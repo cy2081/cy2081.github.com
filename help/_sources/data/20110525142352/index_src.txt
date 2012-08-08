@@ -1,0 +1,18 @@
+The following roles create cross-references to C-language constructs if they are
+defined in the documentation:
+
+.. rst:role:: c:data
+
+   Reference a C-language variable.
+
+.. rst:role:: c:func
+
+   Reference a C-language function. Should include trailing parentheses.
+
+.. rst:role:: c:macro
+
+   Reference a "simple" C macro, as defined above.
+
+.. rst:role:: c:type
+
+   Reference a C-language type.

@@ -1,0 +1,45 @@
+.. _Docutils: http://docutils.sourceforge.net/
+.. _The Docutils Document Tree: http://docutils.sourceforge.net/docs/ref/doctree.html
+.. _Docutils Generic DTD: http://docutils.sourceforge.net/docs/ref/docutils.dtd
+.. _transforms:
+   http://docutils.sourceforge.net/docutils/transforms/
+.. _Grouch: http://www.mems-exchange.org/software/grouch/
+.. _RFC822: http://www.rfc-editor.org/rfc/rfc822.txt
+.. _DocTitle transform:
+.. _DocInfo transform:
+   http://docutils.sourceforge.net/docutils/transforms/frontmatter.py
+.. _getopt.py:
+   http://www.python.org/doc/current/lib/module-getopt.html
+.. _GNU libc getopt_long():
+   http://www.gnu.org/software/libc/manual/html_node/Getopt-Long-Options.html
+.. _doctest module:
+   http://www.python.org/doc/current/lib/module-doctest.html
+.. _Emacs table mode: http://table.sourceforge.net/
+.. _Official IANA Registry of URI Schemes:
+   http://www.iana.org/assignments/uri-schemes
+.. _Retired Index of WWW Addressing Schemes:
+   http://www.w3.org/Addressing/schemes.html
+.. _World Wide Web Consortium: http://www.w3.org/
+.. _HTML Techniques for Web Content Accessibility Guidelines:
+   http://www.w3.org/TR/WCAG10-HTML-TECHS/#link-text
+.. _image: index.html#image
+.. _replace: index.html#replace
+.. _meta: index.html#meta
+.. _figure: index.html#figure
+.. _admonition: index.html#admonitions
+.. _role: index.html#custom-interpreted-text-roles
+.. _reStructuredText Directives: index.html
+.. _reStructuredText Interpreted Text Roles: http://docutils.sourceforge.net/docs/ref/rst/roles.html
+.. _RFC2396: http://www.rfc-editor.org/rfc/rfc2396.txt
+.. _RFC2732: http://www.rfc-editor.org/rfc/rfc2732.txt
+.. _Zope: http://www.zope.com/
+.. _PEP 258: http://docutils.sourceforge.net/docs/peps/pep-0258.html
+
+
+..
+   Local Variables:
+   mode: indented-text
+   indent-tabs-mode: nil
+   sentence-end-double-space: t
+   fill-column: 70
+   End:

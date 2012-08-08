@@ -1,0 +1,207 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Grammar production displays &mdash; Baow Help</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Baow Help" href="../../index.html" />
+    <link rel="up" title="Sphinx Markup Constructs" href="../20110525120240/index.html" />
+    <link rel="next" title="Glossary" href="../20110525140053/index.html" />
+    <link rel="prev" title="Index-generating markup" href="../20110525140020/index.html" />
+<link rel="stylesheet" href="../../_static/baow.css" type="text/css" />
+<link rel="shortcut icon" href="/images/favicon.ico" />
+
+  </head>
+  <body>
+
+<div id=baowhead>
+    <table><tr><td width=250>
+    <div id=baowlogo>
+       <a href="http://www.baow.com" target=_blank><img src="../../_static/logo.png" border=0 title="Baow software"></a>
+    </div>
+    </td><td nowrap>
+    <div id=baowmenu>
+	    <ul>
+                <li><img src="../../_static/go.gif"> <a href="/" > Home</a></li>
+                <li><img src="../../_static/go.gif"> <a href="/help/" > Document Editor</a></li>
+	    </ul>
+     </div>
+     </td><td nowrap>
+	 <a href="/help/">English</a><br>
+	 <a href="/help/zh-CN/">简体中文</a>
+</td></tr></table>
+</div>
+
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../20110525140053/index.html" title="Glossary"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../20110525140020/index.html" title="Index-generating markup"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">Baow Help</a> &raquo;</li>
+          <li><a href="../20110525114558/index.html" >Sphinx documentation</a> &raquo;</li>
+          <li><a href="../20110525120240/index.html" accesskey="U">Sphinx Markup Constructs</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="grammar-production-displays">
+<h1>Grammar production displays<a class="headerlink" href="#grammar-production-displays" title="Permalink to this headline">¶</a></h1>
+<p>Special markup is available for displaying the productions of a formal grammar.
+The markup is simple and does not attempt to model all aspects of BNF (or any
+derived forms), but provides enough to allow context-free grammars to be
+displayed in a way that causes uses of a symbol to be rendered as hyperlinks to
+the definition of the symbol.  There is this directive:</p>
+<dl class="directive">
+<dt id="directive-productionlist">
+<tt class="descname">.. productionlist::</tt><tt class="descclassname"> [name]</tt><a class="headerlink" href="#directive-productionlist" title="Permalink to this definition">¶</a></dt>
+<dd><p>This directive is used to enclose a group of productions.  Each production is
+given on a single line and consists of a name, separated by a colon from the
+following definition.  If the definition spans multiple lines, each
+continuation line must begin with a colon placed at the same column as in the
+first line.</p>
+<p>The argument to <a class="reference internal" href="#directive-productionlist" title="productionlist directive"><tt class="xref rst rst-dir docutils literal"><span class="pre">productionlist</span></tt></a> serves to distinguish different sets of
+production lists that belong to different grammars.</p>
+<p>Blank lines are not allowed within <tt class="docutils literal"><span class="pre">productionlist</span></tt> directive arguments.</p>
+<p>The definition can contain token names which are marked as interpreted text
+(e.g. <tt class="docutils literal"><span class="pre">sum</span> <span class="pre">::=</span> <span class="pre">`integer`</span> <span class="pre">&quot;+&quot;</span> <span class="pre">`integer`</span></tt>) &#8211; this generates cross-references
+to the productions of these tokens.  Outside of the production list, you can
+reference to token productions using <a class="reference internal" href="../20110525140549/index.html#role-token" title="token role"><tt class="xref rst rst-role docutils literal"><span class="pre">token</span></tt></a>.</p>
+<p>Note that no further reST parsing is done in the production, so that you
+don&#8217;t have to escape <tt class="docutils literal"><span class="pre">*</span></tt> or <tt class="docutils literal"><span class="pre">|</span></tt> characters.</p>
+</dd></dl>
+
+<p>The following is an example taken from the Python Reference Manual:</p>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="ow">productionlist</span><span class="p">::</span>
+   try_stmt: try1_stmt | try2_stmt
+   try1_stmt: &quot;try&quot; &quot;:&quot; <span class="nv">`suite`</span>
+            : (&quot;except&quot; [<span class="nv">`expression`</span> [&quot;,&quot; <span class="nv">`target`</span>]] &quot;:&quot; <span class="nv">`suite`</span>)+
+            : [&quot;else&quot; &quot;:&quot; <span class="nv">`suite`</span>]
+            : [&quot;finally&quot; &quot;:&quot; <span class="nv">`suite`</span>]
+   try2_stmt: &quot;try&quot; &quot;:&quot; <span class="nv">`suite`</span>
+            : &quot;finally&quot; &quot;:&quot; <span class="nv">`suite`</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../20110524133011/index.html">Quick install and start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110325210002/index.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110325152027/index.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110325183154/index.html">Project Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110325183235/index.html">Adding content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110325183402/index.html">Build HTML files</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../20110525114558/index.html">Sphinx documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../20110525114720/index.html">reStructuredText Primer</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../20110525120240/index.html">Sphinx Markup Constructs</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../20110525120640/index.html">The TOC tree</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../20110525135554/index.html">Paragraph-level markup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../20110525135925/index.html">Table-of-contents markup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../20110525140020/index.html">Index-generating markup</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Grammar production displays</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../20110525140053/index.html">Glossary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../20110525140209/index.html">Showing code examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../20110525140549/index.html">Inline markup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../20110525141312/index.html">Miscellaneous markup</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../20110525141625/index.html">Sphinx Domains</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../20110525143013/index.html">The build configuration file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../20110525164311/index.html">reStructuredText Markup Specification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../20110525173013/index.html">reStructuredText Directives</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../20110524132550/index.html">Shortcut Keys</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110325225721/index.html">Download</a></li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/data/20110525140123/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../20110525140053/index.html" title="Glossary"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../20110525140020/index.html" title="Index-generating markup"
+             >previous</a> |</li>
+        <li><a href="../../index.html">Baow Help</a> &raquo;</li>
+          <li><a href="../20110525114558/index.html" >Sphinx documentation</a> &raquo;</li>
+          <li><a href="../20110525120240/index.html" >Sphinx Markup Constructs</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright Cyrus. Created using Baow Editor.
+      Last updated on May 07, 2012.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

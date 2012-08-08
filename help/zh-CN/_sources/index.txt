@@ -1,0 +1,131 @@
+Baow 文档编辑器使用说明
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Baow 文档编辑器** 是一个在 `Firefox 浏览器`_ 当中使用的文档编辑工具，不仅可以用来编写文档，还可以用来保存和组织网页、图片、文件等等内容，然后智能方便的生成漂亮的专业网页文件。
+
+Baow还可以管理自己的网络资源，比如常用的网址，保存网页、图片、文件等等，同时通过内置的文档编写和网页生成功能，得到网页文件，然后就可以轻松的给别人看了。
+
+ |照片| 
+
+ :作者: 川越
+ :联系: cy2081@baow.com
+ :最新版本: |version| (2012-05-07)
+ :下载: `下载安装 <http://www.baow.com/help/baow-3.1.xpi>`_ 
+
+
+.. figure:: data/20110326091043/screen_s2.png
+   :align: center
+
+   屏幕截图
+
+
+
+
+使用手册
+########
+
+
+.. toctree::
+
+   特性和功能 <data/20110326100315/index>
+   简明使用方法 <data/20110524131333/index>
+   安装方法 <data/20110326101022/index>
+   项目管理 <data/20110326101834/index>
+   添加内容 <data/20110326103822/index>
+   生成网页文件 <data/20110326104741/index>
+   语法标记 <data/20110524154800/index>
+   快捷键 <data/20110524140712/index>
+   下载 <data/20110326104945/index>
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`search`
+* :ref:`glossary`
+
+
+
+.. _Sphinx Markup: http://sphinx.pocoo.org/markup/index.html
+
+
+.. _reStructuredText: http://sphinx.pocoo.org/rest.html
+.. _Python:
+
+.. _Python 语言: http://www.python.org/
+
+
+.. _Sphinx 模块: http://pypi.python.org/pypi/Sphinx/
+
+
+.. _Firefox 浏览器: http://www.mozilla.com/
+
+
+.. _Python Package Index \: setuptools: http://pypi.python.org/pypi/setuptools/
+
+
+.. _baow: http://www.baow.com/help/baow-3.1.xpi
+
+
+.. _Sphinx: http://sphinx.pocoo.org/index.html
+
+
+.. _生成按钮: data/20110402004113/generate_button.png
+
+.. |生成按钮| image:: data/20110402004113/generate_button.png
+
+
+.. _新文档: data/20110325202815/add_doc_cn.png
+
+.. |新文档| image:: data/20110325202815/add_doc_cn.png
+
+
+.. _生成文档: data/20110325202955/generate_cn.png
+
+.. |生成文档| image:: data/20110325202955/generate_cn.png
+
+
+.. _项目管理按钮: data/20110325205532/project.png
+
+.. |项目管理按钮| image:: data/20110325205532/project.png
+
+
+.. _选择生成参数: data/20110420142541/path_cn.png
+
+.. |选择生成参数| image:: data/20110420142541/path_cn.png
+
+
+.. _选择路径: data/20110325203025/path_cn.png
+
+.. |选择路径| image:: data/20110325203025/path_cn.png
+
+
+.. _照片: data/20110914201631/duws.jpg
+
+.. |照片| image:: data/20110914201631/duws.jpg
+
+
+.. _项目信息: data/20110325221743/project_info_cn.png
+
+.. |项目信息| image:: data/20110325221743/project_info_cn.png
+
+
+.. _项目管理窗口: data/20110325215724/project_manage_cn.png
+
+.. |项目管理窗口| image:: data/20110325215724/project_manage_cn.png
+
+
+.. _screen: data/20110326091043/screen_s2.png
+
+.. |screen| image:: data/20110326091043/screen_s2.png
+
+
+.. _Emacs Keybindings - Firefox - MozillaZine Knowledge Base: http://kb.mozillazine.org/Emacs_Keybindings_(Firefox)
+
+
+.. _Gvim: http://www.vim.org/
+
+
+.. _Emacs: http://www.gnu.org/software/emacs/

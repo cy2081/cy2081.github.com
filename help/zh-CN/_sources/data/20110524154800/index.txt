@@ -1,0 +1,101 @@
+语法标记
+########
+
+Baow 文档编辑器在生成网页的时候采用 `Sphinx`_ 编写文档的方式进行。 `Sphinx`_ 源于 Python 编程语言当中支持的 reStructuredText 。
+
+reStructuredText 是一种简单易用的标记语言，通过按照 reStructuredText 规定好的语法进行编写，就可以生成网页在内的多种格式的文档。  `Sphinx`_  对 reStructuredText 进行了扩展，加入了更多的标记，然后可以将多个文件串联在一起，形成网页文件。 Baow 采用  `Sphinx`_ 生成网页的方式，只需要在 Firefox 浏览器当中编写文档就可以了，简化了 Sphinx 编写文档的方式。
+
+.. seealso::
+
+     `Sphinx`_ 
+
+Baow 和 `Sphinx`_ 是完全兼容的，改进了编写的方式，只要按照树状结构组织章节，就能自动生成目录结构。
+
+这部分内容正在编写当中，将详细讲述 Baow 支持的所有标记和语法，以及 Baow 编写网页时的方式。英文版当中的内容比较全，请查看 `英文版本 <http://www.baow.com/help/data/20110525114558/index.html>`_ 。
+
+
+
+
+
+
+.. _Sphinx Markup: http://sphinx.pocoo.org/markup/index.html
+
+
+.. _reStructuredText: http://sphinx.pocoo.org/rest.html
+.. _Python:
+
+.. _Python 语言: http://www.python.org/
+
+
+.. _Sphinx 模块: http://pypi.python.org/pypi/Sphinx/
+
+
+.. _Firefox 浏览器: http://www.mozilla.com/
+
+
+.. _Python Package Index \: setuptools: http://pypi.python.org/pypi/setuptools/
+
+
+.. _baow: http://www.baow.com/help/baow-3.1.xpi
+
+
+.. _Sphinx: http://sphinx.pocoo.org/index.html
+
+
+.. _生成按钮: ../20110402004113/generate_button.png
+
+.. |生成按钮| image:: ../20110402004113/generate_button.png
+
+
+.. _新文档: ../20110325202815/add_doc_cn.png
+
+.. |新文档| image:: ../20110325202815/add_doc_cn.png
+
+
+.. _生成文档: ../20110325202955/generate_cn.png
+
+.. |生成文档| image:: ../20110325202955/generate_cn.png
+
+
+.. _项目管理按钮: ../20110325205532/project.png
+
+.. |项目管理按钮| image:: ../20110325205532/project.png
+
+
+.. _选择生成参数: ../20110420142541/path_cn.png
+
+.. |选择生成参数| image:: ../20110420142541/path_cn.png
+
+
+.. _选择路径: ../20110325203025/path_cn.png
+
+.. |选择路径| image:: ../20110325203025/path_cn.png
+
+
+.. _照片: ../20110914201631/duws.jpg
+
+.. |照片| image:: ../20110914201631/duws.jpg
+
+
+.. _项目信息: ../20110325221743/project_info_cn.png
+
+.. |项目信息| image:: ../20110325221743/project_info_cn.png
+
+
+.. _项目管理窗口: ../20110325215724/project_manage_cn.png
+
+.. |项目管理窗口| image:: ../20110325215724/project_manage_cn.png
+
+
+.. _screen: ../20110326091043/screen_s2.png
+
+.. |screen| image:: ../20110326091043/screen_s2.png
+
+
+.. _Emacs Keybindings - Firefox - MozillaZine Knowledge Base: http://kb.mozillazine.org/Emacs_Keybindings_(Firefox)
+
+
+.. _Gvim: http://www.vim.org/
+
+
+.. _Emacs: http://www.gnu.org/software/emacs/

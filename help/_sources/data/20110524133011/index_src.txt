@@ -1,0 +1,35 @@
+**Quick install step** :
+
+  1. Install  `Firefox web browser`_ .
+  2. Install  `baow`_ add-on.
+
+If you want to generate web pages with  `Sphinx`_ tools:
+
+  3. Install  `Python Programming Language`_ .
+  4. Install  `Python Package: Sphinx`_ .
+
+
+**Quick start** :
+
+  1. Open Firefox browser, and select menu :menuselection:`Baow --> Show in Sidebar`
+  2. Click menu   :menuselection:`Add Document`  in left panel, and input title dialog, then some text in new opened tab editor, and click  ``save``  button.
+
+     |new_doc|
+
+  3. Click button  |generate button|  from the left panel.
+
+      |generate|
+
+  4. Select your sphinx build command path, and output path, click  ``ok`` . Windows sphinx path like this::
+
+       C:\Python27\Scripts\sphinx-build.exe
+
+     Linux, BSD path like this ::
+
+       /usr/bin/sphinx-build
+
+     |output path| 
+
+  5. OK, you get full features web documents. If you want to continue get more goods of Baow, you should create a project by click management button  |project| , and start your real documents writing.
+        
+

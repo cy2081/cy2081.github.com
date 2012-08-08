@@ -1,0 +1,156 @@
+添加内容
+########
+
+在Baow当中，可以添加多种类型的内容，每种类型的具体作用如下：
+
+**文档** ：
+ 用来编写文本内容，可以包含下级文档和内容，形成文档树。
+
+**摘要** ：
+ 用来显示一段文字信息，一般放在文档的开头或结尾部份。
+
+**分隔** ：
+ 用来区分和标记整体框架当中的不同部分，生成网页时显示成大标题。
+
+**文件夹** ：
+ 用来存放不同的内容，生成网页文件时，不显示文件夹，只处理内容部分。
+
+**图片** ：
+ 可以直接添加本机当中的图片文件，也可以保存添加网页当中的图片，然后就可以全局引用，并显示到文档当中。
+
+**文件** ：
+ 可以直接添加本机当中的文件，也可以保存添加网页当中的文件，然后就可以全局引用，在文档生成的网页文件当中显示为链接。
+
+**书签** ：
+ 可以直接添加书签，也就是网页链接，包括包括标题和网址。然后可以全局引用，放入到文档当中，显示成链接。
+
+**源码文件** ：
+ 和 **文件** 类似，只不过增加了编辑界面，可以对内容进行编辑修改。适用于代码文件，比如：C++，Java，PHP，Python 等等以文本形式出现的文件。
+
+
+
+添加文档
+********
+
+从左侧栏点击菜单   :menuselection:`添加文档` ，然后在标题对话框当中输入文档标题，在新弹出的编辑器窗口中输入文档内容。最后点击 ``保存`` 按钮 。
+
+可以自由添加下级文档，也就是下级章节，通过拖动，可以自由安排结构。
+
+.. tip:: 文档可以包含下级文档，文档当中不用输入章节标题特殊字符。
+
+通过查看文档属性，如果勾选了 Toctree 属性，则文档在生成网页时会按照树型结构显示，如果不勾选默认采用通篇文章方式显示。
+
+
+
+
+添加图片和文件
+**************
+
+从左侧栏当中点击菜单   :menuselection:`添加图片` 或者 :menuselection:`添加文件` ，然后选择文件名称，或输入一个网址。
+
+也可以在浏览网页时，通过鼠标右键调出菜单，把当前的图片、链接或文件保存下来。
+
+添加完成以后，可以通过右键菜单或属性对话框中，复制相应的ReST引用方法。
+
+
+
+添加链接
+********
+
+
+如果打开了一个网址，通过右键菜单，添加Baow书签。
+
+然后，通过右键菜单当中复制 ReST 链接，再插入到当前正在编辑的文档当中。
+
+
+
+添加摘要
+********
+
+摘要一般放在文档的开头或结束部分。用于显示相关内容。
+
+
+
+
+
+.. _Sphinx Markup: http://sphinx.pocoo.org/markup/index.html
+
+
+.. _reStructuredText: http://sphinx.pocoo.org/rest.html
+.. _Python:
+
+.. _Python 语言: http://www.python.org/
+
+
+.. _Sphinx 模块: http://pypi.python.org/pypi/Sphinx/
+
+
+.. _Firefox 浏览器: http://www.mozilla.com/
+
+
+.. _Python Package Index \: setuptools: http://pypi.python.org/pypi/setuptools/
+
+
+.. _baow: http://www.baow.com/help/baow-3.1.xpi
+
+
+.. _Sphinx: http://sphinx.pocoo.org/index.html
+
+
+.. _生成按钮: ../20110402004113/generate_button.png
+
+.. |生成按钮| image:: ../20110402004113/generate_button.png
+
+
+.. _新文档: ../20110325202815/add_doc_cn.png
+
+.. |新文档| image:: ../20110325202815/add_doc_cn.png
+
+
+.. _生成文档: ../20110325202955/generate_cn.png
+
+.. |生成文档| image:: ../20110325202955/generate_cn.png
+
+
+.. _项目管理按钮: ../20110325205532/project.png
+
+.. |项目管理按钮| image:: ../20110325205532/project.png
+
+
+.. _选择生成参数: ../20110420142541/path_cn.png
+
+.. |选择生成参数| image:: ../20110420142541/path_cn.png
+
+
+.. _选择路径: ../20110325203025/path_cn.png
+
+.. |选择路径| image:: ../20110325203025/path_cn.png
+
+
+.. _照片: ../20110914201631/duws.jpg
+
+.. |照片| image:: ../20110914201631/duws.jpg
+
+
+.. _项目信息: ../20110325221743/project_info_cn.png
+
+.. |项目信息| image:: ../20110325221743/project_info_cn.png
+
+
+.. _项目管理窗口: ../20110325215724/project_manage_cn.png
+
+.. |项目管理窗口| image:: ../20110325215724/project_manage_cn.png
+
+
+.. _screen: ../20110326091043/screen_s2.png
+
+.. |screen| image:: ../20110326091043/screen_s2.png
+
+
+.. _Emacs Keybindings - Firefox - MozillaZine Knowledge Base: http://kb.mozillazine.org/Emacs_Keybindings_(Firefox)
+
+
+.. _Gvim: http://www.vim.org/
+
+
+.. _Emacs: http://www.gnu.org/software/emacs/

@@ -1,0 +1,86 @@
+Doctree elements: option_list, option_list_item, option_group, option,
+option_string, option_argument, description.
+
+Option lists are two-column lists of command-line options and
+descriptions, documenting a program's options.  For example::
+
+    -a         Output all.
+    -b         Output both (this description is
+               quite long).
+    -c arg     Output just arg.
+    --long     Output all day long.
+
+    -p         This option has two paragraphs in the description.
+               This is the first.
+
+               This is the second.  Blank lines may be omitted between
+               options (as above) or left in (as here and below).
+
+    --very-long-option  A VMS-style option.  Note the adjustment for
+                        the required two spaces.
+
+    --an-even-longer-option
+               The description can also start on the next line.
+
+    -2, --two  This option has two variants.
+
+    -f FILE, --file=FILE  These two options are synonyms; both have
+                          arguments.
+
+    /V         A VMS/DOS-style option.
+
+There are several types of options recognized by reStructuredText:
+
+- Short POSIX options consist of one dash and an option letter.
+- Long POSIX options consist of two dashes and an option word; some
+  systems use a single dash.
+- Old GNU-style "plus" options consist of one plus and an option
+  letter ("plus" options are deprecated now, their use discouraged).
+- DOS/VMS options consist of a slash and an option letter or word.
+
+Please note that both POSIX-style and DOS/VMS-style options may be
+used by DOS or Windows software.  These and other variations are
+sometimes used mixed together.  The names above have been chosen for
+convenience only.
+
+The syntax for short and long POSIX options is based on the syntax
+supported by Python's getopt.py_ module, which implements an option
+parser similar to the `GNU libc getopt_long()`_ function but with some
+restrictions.  There are many variant option systems, and
+reStructuredText option lists do not support all of them.
+
+Although long POSIX and DOS/VMS option words may be allowed to be
+truncated by the operating system or the application when used on the
+command line, reStructuredText option lists do not show or support
+this with any special syntax.  The complete option word should be
+given, supported by notes about truncation if and when applicable.
+
+Options may be followed by an argument placeholder, whose role and
+syntax should be explained in the description text.  Either a space or
+an equals sign may be used as a delimiter between options and option
+argument placeholders; short options ("-" or "+" prefix only) may omit
+the delimiter.  Option arguments may take one of two forms:
+
+- Begins with a letter (``[a-zA-Z]``) and subsequently consists of
+  letters, numbers, underscores and hyphens (``[a-zA-Z0-9_-]``).
+- Begins with an open-angle-bracket (``<``) and ends with a
+  close-angle-bracket (``>``); any characters except angle brackets
+  are allowed internally.
+
+Multiple option "synonyms" may be listed, sharing a single
+description.  They must be separated by comma-space.
+
+There must be at least two spaces between the option(s) and the
+description.  The description may contain multiple body elements.  The
+first line after the option marker determines the indentation of the
+description.  As with other types of lists, blank lines are required
+before the first option list item and after the last, but are optional
+between option entries.
+
+Syntax diagram (simplified)::
+
+    +----------------------------+-------------+
+    | option [" " argument] "  " | description |
+    +-------+--------------------+             |
+            | (body elements)+                 |
+            +----------------------------------+

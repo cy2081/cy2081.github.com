@@ -1,0 +1,51 @@
+A number sign ("#") may be used as the first character of a footnote
+label to request automatic numbering of the footnote or footnote
+reference.
+
+The first footnote to request automatic numbering is assigned the
+label "1", the second is assigned the label "2", and so on (assuming
+there are no manually numbered footnotes present; see `Mixed Manual
+and Auto-Numbered Footnotes`_ below).  A footnote which has
+automatically received a label "1" generates an implicit hyperlink
+target with name "1", just as if the label was explicitly specified.
+
+.. _autonumber label: `autonumber labels`_
+
+A footnote may specify a label explicitly while at the same time
+requesting automatic numbering: ``[#label]``.  These labels are called
+_`autonumber labels`.  Autonumber labels do two things:
+
+- On the footnote itself, they generate a hyperlink target whose name
+  is the autonumber label (doesn't include the "#").
+
+- They allow an automatically numbered footnote to be referred to more
+  than once, as a footnote reference or hyperlink reference.  For
+  example::
+
+      If [#note]_ is the first footnote reference, it will show up as
+      "[1]".  We can refer to it again as [#note]_ and again see
+      "[1]".  We can also refer to it as note_ (an ordinary internal
+      hyperlink reference).
+
+      .. [#note] This is the footnote labeled "note".
+
+The numbering is determined by the order of the footnotes, not by the
+order of the references.  For footnote references without autonumber
+labels (``[#]_``), the footnotes and footnote references must be in
+the same relative order but need not alternate in lock-step.  For
+example::
+
+    [#]_ is a reference to footnote 1, and [#]_ is a reference to
+    footnote 2.
+
+    .. [#] This is footnote 1.
+    .. [#] This is footnote 2.
+    .. [#] This is footnote 3.
+
+    [#]_ is a reference to footnote 3.
+
+Special care must be taken if footnotes themselves contain
+auto-numbered footnote references, or if multiple references are made
+in close proximity.  Footnotes and references are noted in the order
+they are encountered in the document, which is not necessarily the
+same as the order in which a person would read them.

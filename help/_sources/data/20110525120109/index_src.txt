@@ -1,0 +1,4 @@
+Since the easiest way to include special characters like em dashes or copyright
+signs in reST is to directly write them as Unicode characters, one has to
+specify an encoding.  Sphinx assumes source files to be encoded in UTF-8 by
+default; you can change this with the :confval:`source_encoding` config value.

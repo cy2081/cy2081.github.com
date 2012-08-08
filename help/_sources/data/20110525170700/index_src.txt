@@ -1,0 +1,14 @@
+Doctree elements: table, tgroup, colspec, thead, tbody, row, entry.
+
+ReStructuredText provides two syntaxes for delineating table cells:
+`Grid Tables`_ and `Simple Tables`_.
+
+As with other body elements, blank lines are required before and after
+tables.  Tables' left edges should align with the left edge of
+preceding text blocks; if indented, the table is considered to be part
+of a block quote.
+
+Once isolated, each table cell is treated as a miniature document; the
+top and bottom cell boundaries act as delimiting blank lines.  Each
+cell contains zero or more body elements.  Cell contents may include
+left and/or right margins, which are removed before processing.

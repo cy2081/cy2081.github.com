@@ -1,0 +1,26 @@
+:Directive Type: "container"
+:Doctree Element: container
+:Directive Arguments: One or more, optional (class names).
+:Directive Options: None.
+:Directive Content: Interpreted as body elements.
+
+(New in Docutils 0.3.10)
+
+The "container" directive surrounds its contents (arbitrary body
+elements) with a generic block-level "container" element.  Combined
+with the optional "classes_" attribute argument(s), this is an
+extension mechanism for users & applications.  For example::
+
+    .. container:: custom
+
+       This paragraph might be rendered in a custom way.
+
+Parsing the above results in the following pseudo-XML::
+
+    <container classes="custom">
+        <paragraph>
+            This paragraph might be rendered in a custom way.
+
+The "container" directive is the equivalent of HTML's ``<div>``
+element.  It may be used to group a sequence of elements for user- or
+application-specific purposes.

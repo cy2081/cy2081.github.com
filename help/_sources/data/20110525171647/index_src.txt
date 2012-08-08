@@ -1,0 +1,25 @@
+It is possible to mark up individual characters within a word with
+backslash escapes (see `Escaping Mechanism`_ above).  Backslash
+escapes can be used to allow arbitrary text to immediately follow
+inline markup::
+
+    Python ``list``\s use square bracket syntax.
+
+The backslash will disappear from the processed document.  The word
+"list" will appear as inline literal text, and the letter "s" will
+immediately follow it as normal text, with no space in-between.
+
+Arbitrary text may immediately precede inline markup using
+backslash-escaped whitespace::
+
+    Possible in *re*\ ``Structured``\ *Text*, though not encouraged.
+
+The backslashes and spaces separating "re", "Structured", and "Text"
+above will disappear from the processed document.
+
+.. CAUTION::
+
+   The use of backslash-escapes for character-level inline markup is
+   not encouraged.  Such use is ugly and detrimental to the
+   unprocessed document's readability.  Please use this feature
+   sparingly and only where absolutely necessary.

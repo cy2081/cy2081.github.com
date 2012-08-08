@@ -1,0 +1,32 @@
+Doctree element: transition.
+
+    Instead of subheads, extra space or a type ornament between
+    paragraphs may be used to mark text divisions or to signal
+    changes in subject or emphasis.
+
+    (The Chicago Manual of Style, 14th edition, section 1.80)
+
+Transitions are commonly seen in novels and short fiction, as a gap
+spanning one or more lines, with or without a type ornament such as a
+row of asterisks.  Transitions separate other body elements.  A
+transition should not begin or end a section or document, nor should
+two transitions be immediately adjacent.
+
+The syntax for a transition marker is a horizontal line of 4 or more
+repeated punctuation characters.  The syntax is the same as section
+title underlines without title text.  Transition markers require blank
+lines before and after::
+
+    Para.
+
+    ----------
+
+    Para.
+
+Unlike section title underlines, no hierarchy of transition markers is
+enforced, nor do differences in transition markers accomplish
+anything.  It is recommended that a single consistent style be used.
+
+The processing system is free to render transitions in output in any
+way it likes.  For example, horizontal rules (``<hr>``) in HTML output
+would be an obvious choice.

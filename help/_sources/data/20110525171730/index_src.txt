@@ -1,0 +1,9 @@
+Doctree element: strong.
+
+Start-string = end-string = "**".
+
+Text enclosed by double-asterisks is emphasized strongly::
+
+    This is **strong text**.
+
+Strongly emphasized text is typically displayed in boldface.

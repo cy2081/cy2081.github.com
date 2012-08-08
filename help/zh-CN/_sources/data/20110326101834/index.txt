@@ -1,0 +1,145 @@
+项目管理
+########
+
+通过项目管理才能充分使用Baow的各项功能。在开始之前，最好先好好看看 Sphinx_ 的文档。
+
+
+
+打开项目管理窗口
+****************
+
+点击按钮 |项目管理按钮| :
+
+ |项目管理窗口| 
+
+
+
+配置基本路径
+************
+
+在项目管理窗口当中，点击  ``路径`` 按钮，在弹出的窗口当中，首先输入基本的路径信息。 通过点击  :guilabel:`选择`  按钮可以直接选择路径。
+
+ |选择路径| 
+
+说明如下:
+
+   **数据保存到** :
+    所有数据都保存到这个目录下边。
+   **Sphinx 命令路径** :
+    Sphinx 的命令文件，Windows 当中一般是::
+
+       C:\Python27\Scripts\sphinx-build.exe
+
+    Linux, BSD 等系统当中一般是::
+
+       /usr/bin/sphinx-build 
+
+
+
+
+
+
+输入项目信息
+************
+
+输入完了基本路径信息，然后点击  ``新项目`` 按钮输入项目信息。
+
+  |项目信息| 
+
+ ``项目名称``  和  ``Path ID`` 是必需的，默认的配置一般足够了。如果您不想生成网页文件，其他选项可以不用填写。如果想生成网页，其他的大多数选项只需要输入文字就可以，但有些特殊的设置需要按照Python的语法格式进行。具体的方法请先查阅一下 Sphinx_ 的文档。
+
+
+
+
+
+应用配置
+********
+
+
+最后，应该点击  **应用**  按钮，来选择项目配置。
+
+
+
+
+
+.. _Sphinx Markup: http://sphinx.pocoo.org/markup/index.html
+
+
+.. _reStructuredText: http://sphinx.pocoo.org/rest.html
+.. _Python:
+
+.. _Python 语言: http://www.python.org/
+
+
+.. _Sphinx 模块: http://pypi.python.org/pypi/Sphinx/
+
+
+.. _Firefox 浏览器: http://www.mozilla.com/
+
+
+.. _Python Package Index \: setuptools: http://pypi.python.org/pypi/setuptools/
+
+
+.. _baow: http://www.baow.com/help/baow-3.1.xpi
+
+
+.. _Sphinx: http://sphinx.pocoo.org/index.html
+
+
+.. _生成按钮: ../20110402004113/generate_button.png
+
+.. |生成按钮| image:: ../20110402004113/generate_button.png
+
+
+.. _新文档: ../20110325202815/add_doc_cn.png
+
+.. |新文档| image:: ../20110325202815/add_doc_cn.png
+
+
+.. _生成文档: ../20110325202955/generate_cn.png
+
+.. |生成文档| image:: ../20110325202955/generate_cn.png
+
+
+.. _项目管理按钮: ../20110325205532/project.png
+
+.. |项目管理按钮| image:: ../20110325205532/project.png
+
+
+.. _选择生成参数: ../20110420142541/path_cn.png
+
+.. |选择生成参数| image:: ../20110420142541/path_cn.png
+
+
+.. _选择路径: ../20110325203025/path_cn.png
+
+.. |选择路径| image:: ../20110325203025/path_cn.png
+
+
+.. _照片: ../20110914201631/duws.jpg
+
+.. |照片| image:: ../20110914201631/duws.jpg
+
+
+.. _项目信息: ../20110325221743/project_info_cn.png
+
+.. |项目信息| image:: ../20110325221743/project_info_cn.png
+
+
+.. _项目管理窗口: ../20110325215724/project_manage_cn.png
+
+.. |项目管理窗口| image:: ../20110325215724/project_manage_cn.png
+
+
+.. _screen: ../20110326091043/screen_s2.png
+
+.. |screen| image:: ../20110326091043/screen_s2.png
+
+
+.. _Emacs Keybindings - Firefox - MozillaZine Knowledge Base: http://kb.mozillazine.org/Emacs_Keybindings_(Firefox)
+
+
+.. _Gvim: http://www.vim.org/
+
+
+.. _Emacs: http://www.gnu.org/software/emacs/

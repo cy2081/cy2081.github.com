@@ -1,0 +1,110 @@
+特性和功能
+##########
+
+Baow 是一个文档编辑器软件，可以用来编写文档，然后生成多种格式的文档，同时还是上网辅助工具，可以用来管理自己的各种网络文件资源。主要的特性有：
+
+* 基于树状的层级显示，可以方便的管理组织网络资源和文档。
+* 可以保存网页、图片、文件等等多种形式的网络资源，或者加入书签链接。
+* 支持项目管理，可以进行多层级的项目管理，以及切换。
+* 支持全文搜索。
+* 支持多种平台，Windows, Linux, Mac 等等系统都支持。
+* 支持  `Gvim`_  和  `Emacs`_  编辑器
+* 支持编写 `Sphinx Markup`_ 格式的文档，并用 `Sphinx`_ 生成网页文件。
+
+  * 可以轻松的进行配置，并生成多种格式的文档。
+  * 自动处理段落和章节，并加上标题，不需要加入特殊的标题字符。 
+  * 大量的快捷菜单，轻松进行预览编辑  `Sphinx Markup`_ 格式的文档。
+  * 可以按照树状层级添加文档，每个文档可以包含下级文档，下级文档就相当于章节。通过建立文档树，就建立了章节结构。 
+  * 可以通过鼠标拖动，放到其他文档下边，并随意调整章节布局。
+  * 充分和 Sphinx_ 兼容。  
+  * 可以轻松添加链接、图片和文件，并可以在全局进行引用。
+  * 还可以帮助你组织网络资源，轻松的放入到自己的文档当中。
+  * 支持 HTML 网页预览。 
+  * 支持 Sphinx_ 全部配置选项。
+
+
+
+
+
+
+.. _Sphinx Markup: http://sphinx.pocoo.org/markup/index.html
+
+
+.. _reStructuredText: http://sphinx.pocoo.org/rest.html
+.. _Python:
+
+.. _Python 语言: http://www.python.org/
+
+
+.. _Sphinx 模块: http://pypi.python.org/pypi/Sphinx/
+
+
+.. _Firefox 浏览器: http://www.mozilla.com/
+
+
+.. _Python Package Index \: setuptools: http://pypi.python.org/pypi/setuptools/
+
+
+.. _baow: http://www.baow.com/help/baow-3.1.xpi
+
+
+.. _Sphinx: http://sphinx.pocoo.org/index.html
+
+
+.. _生成按钮: ../20110402004113/generate_button.png
+
+.. |生成按钮| image:: ../20110402004113/generate_button.png
+
+
+.. _新文档: ../20110325202815/add_doc_cn.png
+
+.. |新文档| image:: ../20110325202815/add_doc_cn.png
+
+
+.. _生成文档: ../20110325202955/generate_cn.png
+
+.. |生成文档| image:: ../20110325202955/generate_cn.png
+
+
+.. _项目管理按钮: ../20110325205532/project.png
+
+.. |项目管理按钮| image:: ../20110325205532/project.png
+
+
+.. _选择生成参数: ../20110420142541/path_cn.png
+
+.. |选择生成参数| image:: ../20110420142541/path_cn.png
+
+
+.. _选择路径: ../20110325203025/path_cn.png
+
+.. |选择路径| image:: ../20110325203025/path_cn.png
+
+
+.. _照片: ../20110914201631/duws.jpg
+
+.. |照片| image:: ../20110914201631/duws.jpg
+
+
+.. _项目信息: ../20110325221743/project_info_cn.png
+
+.. |项目信息| image:: ../20110325221743/project_info_cn.png
+
+
+.. _项目管理窗口: ../20110325215724/project_manage_cn.png
+
+.. |项目管理窗口| image:: ../20110325215724/project_manage_cn.png
+
+
+.. _screen: ../20110326091043/screen_s2.png
+
+.. |screen| image:: ../20110326091043/screen_s2.png
+
+
+.. _Emacs Keybindings - Firefox - MozillaZine Knowledge Base: http://kb.mozillazine.org/Emacs_Keybindings_(Firefox)
+
+
+.. _Gvim: http://www.vim.org/
+
+
+.. _Emacs: http://www.gnu.org/software/emacs/

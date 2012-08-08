@@ -1,0 +1,46 @@
+Doctree elements: footnote, label.
+
+Each footnote consists of an explicit markup start (".. "), a left
+square bracket, the footnote label, a right square bracket, and
+whitespace, followed by indented body elements.  A footnote label can
+be:
+
+- a whole decimal number consisting of one or more digits,
+
+- a single "#" (denoting `auto-numbered footnotes`_),
+
+- a "#" followed by a simple reference name (an `autonumber label`_),
+  or
+
+- a single "*" (denoting `auto-symbol footnotes`_).
+
+The footnote content (body elements) must be consistently indented (by
+at least 3 spaces) and left-aligned.  The first body element within a
+footnote may often begin on the same line as the footnote label.
+However, if the first element fits on one line and the indentation of
+the remaining elements differ, the first element must begin on the
+line after the footnote label.  Otherwise, the difference in
+indentation will not be detected.
+
+Footnotes may occur anywhere in the document, not only at the end.
+Where and how they appear in the processed output depends on the
+processing system.
+
+Here is a manually numbered footnote::
+
+    .. [1] Body elements go here.
+
+Each footnote automatically generates a hyperlink target pointing to
+itself.  The text of the hyperlink target name is the same as that of
+the footnote label.  `Auto-numbered footnotes`_ generate a number as
+their footnote label and reference name.  See `Implicit Hyperlink
+Targets`_ for a complete description of the mechanism.
+
+Syntax diagram::
+
+    +-------+-------------------------+
+    | ".. " | "[" label "]" footnote  |
+    +-------+                         |
+            | (body elements)+        |
+            +-------------------------+
+

@@ -1,0 +1,108 @@
+Simple tables provide a compact and easy to type but limited
+row-oriented table representation for simple data sets.  Cell contents
+are typically single paragraphs, although arbitrary body elements may
+be represented in most cells.  Simple tables allow multi-line rows (in
+all but the first column) and column spans, but not row spans.  See
+`Grid Tables`_ above for a complete table representation.
+
+Simple tables are described with horizontal borders made up of "=" and
+"-" characters.  The equals sign ("=") is used for top and bottom
+table borders, and to separate optional header rows from the table
+body.  The hyphen ("-") is used to indicate column spans in a single
+row by underlining the joined columns, and may optionally be used to
+explicitly and/or visually separate rows.
+
+A simple table begins with a top border of equals signs with one or
+more spaces at each column boundary (two or more spaces recommended).
+Regardless of spans, the top border *must* fully describe all table
+columns.  There must be at least two columns in the table (to
+differentiate it from section headers).  The top border may be
+followed by header rows, and the last of the optional header rows is
+underlined with '=', again with spaces at column boundaries.  There
+may not be a blank line below the header row separator; it would be
+interpreted as the bottom border of the table.  The bottom boundary of
+the table consists of '=' underlines, also with spaces at column
+boundaries.  For example, here is a truth table, a three-column table
+with one header row and four body rows::
+
+    =====  =====  =======
+      A      B    A and B
+    =====  =====  =======
+    False  False  False
+    True   False  False
+    False  True   False
+    True   True   True
+    =====  =====  =======
+
+Underlines of '-' may be used to indicate column spans by "filling in"
+column margins to join adjacent columns.  Column span underlines must
+be complete (they must cover all columns) and align with established
+column boundaries.  Text lines containing column span underlines may
+not contain any other text.  A column span underline applies only to
+one row immediately above it.  For example, here is a table with a
+column span in the header::
+
+    =====  =====  ======
+       Inputs     Output
+    ------------  ------
+      A      B    A or B
+    =====  =====  ======
+    False  False  False
+    True   False  True
+    False  True   True
+    True   True   True
+    =====  =====  ======
+
+Each line of text must contain spaces at column boundaries, except
+where cells have been joined by column spans.  Each line of text
+starts a new row, except when there is a blank cell in the first
+column.  In that case, that line of text is parsed as a continuation
+line.  For this reason, cells in the first column of new rows (*not*
+continuation lines) *must* contain some text; blank cells would lead
+to a misinterpretation (but see the tip below).  Also, this mechanism
+limits cells in the first column to only one line of text.  Use `grid
+tables`_ if this limitation is unacceptable.
+
+.. Tip::
+
+   To start a new row in a simple table without text in the first
+   column in the processed output, use one of these:
+
+   * an empty comment (".."), which may be omitted from the processed
+     output (see Comments_ below)
+
+   * a backslash escape ("``\``") followed by a space (see `Escaping
+     Mechanism`_ above)
+
+Underlines of '-' may also be used to visually separate rows, even if
+there are no column spans.  This is especially useful in long tables,
+where rows are many lines long.
+
+Blank lines are permitted within simple tables.  Their interpretation
+depends on the context.  Blank lines *between* rows are ignored.
+Blank lines *within* multi-line rows may separate paragraphs or other
+body elements within cells.
+
+The rightmost column is unbounded; text may continue past the edge of
+the table (as indicated by the table borders).  However, it is
+recommended that borders be made long enough to contain the entire
+text.
+
+The following example illustrates continuation lines (row 2 consists
+of two lines of text, and four lines for row 3), a blank line
+separating paragraphs (row 3, column 2), text extending past the right
+edge of the table, and a new row which will have no text in the first
+column in the processed output (row 4)::
+
+    =====  =====
+    col 1  col 2
+    =====  =====
+    1      Second column of row 1.
+    2      Second column of row 2.
+           Second line of paragraph.
+    3      - Second column of row 3.
+
+           - Second item in bullet
+             list (row 3, column 2).
+    \      Row 4; column 1 will be empty.
+    =====  =====

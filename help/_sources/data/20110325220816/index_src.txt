@@ -1,0 +1,11 @@
+After all your base path done, click  ``New Project`` button in the projects management window, and input project information.
+
+  |project info| 
+
+ ``Project Name``  and  ``Path ID`` are required, default config is suitable for common task. If you don't want to generate web pages finally, others options can be blank or default. 
+
+You should read Sphinx_ documents carefully when inputing others options. Most of them are plain text, some options are in Python language format, check Sphinx_ document, please.
+
+
+
+ 

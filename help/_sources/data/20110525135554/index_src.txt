@@ -1,0 +1,131 @@
+.. highlight:: rest
+
+.. index:: note, warning
+           pair: changes; in version
+
+These directives create short paragraphs and can be used inside information
+units as well as normal text:
+
+.. rst:directive:: .. note::
+
+   An especially important bit of information about an API that a user should be
+   aware of when using whatever bit of API the note pertains to.  The content of
+   the directive should be written in complete sentences and include all
+   appropriate punctuation.
+
+   Example::
+
+      .. note::
+
+         This function is not suitable for sending spam e-mails.
+
+.. rst:directive:: .. warning::
+
+   An important bit of information about an API that a user should be very aware
+   of when using whatever bit of API the warning pertains to.  The content of
+   the directive should be written in complete sentences and include all
+   appropriate punctuation. This differs from :rst:dir:`note` in that it is
+   recommended over :rst:dir:`note` for information regarding security.
+
+.. rst:directive:: .. versionadded:: version
+
+   This directive documents the version of the project which added the described
+   feature to the library or C API. When this applies to an entire module, it
+   should be placed at the top of the module section before any prose.
+
+   The first argument must be given and is the version in question; you can add
+   a second argument consisting of a *brief* explanation of the change.
+
+   Example::
+
+      .. versionadded:: 2.5
+         The *spam* parameter.
+
+   Note that there must be no blank line between the directive head and the
+   explanation; this is to make these blocks visually continuous in the markup.
+
+.. rst:directive:: .. versionchanged:: version
+
+   Similar to :rst:dir:`versionadded`, but describes when and what changed in
+   the named feature in some way (new parameters, changed side effects, etc.).
+
+.. rst:directive:: .. deprecated:: vesion
+
+   Similar to :rst:dir:`versionchanged`, but describes when the feature was
+   deprecated.  An explanation can also be given, for example to inform the
+   reader what should be used instead.  Example::
+
+      .. deprecated:: 3.1
+         Use :func:`spam` instead.
+
+
+--------------
+
+.. rst:directive:: seealso
+
+   Many sections include a list of references to module documentation or
+   external documents.  These lists are created using the :rst:dir:`seealso`
+   directive.
+
+   The :rst:dir:`seealso` directive is typically placed in a section just before any
+   sub-sections.  For the HTML output, it is shown boxed off from the main flow
+   of the text.
+
+   The content of the :rst:dir:`seealso` directive should be a reST definition list.
+   Example::
+
+      .. seealso::
+
+         Module :py:mod:`zipfile`
+            Documentation of the :py:mod:`zipfile` standard module.
+
+         `GNU tar manual, Basic Tar Format <http://link>`_
+            Documentation for tar archive files, including GNU tar extensions.
+
+   There's also a "short form" allowed that looks like this::
+
+      .. seealso:: modules :py:mod:`zipfile`, :py:mod:`tarfile`
+
+   .. versionadded:: 0.5
+      The short form.
+
+.. rst:directive:: .. rubric:: title
+
+   This directive creates a paragraph heading that is not used to create a
+   table of contents node.
+
+   .. note::
+
+      If the *title* of the rubric is "Footnotes" (or the selected language's
+      equivalent), this rubric is ignored by the LaTeX writer, since it is
+      assumed to only contain footnote definitions and therefore would create an
+      empty heading.
+
+
+.. rst:directive:: centered
+
+   This directive creates a centered boldfaced line of text.  Use it as
+   follows::
+
+      .. centered:: LICENSE AGREEMENT
+
+
+.. rst:directive:: hlist
+
+   This directive must contain a bullet list.  It will transform it into a more
+   compact list by either distributing more than one item horizontally, or
+   reducing spacing between items, depending on the builder.
+
+   For builders that support the horizontal distribution, there is a ``columns``
+   option that specifies the number of columns; it defaults to 2.  Example::
+
+      .. hlist::
+         :columns: 3
+
+         * A list of
+         * short items
+         * that should be
+         * displayed
+         * horizontally
+
+   .. versionadded:: 0.6

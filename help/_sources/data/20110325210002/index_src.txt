@@ -1,0 +1,21 @@
+  * Tree based outline, help you organize internet resources and documents.
+  * Save or bookmark web images, files or pages.
+  * Multi level project management.
+  * Full text search.
+  * Multi platform support, Windows, Linux, Mac etc.
+  * Lots of shortcut keys when browse web pages.
+  * Write `Sphinx Markup`_  (`reStructuredText`_)   documents and generate web pages by `Sphinx`_ tools.
+
+    * Easily configure and build documents.
+    * Automatic create section headers level, no marker characters. 
+    * Lots of quick menus, help you write and preview  `Sphinx Markup`_  documents.
+    * Gvim editor support, press Ctrl+Y to launch gvim editor.
+    * Freely add documents by tree level, each document is container that can be included document or sections. 
+    * You can drag a document by mouse, and put it into another place.
+    * Full compatible with Sphinx_  
+    * One add images and files, Cross-referencing.
+    * Help you organize internet resources, and put it into your documents.
+    * HTML preview pages support. 
+    * Easily edit  `reStructuredText`_ .
+    * All Sphinx_ config options support.
+

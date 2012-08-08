@@ -1,0 +1,27 @@
+Baow is a tool that makes it easy to organize your internet resources and create intelligent and beautiful web pages within `Firefox web browser`_ .
+
+
+ :Author: Du Wenshan
+ :Contact: du@baow.com
+ :Date: |today|
+ :Version: |version|   `download <http://www.baow.com/help/baow-2.3.3.xpi>`_ 
+
+
+ |screen| 
+
+**Highlights** :
+
+  * Tree based outline, help you organize internet resources and documents.
+  * Save or bookmark web images, files or pages.
+  * Multi level project management.
+  * Full text search.
+  * Write `Sphinx Markup`_  (`reStructuredText`_)  documents and generate web pages by `Sphinx`_ tools.
+
+    * Easily configure and build documents.
+    * Automatic create section headers level, no marker characters. 
+    * Lots of quick menus, help you write and preview  `Sphinx Markup`_  documents.
+    * Gvim editor support, press Ctrl+Y to launch gvim editor.
+
+  * Multi platform support, Windows, Linux, Mac etc.
+  * Lots of shortcut keys when browse web pages.
+

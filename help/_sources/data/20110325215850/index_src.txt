@@ -1,0 +1,18 @@
+Click  ``Root Path`` button in the projects management window, you should select some base path to save your data and pages at first. You can  *select*  a path by click **Select**  button.
+
+ |root path| 
+
+  Root data path:
+    save all your data in this path.
+  Sphinx command path:
+    Where your sphinx installed.Windows sphinx path like this::
+
+       C:\Python27\Scripts\sphinx-build.exe
+
+    Linux, BSD path like this::
+
+       /usr/bin/sphinx-build
+
+      
+
+

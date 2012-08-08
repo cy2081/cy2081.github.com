@@ -1,0 +1,220 @@
+Adding content
+############################
+
+You can write documents by adding objects, like Document, Summary, Image, File, Bookmark, Separator, Folder or Source File, and referenced with  `Sphinx Markup`_ (ReST).
+
+ * Document: 
+    you can edit with it, and add sub document.
+ * Summary: 
+    It's text paragraph, and will be inserted into document.
+ * Image:
+    You can add images by select from local file or saved from web pages, and referenced globally in ReST.
+ * File:
+    You can add files by select from local file or saved from web pages, and referenced globally in ReST.
+ * Bookmark:
+    Web links with title and URL, and referenced globally in ReST.
+ * Source File:
+    You can edit source code, like C++, Java, PHP, Python.
+ * Separator:
+    It's used for partition.
+ * Folder:
+    Help you organizing resources.
+
+
+
+
+Add documents
+**************************
+
+Click menu   :menuselection:`New Document`  from the sidebar, and input title in bring up dialog, then input text in new opened tab editor, and click  :guilabel:`Save`  button finally.
+
+You can add sub documents as sections by click pop up menu, or drag it to your target place.
+
+.. tip:: A document can be contained by another document, this is document tree. Section mark characters is no longer needed.
+
+
+You can select toctree style with sub documents in **Properties** dialog window by checking :guilabel:`Toctree`.
+
+ |toctree|  
+
+
+
+Set cross-referencing label
+======================================================
+
+To support cross-referencing to arbitrary locations in any document, you can set a reference label.
+
+Open **Properties** window by right click pop up menu, select  **Reference**  tab :
+
+ |set referencing label| 
+
+Input your label text, and click :guilabel:`Copy`, and click :guilabel:`OK` button.
+
+Paste text into your document where you want to refer to this label.
+
+
+
+Add summary
+**********************
+
+Summary text will be inserted into document, and displayed in sequence.
+
+Click menu   :menuselection:`New Summary` from the sidebar, and input title dialog, then input text in new opened tab editor, and click  :guilabel:`Save`  button.
+
+
+
+
+
+
+Add images or files
+**************************************
+
+You can add images and files from local directory or web pages.
+
+Add local file:
+
+ Click menu   :menuselection:`New Image` or :menuselection:`New File` from the sidebar, and select your local file or input a file URL.
+
+Save web file:
+
+ move your mouse on image, link, web pages, and right click , you see this menu:
+
+ |save image| 
+
+After done, you can reference it by copy ReST text from pop up menu or property dialog.
+
+
+
+
+
+
+Insert image
+========================
+
+After you have added a image. You can copy its ReST text, and paste into your document where you want to display image.
+
+ |copy image rst| 
+
+Select "Image Replace" from pop up menu.
+
+
+
+Add web links or bookmark
+**************************************************
+
+You can add links or bookmark with right pop up menu, or click menu   :menuselection:`New Bookmark`  from the sidebar. 
+
+You may copy ReST text to your document for web links.
+
+
+
+
+Add source file
+******************************
+
+You can add source files from local directory, and edit code.
+
+Click menu   :menuselection:`New Source File` , and select your local file, like C++, Java, Python, PHP files.
+
+
+
+
+
+.. _reStructuredText: http://www.baow.com/help/data/20110525114720/index.html
+
+
+.. _Sphinx Markup: http://www.baow.com/help/data/20110525120240/index.html
+.. _Python:
+
+.. _Python Programming Language: http://www.python.org/
+
+
+.. _Python Package\: Sphinx: http://pypi.python.org/pypi/Sphinx/
+
+
+.. _Firefox web browser: http://www.mozilla.com/en-US/firefox/fx/
+
+
+.. _Python Package Index \: setuptools: http://pypi.python.org/pypi/setuptools/
+
+
+.. _Sphinx: http://sphinx.pocoo.org/index.html
+
+
+.. _baow: http://www.baow.com/help/baow-3.1.xpi
+
+
+.. _new_doc: ../20110325202815/add_doc.png
+
+.. |new_doc| image:: ../20110325202815/add_doc.png
+
+
+.. _generate: ../20110325202955/generate.png
+
+.. |generate| image:: ../20110325202955/generate.png
+
+
+.. _root path: ../20110425145128/root.png
+
+.. |root path| image:: ../20110425145128/root.png
+
+
+.. _output path: ../20110325203025/path.png
+
+.. |output path| image:: ../20110325203025/path.png
+
+
+.. _generate button: ../20110401215016/generate_button.png
+
+.. |generate button| image:: ../20110401215016/generate_button.png
+
+
+.. _set referencing label: ../20110527095518/2011-05-27-094445.png
+
+.. |set referencing label| image:: ../20110527095518/2011-05-27-094445.png
+
+
+.. _project: ../20110325205532/project.png
+
+.. |project| image:: ../20110325205532/project.png
+
+
+.. _project manage: ../20110325215724/project_manage.png
+
+.. |project manage| image:: ../20110325215724/project_manage.png
+
+
+.. _project info: ../20110325221743/project_info.png
+
+.. |project info| image:: ../20110325221743/project_info.png
+
+
+.. _screen: ../20110326091043/screen_s2.png
+
+.. |screen| image:: ../20110326091043/screen_s2.png
+
+
+.. _save image: ../20110524094717/save_image.png
+
+.. |save image| image:: ../20110524094717/save_image.png
+
+
+.. _toctree: ../20110524102859/toc_tree.png
+
+.. |toctree| image:: ../20110524102859/toc_tree.png
+
+
+.. _copy image rst: ../20110527100539/copy_image_rst.png
+
+.. |copy image rst| image:: ../20110527100539/copy_image_rst.png
+
+
+.. _Du Wenshan: ../20110914201520/duws.jpg
+
+.. |Du Wenshan| image:: ../20110914201520/duws.jpg
+
+
+.. _Gvim: http://www.vim.org/
+
+
+.. _Emacs: http://www.gnu.org/software/emacs/

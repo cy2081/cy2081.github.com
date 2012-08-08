@@ -1,0 +1,19 @@
+Doctree element: paragraph.
+
+Paragraphs consist of blocks of left-aligned text with no markup
+indicating any other body element.  Blank lines separate paragraphs
+from each other and from other body elements.  Paragraphs may contain
+`inline markup`_.
+
+Syntax diagram::
+
+    +------------------------------+
+    | paragraph                    |
+    |                              |
+    +------------------------------+
+
+    +------------------------------+
+    | paragraph                    |
+    |                              |
+    +------------------------------+
+

@@ -1,0 +1,62 @@
+Doctree element: reference.
+
+Start-string = end-string = "" (empty string).
+
+A URI (absolute URI [#URI]_ or standalone email address) within a text
+block is treated as a general external hyperlink with the URI itself
+as the link's text.  For example::
+
+    See http://www.python.org for info.
+
+would be marked up in HTML as::
+
+    See <a href="http://www.python.org">http://www.python.org</a> for
+    info.
+
+Two forms of URI are recognized:
+
+1. Absolute URIs.  These consist of a scheme, a colon (":"), and a
+   scheme-specific part whose interpretation depends on the scheme.
+
+   The scheme is the name of the protocol, such as "http", "ftp",
+   "mailto", or "telnet".  The scheme consists of an initial letter,
+   followed by letters, numbers, and/or "+", "-", ".".  Recognition is
+   limited to known schemes, per the `Official IANA Registry of URI
+   Schemes`_ and the W3C's `Retired Index of WWW Addressing Schemes`_.
+
+   The scheme-specific part of the resource identifier may be either
+   hierarchical or opaque:
+
+   - Hierarchical identifiers begin with one or two slashes and may
+     use slashes to separate hierarchical components of the path.
+     Examples are web pages and FTP sites::
+
+         http://www.python.org
+
+         ftp://ftp.python.org/pub/python
+
+   - Opaque identifiers do not begin with slashes.  Examples are
+     email addresses and newsgroups::
+
+         mailto:someone@somewhere.com
+
+         news:comp.lang.python
+
+   With queries, fragments, and %-escape sequences, URIs can become
+   quite complicated.  A reStructuredText parser must be able to
+   recognize any absolute URI, as defined in RFC2396_ and RFC2732_.
+
+2. Standalone email addresses, which are treated as if they were
+   absolute URIs with a "mailto:" scheme.  Example::
+
+       someone@somewhere.com
+
+Punctuation at the end of a URI is not considered part of the URI,
+unless the URI is terminated by a closing angle bracket (">").
+Backslashes may be used in URIs to escape markup characters,
+specifically asterisks ("*") and underscores ("_") which are vaid URI
+characters (see `Escaping Mechanism`_ above).
+
+.. [#URI] Uniform Resource Identifier.  URIs are a general form of
+   URLs (Uniform Resource Locators).  For the syntax of URIs see
+   RFC2396_ and RFC2732_.

@@ -1,0 +1,60 @@
+:Directive Type: "unicode"
+:Doctree Element: Text
+:Directive Arguments: One or more, required (Unicode character codes,
+                      optional text, and comments).
+:Directive Options: Possible.
+:Directive Content: None.
+
+The "unicode" directive converts Unicode character codes (numerical
+values) to characters, and may be used in substitution definitions
+only.
+
+The arguments, separated by spaces, can be:
+
+* **character codes** as
+
+  - decimal numbers or
+
+  - hexadecimal numbers, prefixed by ``0x``, ``x``, ``\x``, ``U+``,
+    ``u``, or ``\u`` or as XML-style hexadecimal character entities,
+    e.g. ``&#x1a2b;``
+
+* **text**, which is used as-is.
+
+Text following " .. " is a comment and is ignored.  The spaces between
+the arguments are ignored and thus do not appear in the output.
+Hexadecimal codes are case-insensitive.
+
+For example, the following text::
+
+    Copyright |copy| 2003, |BogusMegaCorp (TM)| |---|
+    all rights reserved.
+
+    .. |copy| unicode:: 0xA9 .. copyright sign
+    .. |BogusMegaCorp (TM)| unicode:: BogusMegaCorp U+2122
+       .. with trademark sign
+    .. |---| unicode:: U+02014 .. em dash
+       :trim:
+
+results in:
+
+    Copyright |copy| 2003, |BogusMegaCorp (TM)| |---|
+    all rights reserved.
+
+    .. |copy| unicode:: 0xA9 .. copyright sign
+    .. |BogusMegaCorp (TM)| unicode:: BogusMegaCorp U+2122
+       .. with trademark sign
+    .. |---| unicode:: U+02014 .. em dash
+       :trim:
+
+The following options are recognized:
+
+``ltrim`` : flag
+    Whitespace to the left of the substitution reference is removed.
+
+``rtrim`` : flag
+    Whitespace to the right of the substitution reference is removed.
+
+``trim`` : flag
+    Equivalent to ``ltrim`` plus ``rtrim``; whitespace on both sides
+    of the substitution reference is removed.

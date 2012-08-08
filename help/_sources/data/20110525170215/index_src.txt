@@ -1,0 +1,58 @@
+Doctree element: literal_block.
+
+A paragraph consisting of two colons ("::") signifies that the
+following text block(s) comprise a literal block.  The literal block
+must either be indented or quoted (see below).  No markup processing
+is done within a literal block.  It is left as-is, and is typically
+rendered in a monospaced typeface::
+
+    This is a typical paragraph.  An indented literal block follows.
+
+    ::
+
+        for a in [5,4,3,2,1]:   # this is program code, shown as-is
+            print a
+        print "it's..."
+        # a literal block continues until the indentation ends
+
+    This text has returned to the indentation of the first paragraph,
+    is outside of the literal block, and is therefore treated as an
+    ordinary paragraph.
+
+The paragraph containing only "::" will be completely removed from the
+output; no empty paragraph will remain.
+
+As a convenience, the "::" is recognized at the end of any paragraph.
+If immediately preceded by whitespace, both colons will be removed
+from the output (this is the "partially minimized" form).  When text
+immediately precedes the "::", *one* colon will be removed from the
+output, leaving only one colon visible (i.e., "::" will be replaced by
+":"; this is the "fully minimized" form).
+
+In other words, these are all equivalent (please pay attention to the
+colons after "Paragraph"):
+
+1. Expanded form::
+
+      Paragraph:
+
+      ::
+
+          Literal block
+
+2. Partially minimized form::
+
+      Paragraph: ::
+
+          Literal block
+
+3. Fully minimized form::
+
+      Paragraph::
+
+          Literal block
+
+All whitespace (including line breaks, but excluding minimum
+indentation for indented literal blocks) is preserved.  Blank lines
+are required before and after a literal block, but these blank lines
+are not included as part of the literal block.

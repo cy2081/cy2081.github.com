@@ -1,0 +1,5 @@
+Summary text will be inserted into document, and displayed in sequence.
+
+Click menu   :menuselection:`Add Summary`  in left panel, and input title dialog, then some text in new opened tab editor, and click  ``save``  button.
+
+

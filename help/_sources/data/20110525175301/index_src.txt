@@ -1,0 +1,4 @@
+The directives in this section may only be used in substitution
+definitions.  They may not be used directly, in standalone context.
+The `image`_ directive may be used both in substitution definitions
+and in the standalone context.

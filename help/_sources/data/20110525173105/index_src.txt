@@ -1,0 +1,9 @@
+.. _attention:
+.. _caution:
+.. _danger:
+.. _error:
+.. _hint:
+.. _important:
+.. _note:
+.. _tip:
+.. _warning:

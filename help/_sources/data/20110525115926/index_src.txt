@@ -1,0 +1,14 @@
+For footnotes (:duref:`ref <footnotes>`), use ``[#name]_`` to mark the footnote
+location, and add the footnote body at the bottom of the document after a
+"Footnotes" rubric heading, like so::
+
+   Lorem ipsum [#f1]_ dolor sit amet ... [#f2]_
+
+   .. rubric:: Footnotes
+
+   .. [#f1] Text of the first footnote.
+   .. [#f2] Text of the second footnote.
+
+You can also explicitly number the footnotes (``[1]_``) or use auto-numbered
+footnotes without names (``[#]_``).
+

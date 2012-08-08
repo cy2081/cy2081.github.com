@@ -1,0 +1,82 @@
+:Directive Type: "figure"
+:Doctree Elements: figure, image, caption, legend
+:Directive Arguments: One, required (image URI).
+:Directive Options: Possible.
+:Directive Content: Interpreted as the figure caption and an optional
+                    legend.
+
+A "figure" consists of image_ data (including `image options`_), an optional
+caption (a single paragraph), and an optional legend (arbitrary body
+elements). For page-based output media, figures might float to a different
+position if this helps the page layout.
+::
+
+    .. figure:: picture.png
+       :scale: 50 %
+       :alt: map to buried treasure
+
+       This is the caption of the figure (a simple paragraph).
+
+       The legend consists of all elements after the caption.  In this
+       case, the legend consists of this paragraph and the following
+       table:
+
+       +-----------------------+-----------------------+
+       | Symbol                | Meaning               |
+       +=======================+=======================+
+       | .. image:: tent.png   | Campground            |
+       +-----------------------+-----------------------+
+       | .. image:: waves.png  | Lake                  |
+       +-----------------------+-----------------------+
+       | .. image:: peak.png   | Mountain              |
+       +-----------------------+-----------------------+
+
+There must be blank lines before the caption paragraph and before the
+legend.  To specify a legend without a caption, use an empty comment
+("..") in place of the caption.
+
+The "figure" directive supports all of the options of the "image"
+directive (see `image options`_ above). These options (except
+"align") are passed on to the contained image.
+
+``align`` : "left", "center", or "right"
+    The horizontal alignment of the figure, allowing the image to
+    float and have the text flow around it.  The specific behavior
+    depends upon the browser or rendering software used.
+
+In addition, the following options are recognized:
+
+``figwidth`` : "image", length_, or percentage_ of current line width
+    The width of the figure.
+    Limits the horizontal space used by the figure.
+    A special value of "image" is allowed, in which case the
+    included image's actual width is used (requires the `Python Imaging
+    Library`_). If the image file is not found or the required software is
+    unavailable, this option is ignored.
+
+    Sets the "width" attribute of the "figure" doctree element.
+
+    This option does not scale the included image; use the "width"
+    `image`_ option for that. ::
+
+        +---------------------------+
+        |        figure             |
+        |                           |
+        |<------ figwidth --------->|
+        |                           |
+        |  +---------------------+  |
+        |  |     image           |  |
+        |  |                     |  |
+        |  |<--- width --------->|  |
+        |  +---------------------+  |
+        |                           |
+        |The figure's caption should|
+        |wrap at this width.        |
+        +---------------------------+
+
+``figclass`` : text
+    Set a "classes" attribute value on the figure element.  See the
+    class_ directive below.
+
+.. _Python Imaging Library: http://www.pythonware.com/products/pil/
+

@@ -1,0 +1,76 @@
+:Directive Type: "image"
+:Doctree Element: image
+:Directive Arguments: One, required (image URI).
+:Directive Options: Possible.
+:Directive Content: None.
+
+An "image" is a simple picture::
+
+    .. image:: picture.png
+
+The URI for the image source file is specified in the directive
+argument.  As with hyperlink targets, the image URI may begin on the
+same line as the explicit markup start and target name, or it may
+begin in an indented text block immediately following, with no
+intervening blank lines.  If there are multiple lines in the link
+block, they are stripped of leading and trailing whitespace and joined
+together.
+
+Optionally, the image link block may contain a flat field list, the
+_`image options`.  For example::
+
+    .. image:: picture.jpeg
+       :height: 100px
+       :width: 200 px
+       :scale: 50 %
+       :alt: alternate text
+       :align: right
+
+The following options are recognized:
+
+``alt`` : text
+    Alternate text: a short description of the image, displayed by
+    applications that cannot display images, or spoken by applications
+    for visually impaired users.
+
+``height`` : `length`_
+    The desired height of the image.
+    Used to reserve space or scale the image vertically.  When the "scale"
+    option is also specified, they are combined.  For example, a height of
+    200px and a scale of 50 is equivalent to a height of 100px with no scale.
+
+``width`` : `length`_ or `percentage`_ of the current line width
+    The width of the image.
+    Used to reserve space or scale the image horizontally.  As with "height"
+    above, when the "scale" option is also specified, they are combined.
+
+    .. _length: ../20110525164311/index.html#length-units
+    .. _percentage: ../20110525164311/index.html#percentage-units
+
+``scale`` : integer percentage (the "%" symbol is optional)
+    The uniform scaling factor of the image.  The default is "100 %", i.e.
+    no scaling.
+
+    If no "height" or "width" options are specified, the `Python Imaging
+    Library`_ (PIL) may be used to determine them, if it is installed and
+    the image file is available.
+
+``align`` : "top", "middle", "bottom", "left", "center", or "right"
+    The alignment of the image, equivalent to the HTML ``<img>`` tag's
+    "align" attribute.  The values "top", "middle", and "bottom"
+    control an image's vertical alignment (relative to the text
+    baseline); they are only useful for inline images (substitutions).
+    The values "left", "center", and "right" control an image's
+    horizontal alignment, allowing the image to float and have the
+    text flow around it.  The specific behavior depends upon the
+    browser or rendering software used.
+
+``target`` : text (URI or reference name)
+    Makes the image into a hyperlink reference ("clickable").  The
+    option argument may be a URI (relative or absolute), or a
+    reference name with underscore suffix (e.g. ``name_``).
+
+``class`` : text
+    Set a "classes" attribute value on the image element.  See the
+    class_ directive below.
+

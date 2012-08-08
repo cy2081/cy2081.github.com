@@ -1,0 +1,10 @@
+Click menu   :menuselection:`Add Document`  in left panel, and input title dialog, then some text in new opened tab editor, and click  ``save``  button.
+
+You can add sub documents as sections, and drag it to your target place.
+
+.. tip:: A document can be contained by another document, this is document tree. Section mark characters in Sphinx_ is no longer needed.
+
+
+You can select toctree style with sub documents in property dialog by checking toctree.
+
+ |toctree|  

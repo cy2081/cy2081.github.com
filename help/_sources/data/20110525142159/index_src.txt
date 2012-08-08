@@ -1,0 +1,48 @@
+.. versionadded:: 0.4
+
+Inside Python object description directives, reST field lists with these fields
+are recognized and formatted nicely:
+
+* ``param``, ``parameter``, ``arg``, ``argument``, ``key``, ``keyword``:
+  Description of a parameter.
+* ``type``: Type of a parameter.
+* ``raises``, ``raise``, ``except``, ``exception``: That (and when) a specific
+  exception is raised.
+* ``var``, ``ivar``, ``cvar``: Description of a variable.
+* ``returns``, ``return``: Description of the return value.
+* ``rtype``: Return type.
+
+The field names must consist of one of these keywords and an argument (except
+for ``returns`` and ``rtype``, which do not need an argument).  This is best
+explained by an example::
+
+   .. py:function:: format_exception(etype, value, tb[, limit=None])
+
+      Format the exception with a traceback.
+
+      :param etype: exception type
+      :param value: exception value
+      :param tb: traceback object
+      :param limit: maximum number of stack frames to show
+      :type limit: integer or None
+      :rtype: list of strings
+
+This will render like this:
+
+   .. py:function:: format_exception(etype, value, tb[, limit=None])
+      :noindex:
+
+      Format the exception with a traceback.
+
+      :param etype: exception type
+      :param value: exception value
+      :param tb: traceback object
+      :param limit: maximum number of stack frames to show
+      :type limit: integer or None
+      :rtype: list of strings
+
+It is also possible to combine parameter type and description, if the type is a
+single word, like this::
+
+   :param integer limit: maximum number of stack frames to show
+

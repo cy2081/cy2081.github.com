@@ -1,0 +1,3 @@
+You can add source files from local directory, and edit code.
+
+Click menu   :menuselection:`Add Source File` , and select your local file, like C++, Java, Python, PHP files.

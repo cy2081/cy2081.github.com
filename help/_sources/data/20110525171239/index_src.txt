@@ -1,0 +1,101 @@
+Doctree elements: depend on the directive.
+
+Directives are an extension mechanism for reStructuredText, a way of
+adding support for new constructs without adding new primary syntax
+(directives may support additional syntax locally).  All standard
+directives (those implemented and registered in the reference
+reStructuredText parser) are described in the `reStructuredText
+Directives`_ document, and are always available.  Any other directives
+are domain-specific, and may require special action to make them
+available when processing the document.
+
+For example, here's how an image_ may be placed::
+
+    .. image:: mylogo.jpeg
+
+A figure_ (a graphic with a caption) may placed like this::
+
+    .. figure:: larch.png
+
+       The larch.
+
+An admonition_ (note, caution, etc.) contains other body elements::
+
+    .. note:: This is a paragraph
+
+       - Here is a bullet list.
+
+Directives are indicated by an explicit markup start (".. ") followed
+by the directive type, two colons, and whitespace (together called the
+"directive marker").  Directive types are case-insensitive single
+words (alphanumerics plus internal hyphens, underscores, and periods;
+no whitespace).  Two colons are used after the directive type for
+these reasons:
+
+- Two colons are distinctive, and unlikely to be used in common text.
+
+- Two colons avoids clashes with common comment text like::
+
+      .. Danger: modify at your own risk!
+
+- If an implementation of reStructuredText does not recognize a
+  directive (i.e., the directive-handler is not installed), a level-3
+  (error) system message is generated, and the entire directive block
+  (including the directive itself) will be included as a literal
+  block.  Thus "::" is a natural choice.
+
+The directive block is consists of any text on the first line of the
+directive after the directive marker, and any subsequent indented
+text.  The interpretation of the directive block is up to the
+directive code.  There are three logical parts to the directive block:
+
+1. Directive arguments.
+2. Directive options.
+3. Directive content.
+
+Individual directives can employ any combination of these parts.
+Directive arguments can be filesystem paths, URLs, title text, etc.
+Directive options are indicated using `field lists`_; the field names
+and contents are directive-specific.  Arguments and options must form
+a contiguous block beginning on the first or second line of the
+directive; a blank line indicates the beginning of the directive
+content block.  If either arguments and/or options are employed by the
+directive, a blank line must separate them from the directive content.
+The "figure" directive employs all three parts::
+
+    .. figure:: larch.png
+       :scale: 50
+
+       The larch.
+
+Simple directives may not require any content.  If a directive that
+does not employ a content block is followed by indented text anyway,
+it is an error.  If a block quote should immediately follow a
+directive, use an empty comment in-between (see Comments_ below).
+
+Actions taken in response to directives and the interpretation of text
+in the directive content block or subsequent text block(s) are
+directive-dependent.  See `reStructuredText Directives`_ for details.
+
+Directives are meant for the arbitrary processing of their contents,
+which can be transformed into something possibly unrelated to the
+original text.  It may also be possible for directives to be used as
+pragmas, to modify the behavior of the parser, such as to experiment
+with alternate syntax.  There is no parser support for this
+functionality at present; if a reasonable need for pragma directives
+is found, they may be supported.
+
+Directives do not generate "directive" elements; they are a *parser
+construct* only, and have no intrinsic meaning outside of
+reStructuredText.  Instead, the parser will transform recognized
+directives into (possibly specialized) document elements.  Unknown
+directives will trigger level-3 (error) system messages.
+
+Syntax diagram::
+
+    +-------+-------------------------------+
+    | ".. " | directive type "::" directive |
+    +-------+ block                         |
+            |                               |
+            +-------------------------------+
+

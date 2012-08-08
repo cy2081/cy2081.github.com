@@ -1,0 +1,111 @@
+The Python domain (name **py**) provides the following directives for module
+declarations:
+
+.. rst:directive:: .. py:module:: name
+
+   This directive marks the beginning of the description of a module (or package
+   submodule, in which case the name should be fully qualified, including the
+   package name).  It does not create content (like e.g. :rst:dir:`py:class` does).
+
+   This directive will also cause an entry in the global module index.
+
+   The ``platform`` option, if present, is a comma-separated list of the
+   platforms on which the module is available (if it is available on all
+   platforms, the option should be omitted).  The keys are short identifiers;
+   examples that are in use include "IRIX", "Mac", "Windows", and "Unix".  It is
+   important to use a key which has already been used when applicable.
+
+   The ``synopsis`` option should consist of one sentence describing the
+   module's purpose -- it is currently only used in the Global Module Index.
+
+   The ``deprecated`` option can be given (with no value) to mark a module as
+   deprecated; it will be designated as such in various locations then.
+
+
+.. rst:directive:: .. py:currentmodule:: name
+
+   This directive tells Sphinx that the classes, functions etc. documented from
+   here are in the given module (like :rst:dir:`py:module`), but it will not
+   create index entries, an entry in the Global Module Index, or a link target
+   for :rst:role:`py:mod`.  This is helpful in situations where documentation
+   for things in a module is spread over multiple files or sections -- one
+   location has the :rst:dir:`py:module` directive, the others only
+   :rst:dir:`py:currentmodule`.
+
+
+The following directives are provided for module and class contents:
+
+.. rst:directive:: .. py:data:: name
+
+   Describes global data in a module, including both variables and values used
+   as "defined constants."  Class and object attributes are not documented
+   using this environment.
+
+.. rst:directive:: .. py:exception:: name
+
+   Describes an exception class.  The signature can, but need not include
+   parentheses with constructor arguments.
+
+.. rst:directive:: .. py:function:: name(signature)
+
+   Describes a module-level function.  The signature should include the
+   parameters, enclosing optional parameters in brackets.  Default values can be
+   given if it enhances clarity; see :ref:`signatures`.  For example::
+
+      .. py:function:: Timer.repeat([repeat=3[, number=1000000]])
+
+   Object methods are not documented using this directive. Bound object methods
+   placed in the module namespace as part of the public interface of the module
+   are documented using this, as they are equivalent to normal functions for
+   most purposes.
+
+   The description should include information about the parameters required and
+   how they are used (especially whether mutable objects passed as parameters
+   are modified), side effects, and possible exceptions.  A small example may be
+   provided.
+
+.. rst:directive:: .. py:class:: name[(signature)]
+
+   Describes a class.  The signature can include parentheses with parameters
+   which will be shown as the constructor arguments.  See also
+   :ref:`signatures`.
+
+   Methods and attributes belonging to the class should be placed in this
+   directive's body.  If they are placed outside, the supplied name should
+   contain the class name so that cross-references still work.  Example::
+
+      .. py:class:: Foo
+         .. py:method:: quux()
+
+      -- or --
+
+      .. py:class:: Bar
+
+      .. py:method:: Bar.quux()
+
+   The first way is the preferred one.
+
+.. rst:directive:: .. py:attribute:: name
+
+   Describes an object data attribute.  The description should include
+   information about the type of the data to be expected and whether it may be
+   changed directly.
+
+.. rst:directive:: .. py:method:: name(signature)
+
+   Describes an object method.  The parameters should not include the ``self``
+   parameter.  The description should include similar information to that
+   described for ``function``.  See also :ref:`signatures`.
+
+.. rst:directive:: .. py:staticmethod:: name(signature)
+
+   Like :rst:dir:`py:method`, but indicates that the method is a static method.
+
+   .. versionadded:: 0.4
+
+.. rst:directive:: .. py:classmethod:: name(signature)
+
+   Like :rst:dir:`py:method`, but indicates that the method is a class method.
+
+   .. versionadded:: 0.6
+

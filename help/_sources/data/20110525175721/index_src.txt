@@ -1,0 +1,78 @@
+:Directive Type: "role"
+:Doctree Element: None; affects subsequent parsing.
+:Directive Arguments: Two; one required (new role name), one optional
+                      (base role name, in parentheses).
+:Directive Options: Possible (depends on base role).
+:Directive Content: depends on base role.
+
+(New in Docutils 0.3.2)
+
+The "role" directive dynamically creates a custom interpreted text
+role and registers it with the parser.  This means that after
+declaring a role like this::
+
+    .. role:: custom
+
+the document may use the new "custom" role::
+
+    An example of using :custom:`interpreted text`
+
+This will be parsed into the following document tree fragment::
+
+    <paragraph>
+        An example of using
+        <inline classes="custom">
+            interpreted text
+
+The role must be declared in a document before it can be used.
+
+The new role may be based on an existing role, specified as a second
+argument in parentheses (whitespace optional)::
+
+    .. role:: custom(emphasis)
+
+    :custom:`text`
+
+The parsed result is as follows::
+
+    <paragraph>
+        <emphasis classes="custom">
+            text
+
+If no base role is explicitly specified, a generic custom role is
+automatically used.  Subsequent interpreted text will produce an
+"inline" element with a "classes" attribute, as in the first example
+above.
+
+With most roles, the ":class:" option can be used to set a "classes"
+attribute that is different from the role name.  For example::
+
+    .. role:: custom
+       :class: special
+
+    :custom:`interpreted text`
+
+This is the parsed result::
+
+    <paragraph>
+        <inline classes="special">
+            interpreted text
+
+.. _role class:
+
+The following option is recognized by the "role" directive for most
+base roles:
+
+``class`` : text
+    Set the "classes" attribute value on the element produced
+    (``inline``, or element associated with a base class) when the
+    custom interpreted text role is used.  If no directive options are
+    specified, a "class" option with the directive argument (role
+    name) as the value is implied.  See the class_ directive above.
+
+Specific base roles may support other options and/or directive
+content.  See the `reStructuredText Interpreted Text Roles`_ document
+for details.
+
+.. _reStructuredText Interpreted Text Roles: http://docutils.sourceforge.net/docs/ref/rst/roles.html
+

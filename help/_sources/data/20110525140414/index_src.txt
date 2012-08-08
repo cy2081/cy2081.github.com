@@ -1,0 +1,17 @@
+If installed, Pygments can generate line numbers for code blocks.  For
+automatically-highlighted blocks (those started by ``::``), line numbers must be
+switched on in a :rst:dir:`highlight` directive, with the ``linenothreshold``
+option::
+
+   .. highlight:: python
+      :linenothreshold: 5
+
+This will produce line numbers for all code blocks longer than five lines.
+
+For :rst:dir:`code-block` blocks, a ``linenos`` flag option can be given to switch
+on line numbers for the individual block::
+
+   .. code-block:: ruby
+      :linenos:
+
+      Some more Ruby code.

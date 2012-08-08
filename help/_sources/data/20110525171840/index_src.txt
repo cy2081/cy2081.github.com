@@ -1,0 +1,30 @@
+Doctree element: reference.
+
+- Named hyperlink references:
+
+  - Start-string = "" (empty string), end-string = "_".
+  - Start-string = "`", end-string = "\`_".  (Phrase references.)
+
+- Anonymous hyperlink references:
+
+  - Start-string = "" (empty string), end-string = "__".
+  - Start-string = "`", end-string = "\`__".  (Phrase references.)
+
+Hyperlink references are indicated by a trailing underscore, "_",
+except for `standalone hyperlinks`_ which are recognized
+independently.  The underscore can be thought of as a right-pointing
+arrow.  The trailing underscores point away from hyperlink references,
+and the leading underscores point toward `hyperlink targets`_.
+
+Hyperlinks consist of two parts.  In the text body, there is a source
+link, a reference name with a trailing underscore (or two underscores
+for `anonymous hyperlinks`_)::
+
+    See the Python_ home page for info.
+
+A target link with a matching reference name must exist somewhere else
+in the document.  See `Hyperlink Targets`_ for a full description).
+
+`Anonymous hyperlinks`_ (which see) do not use reference names to
+match references to targets, but otherwise behave similarly to named
+hyperlinks.

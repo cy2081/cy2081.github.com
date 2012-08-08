@@ -1,0 +1,25 @@
+Doctree element: doctest_block.
+
+Doctest blocks are interactive Python sessions cut-and-pasted into
+docstrings.  They are meant to illustrate usage by example, and
+provide an elegant and powerful testing environment via the `doctest
+module`_ in the Python standard library.
+
+Doctest blocks are text blocks which begin with ``">>> "``, the Python
+interactive interpreter main prompt, and end with a blank line.
+Doctest blocks are treated as a special case of literal blocks,
+without requiring the literal block syntax.  If both are present, the
+literal block syntax takes priority over Doctest block syntax::
+
+    This is an ordinary paragraph.
+
+    >>> print 'this is a Doctest block'
+    this is a Doctest block
+
+    The following is a literal block::
+
+        >>> This is not recognized as a doctest block by
+        reStructuredText.  It *will* be recognized by the doctest
+        module, though!
+
+Indentation is not required for doctest blocks.

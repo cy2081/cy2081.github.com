@@ -1,0 +1,35 @@
+Doctree element: depends on the explicit or implicit role and
+processing.
+
+Start-string = end-string = "`".
+
+Interpreted text is text that is meant to be related, indexed, linked,
+summarized, or otherwise processed, but the text itself is typically
+left alone.  Interpreted text is enclosed by single backquote
+characters::
+
+    This is `interpreted text`.
+
+The "role" of the interpreted text determines how the text is
+interpreted.  The role may be inferred implicitly (as above; the
+"default role" is used) or indicated explicitly, using a role marker.
+A role marker consists of a colon, the role name, and another colon.
+A role name is a single word consisting of alphanumerics plus internal
+hyphens, underscores, and periods; no whitespace or other characters
+are allowed.  A role marker is either a prefix or a suffix to the
+interpreted text, whichever reads better; it's up to the author::
+
+    :role:`interpreted text`
+
+    `interpreted text`:role:
+
+Interpreted text allows extensions to the available inline descriptive
+markup constructs.  To emphasis_, `strong emphasis`_, `inline
+literals`_, and `hyperlink references`_, we can add "title reference",
+"index entry", "acronym", "class", "red", "blinking" or anything else
+we want.  Only pre-determined roles are recognized; unknown roles will
+generate errors.  A core set of standard roles is implemented in the
+reference parser; see `reStructuredText Interpreted Text Roles`_ for
+individual descriptions.  The role_ directive can be used to define
+custom interpreted text roles.  In addition, applications may support
+specialized roles.

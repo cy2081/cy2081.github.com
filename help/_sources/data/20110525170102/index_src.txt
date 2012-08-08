@@ -1,0 +1,19 @@
+`Bibliographic fields`_ recognized by the parser are normally checked
+for RCS [#]_ keywords and cleaned up [#]_.  RCS keywords may be
+entered into source files as "$keyword$", and once stored under RCS or
+CVS [#]_, they are expanded to "$keyword: expansion text $".  For
+example, a "Status" field will be transformed to a "status" element::
+
+    :Status: $keyword: expansion text $
+
+.. [#] Revision Control System.
+.. [#] RCS keyword processing can be turned off (unimplemented).
+.. [#] Concurrent Versions System.  CVS uses the same keywords as RCS.
+
+Processed, the "status" element's text will become simply "expansion
+text".  The dollar sign delimiters and leading RCS keyword name are
+removed.
+
+The RCS keyword processing only kicks in when the field list is in
+bibliographic context (first non-comment construct in the document,
+after a document title if there is one).

@@ -1,0 +1,5 @@
+Formal tables need more structure than the reStructuredText syntax
+supplies.  Tables may be given titles with the table_ directive.
+Sometimes reStructuredText tables are inconvenient to write, or table
+data in a standard format is readily available.  The csv-table_
+directive supports CSV data.

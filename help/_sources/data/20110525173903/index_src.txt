@@ -1,0 +1,26 @@
+:Directive Type: "epigraph"
+:Doctree Element: block_quote
+:Directive Arguments: None.
+:Directive Options: None.
+:Directive Content: Interpreted as the body of the block quote.
+
+An epigraph is an apposite (suitable, apt, or pertinent) short
+inscription, often a quotation or poem, at the beginning of a document
+or section.
+
+The "epigraph" directive produces an "epigraph"-class block quote.
+For example, this input::
+
+     .. epigraph::
+
+        No matter where you go, there you are.
+
+        -- Buckaroo Banzai
+
+becomes this document tree fragment::
+
+    <block_quote classes="epigraph">
+        <paragraph>
+            No matter where you go, there you are.
+        <attribution>
+            Buckaroo Banzai
