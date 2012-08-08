@@ -1,7 +1,0 @@
-These roles are described with their respective domains:
-
-* :ref:`Python <python-roles>`
-* :ref:`C <c-roles>`
-* :ref:`C++ <cpp-roles>`
-* :ref:`JavaScript <js-roles>`
-* :ref:`ReST <rst-roles>`

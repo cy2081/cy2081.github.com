@@ -1,6 +1,0 @@
-Click button  |generate button|  from the left panel.
-
-   |generate| 
-
-Select your output path. It will be a moment to generate final pages.
-

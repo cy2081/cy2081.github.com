@@ -1,7 +1,7 @@
 Download
 ################
 
-Firefox extension:   `click here <http://www.baow.com/help/baow-3.1.xpi>`_  
+Firefox extension:   `click here <http://www.baow.com/help/baow-3.2.xpi>`_  
    Version: |version|
 
 Demo project: `click here <http://www.baow.com/help/doc.zip>`_ 
@@ -34,7 +34,7 @@ Demo project: `click here <http://www.baow.com/help/doc.zip>`_
 .. _Sphinx: http://sphinx.pocoo.org/index.html
 
 
-.. _baow: http://www.baow.com/help/baow-3.1.xpi
+.. _baow: http://www.baow.com/help/baow-3.2.xpi
 
 
 .. _new_doc: ../20110325202815/add_doc.png

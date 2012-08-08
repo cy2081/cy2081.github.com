@@ -1,3 +1,0 @@
-.. highlight:: rst
-
-.. versionadded:: 1.0

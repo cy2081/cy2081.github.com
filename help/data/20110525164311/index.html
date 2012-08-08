@@ -7,7 +7,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>reStructuredText Markup Specification &mdash; Baow Help</title>
+    <title>7.5. reStructuredText Markup Specification &mdash; Baow Help</title>
     
     <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -25,9 +25,9 @@
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="top" title="Baow Help" href="../../index.html" />
-    <link rel="up" title="Sphinx documentation" href="../20110525114558/index.html" />
-    <link rel="next" title="reStructuredText Directives" href="../20110525173013/index.html" />
-    <link rel="prev" title="The build configuration file" href="../20110525143013/index.html" />
+    <link rel="up" title="7. Sphinx documentation" href="../20110525114558/index.html" />
+    <link rel="next" title="7.6. reStructuredText Directives" href="../20110525173013/index.html" />
+    <link rel="prev" title="7.4. The build configuration file" href="../20110525143013/index.html" />
 <link rel="stylesheet" href="../../_static/baow.css" type="text/css" />
 <link rel="shortcut icon" href="/images/favicon.ico" />
 
@@ -63,13 +63,13 @@
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="../20110525173013/index.html" title="reStructuredText Directives"
+          <a href="../20110525173013/index.html" title="7.6. reStructuredText Directives"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="../20110525143013/index.html" title="The build configuration file"
+          <a href="../20110525143013/index.html" title="7.4. The build configuration file"
              accesskey="P">previous</a> |</li>
         <li><a href="../../index.html">Baow Help</a> &raquo;</li>
-          <li><a href="../20110525114558/index.html" accesskey="U">Sphinx documentation</a> &raquo;</li> 
+          <li><a href="../20110525114558/index.html" accesskey="U">7. Sphinx documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -79,7 +79,7 @@
           <div class="body">
             
   <div class="section" id="restructuredtext-markup-specification">
-<h1>reStructuredText Markup Specification<a class="headerlink" href="#restructuredtext-markup-specification" title="Permalink to this headline">¶</a></h1>
+<h1>7.5. reStructuredText Markup Specification<a class="headerlink" href="#restructuredtext-markup-specification" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="http://www.baow.com/help/data/20110525114720/index.html">reStructuredText</a> is plaintext that uses simple and intuitive
 constructs to indicate the structure of a document.  These constructs
 are equally easy to read in raw and processed forms.  This document is
@@ -100,7 +100,7 @@ in the <a class="reference internal" href="#syntax-details">Syntax Details</a> s
 <p><a class="reference internal" href="#literal-blocks">Literal blocks</a> (in which no markup processing is done) are used for
 examples throughout this document, to illustrate the plaintext markup.</p>
 <div class="section" id="quick-syntax-overview">
-<h2>Quick Syntax Overview<a class="headerlink" href="#quick-syntax-overview" title="Permalink to this headline">¶</a></h2>
+<h2>7.5.1. Quick Syntax Overview<a class="headerlink" href="#quick-syntax-overview" title="Permalink to this headline">¶</a></h2>
 <p>A reStructuredText document is made up of body or block-level
 elements, and may be structured into sections.  <a class="reference internal" href="#sections">Sections</a> are
 indicated through title style (underlines &amp; optional overlines).
@@ -279,20 +279,20 @@ The &quot;_example&quot; target above points to this paragraph.
 </ul>
 </div>
 <div class="section" id="syntax-details">
-<h2>Syntax Details<a class="headerlink" href="#syntax-details" title="Permalink to this headline">¶</a></h2>
+<h2>7.5.2. Syntax Details<a class="headerlink" href="#syntax-details" title="Permalink to this headline">¶</a></h2>
 <p>Descriptions below list &#8220;doctree elements&#8221; (document tree element
 names; XML DTD generic identifiers) corresponding to syntax
 constructs.  For details on the hierarchy of elements, please see <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/doctree.html">The
 Docutils Document Tree</a> and the <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/docutils.dtd">Docutils Generic DTD</a> XML document
 type definition.</p>
 <div class="section" id="whitespace">
-<h3>Whitespace<a class="headerlink" href="#whitespace" title="Permalink to this headline">¶</a></h3>
+<h3>7.5.2.1. Whitespace<a class="headerlink" href="#whitespace" title="Permalink to this headline">¶</a></h3>
 <p>Spaces are recommended for <a class="reference internal" href="#indentation">indentation</a>, but tabs may also be used.
 Tabs will be converted to spaces.  Tab stops are at every 8th column.</p>
 <p>Other whitespace characters (form feeds [chr(12)] and vertical tabs
 [chr(11)]) are converted to single spaces before processing.</p>
 <div class="section" id="blank-lines">
-<h4>Blank Lines<a class="headerlink" href="#blank-lines" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.1.1. Blank Lines<a class="headerlink" href="#blank-lines" title="Permalink to this headline">¶</a></h4>
 <p>Blank lines are used to separate paragraphs and other elements.
 Multiple successive blank lines are equivalent to a single blank line,
 except within literal blocks (where all whitespace is preserved).
@@ -302,7 +302,7 @@ document is treated as if it is preceded by a blank line, and the last
 line of a document is treated as if it is followed by a blank line.</p>
 </div>
 <div class="section" id="indentation">
-<h4>Indentation<a class="headerlink" href="#indentation" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.1.2. Indentation<a class="headerlink" href="#indentation" title="Permalink to this headline">¶</a></h4>
 <p>Indentation is used to indicate &#8211; and is only significant in
 indicating &#8211; block quotes, definitions (in definition list items),
 and local nested content:</p>
@@ -395,7 +395,7 @@ the field names):</p>
 </div>
 </div>
 <div class="section" id="escaping-mechanism">
-<h3>Escaping Mechanism<a class="headerlink" href="#escaping-mechanism" title="Permalink to this headline">¶</a></h3>
+<h3>7.5.2.2. Escaping Mechanism<a class="headerlink" href="#escaping-mechanism" title="Permalink to this headline">¶</a></h3>
 <p>The character set universally available to plaintext documents, 7-bit
 ASCII, is limited.  No matter what characters are used for markup,
 they will already have multiple meanings in written text.  Therefore
@@ -429,7 +429,7 @@ appear in Python docstrings is to use raw docstrings:</p>
 </div>
 </div>
 <div class="section" id="reference-names">
-<h3>Reference Names<a class="headerlink" href="#reference-names" title="Permalink to this headline">¶</a></h3>
+<h3>7.5.2.3. Reference Names<a class="headerlink" href="#reference-names" title="Permalink to this headline">¶</a></h3>
 <p>Simple reference names are single words consisting of alphanumerics
 plus isolated (no two adjacent) internal hyphens, underscores,
 periods, colons and plus signs; no whitespace or other characters are
@@ -473,9 +473,9 @@ footnote, citation) may be processed and rendered differently.  Some
 care should be taken to avoid reference name conflicts.</p>
 </div>
 <div class="section" id="document-structure">
-<h3>Document Structure<a class="headerlink" href="#document-structure" title="Permalink to this headline">¶</a></h3>
+<h3>7.5.2.4. Document Structure<a class="headerlink" href="#document-structure" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="document">
-<h4>Document<a class="headerlink" href="#document" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.4.1. Document<a class="headerlink" href="#document" title="Permalink to this headline">¶</a></h4>
 <p>Doctree element: document.</p>
 <p>The top-level element of a parsed reStructuredText document is the
 &#8220;document&#8221; element.  After initial parsing, the document element is a
@@ -495,7 +495,7 @@ the sections are then lifted up a level or two.  See the <a class="reference ext
 transform</a> for details.</p>
 </div>
 <div class="section" id="sections">
-<h4>Sections<a class="headerlink" href="#sections" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.4.2. Sections<a class="headerlink" href="#sections" title="Permalink to this headline">¶</a></h4>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Baow create section headers level automatic by tree, and need no marker characters. You may skip this section.</p>
@@ -590,7 +590,7 @@ Hyperlink Targets</a> for a complete description.</p>
 sections.</p>
 </div>
 <div class="section" id="transitions">
-<h4>Transitions<a class="headerlink" href="#transitions" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.4.3. Transitions<a class="headerlink" href="#transitions" title="Permalink to this headline">¶</a></h4>
 <p>Doctree element: transition.</p>
 <blockquote>
 <div><p>Instead of subheads, extra space or a type ornament between
@@ -623,9 +623,9 @@ would be an obvious choice.</p>
 </div>
 </div>
 <div class="section" id="body-elements">
-<h3>Body Elements<a class="headerlink" href="#body-elements" title="Permalink to this headline">¶</a></h3>
+<h3>7.5.2.5. Body Elements<a class="headerlink" href="#body-elements" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="paragraphs">
-<h4>Paragraphs<a class="headerlink" href="#paragraphs" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.5.1. Paragraphs<a class="headerlink" href="#paragraphs" title="Permalink to this headline">¶</a></h4>
 <p>Doctree element: paragraph.</p>
 <p>Paragraphs consist of blocks of left-aligned text with no markup
 indicating any other body element.  Blank lines separate paragraphs
@@ -645,7 +645,7 @@ from each other and from other body elements.  Paragraphs may contain
 </div>
 </div>
 <div class="section" id="bullet-lists">
-<h4>Bullet Lists<a class="headerlink" href="#bullet-lists" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.5.2. Bullet Lists<a class="headerlink" href="#bullet-lists" title="Permalink to this headline">¶</a></h4>
 <p>Doctree elements: bullet_list, list_item.</p>
 <p>A text block which begins with a &#8220;*&#8221;, &#8220;+&#8221;, &#8220;-&#8221;, &#8220;•&#8221;, &#8220;‣&#8221;, or &#8220;⁃&#8221;,
 followed by whitespace, is a bullet list item (a.k.a. &#8220;unordered&#8221; list
@@ -692,7 +692,7 @@ A blank line is required between list items and paragraphs.
 </div>
 </div>
 <div class="section" id="enumerated-lists">
-<h4>Enumerated Lists<a class="headerlink" href="#enumerated-lists" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.5.3. Enumerated Lists<a class="headerlink" href="#enumerated-lists" title="Permalink to this headline">¶</a></h4>
 <p>Doctree elements: enumerated_list, list_item.</p>
 <p>Enumerated lists (a.k.a. &#8220;ordered&#8221; lists) are similar to bullet lists,
 but use enumerators instead of bullets.  An enumerator consists of an
@@ -774,7 +774,7 @@ escaped in order to have the line parsed as an ordinary paragraph:</p>
 </div>
 </div>
 <div class="section" id="definition-lists">
-<h4>Definition Lists<a class="headerlink" href="#definition-lists" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.5.4. Definition Lists<a class="headerlink" href="#definition-lists" title="Permalink to this headline">¶</a></h4>
 <p>Doctree elements: definition_list, definition_list_item, term,
 classifier, definition.</p>
 <p>Each definition list item contains a term, optional classifiers, and a
@@ -827,7 +827,7 @@ object schema.</li>
 </div>
 </div>
 <div class="section" id="field-lists">
-<h4>Field Lists<a class="headerlink" href="#field-lists" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.5.5. Field Lists<a class="headerlink" href="#field-lists" title="Permalink to this headline">¶</a></h4>
 <p>Doctree elements: field_list, field, field_name, field_body.</p>
 <p>Field lists are used as part of an extension syntax, such as options
 for <a class="reference internal" href="#directives">directives</a>, or database-like records meant for further
@@ -880,7 +880,7 @@ used.</p>
 </pre></div>
 </div>
 <div class="section" id="bibliographic-fields">
-<h5>Bibliographic Fields<a class="headerlink" href="#bibliographic-fields" title="Permalink to this headline">¶</a></h5>
+<h5>7.5.2.5.5.1. Bibliographic Fields<a class="headerlink" href="#bibliographic-fields" title="Permalink to this headline">¶</a></h5>
 <p>Doctree elements: docinfo, author, authors, organization, contact,
 version, status, date, copyright, field, topic.</p>
 <p>When a field list is the first non-comment element in a document
@@ -934,7 +934,7 @@ for details.</p>
 arbitrary body elements.</p>
 </div>
 <div class="section" id="rcs-keywords">
-<h5>RCS Keywords<a class="headerlink" href="#rcs-keywords" title="Permalink to this headline">¶</a></h5>
+<h5>7.5.2.5.5.2. RCS Keywords<a class="headerlink" href="#rcs-keywords" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference internal" href="#bibliographic-fields">Bibliographic fields</a> recognized by the parser are normally checked
 for RCS <a class="footnote-reference" href="#id6" id="id3">[2]</a> keywords and cleaned up <a class="footnote-reference" href="#id7" id="id4">[3]</a>.  RCS keywords may be
 entered into source files as &#8220;$keyword$&#8221;, and once stored under RCS or
@@ -970,7 +970,7 @@ after a document title if there is one).</p>
 </div>
 </div>
 <div class="section" id="option-lists">
-<h4>Option Lists<a class="headerlink" href="#option-lists" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.5.6. Option Lists<a class="headerlink" href="#option-lists" title="Permalink to this headline">¶</a></h4>
 <p>Doctree elements: option_list, option_list_item, option_group, option,
 option_string, option_argument, description.</p>
 <p>Option lists are two-column lists of command-line options and
@@ -1054,7 +1054,7 @@ between option entries.</p>
 </div>
 </div>
 <div class="section" id="literal-blocks">
-<h4>Literal Blocks<a class="headerlink" href="#literal-blocks" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.5.7. Literal Blocks<a class="headerlink" href="#literal-blocks" title="Permalink to this headline">¶</a></h4>
 <p>Doctree element: literal_block.</p>
 <p>A paragraph consisting of two colons (&#8221;::&#8221;) signifies that the
 following text block(s) comprise a literal block.  The literal block
@@ -1115,7 +1115,7 @@ indentation for indented literal blocks) is preserved.  Blank lines
 are required before and after a literal block, but these blank lines
 are not included as part of the literal block.</p>
 <div class="section" id="indented-literal-blocks">
-<h5>Indented Literal Blocks<a class="headerlink" href="#indented-literal-blocks" title="Permalink to this headline">¶</a></h5>
+<h5>7.5.2.5.7.1. Indented Literal Blocks<a class="headerlink" href="#indented-literal-blocks" title="Permalink to this headline">¶</a></h5>
 <p>Indented literal blocks are indicated by indentation relative to the
 surrounding text (leading whitespace on each line).  The minimum
 indentation will be removed from each line of an indented literal
@@ -1134,7 +1134,7 @@ with the end of the indentation.</p>
 </div>
 </div>
 <div class="section" id="quoted-literal-blocks">
-<h5>Quoted Literal Blocks<a class="headerlink" href="#quoted-literal-blocks" title="Permalink to this headline">¶</a></h5>
+<h5>7.5.2.5.7.2. Quoted Literal Blocks<a class="headerlink" href="#quoted-literal-blocks" title="Permalink to this headline">¶</a></h5>
 <p>Quoted literal blocks are unindented contiguous blocks of text where
 each line begins with the same non-alphanumeric printable 7-bit ASCII
 character <a class="footnote-reference" href="#id10" id="id9">[5]</a>.  A blank line ends a quoted literal block.  The
@@ -1176,7 +1176,7 @@ You just did!  ;-)
 </div>
 </div>
 <div class="section" id="line-blocks">
-<h4>Line Blocks<a class="headerlink" href="#line-blocks" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.5.8. Line Blocks<a class="headerlink" href="#line-blocks" title="Permalink to this headline">¶</a></h4>
 <p>Doctree elements: line_block, line.  (New in Docutils 0.3.5.)</p>
 <p>Line blocks are useful for address blocks, verse (poetry, song
 lyrics), and unadorned lists, where the structure of lines is
@@ -1224,7 +1224,7 @@ initial indentation of new lines:</p>
 </div>
 </div>
 <div class="section" id="block-quotes">
-<h4>Block Quotes<a class="headerlink" href="#block-quotes" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.5.9. Block Quotes<a class="headerlink" href="#block-quotes" title="Permalink to this headline">¶</a></h4>
 <p>Doctree element: block_quote, attribution.</p>
 <p>A text block that is indented relative to the preceding text, without
 preceding markup indicating it to be a literal block or other content,
@@ -1287,7 +1287,7 @@ blank lines are not included as part of the block quote.</p>
 </div>
 </div>
 <div class="section" id="doctest-blocks">
-<h4>Doctest Blocks<a class="headerlink" href="#doctest-blocks" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.5.10. Doctest Blocks<a class="headerlink" href="#doctest-blocks" title="Permalink to this headline">¶</a></h4>
 <p>Doctree element: doctest_block.</p>
 <p>Doctest blocks are interactive Python sessions cut-and-pasted into
 docstrings.  They are meant to illustrate usage by example, and
@@ -1313,7 +1313,7 @@ The following is a literal block<span class="se">::</span>
 <p>Indentation is not required for doctest blocks.</p>
 </div>
 <div class="section" id="tables">
-<h4>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.5.11. Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h4>
 <p>Doctree elements: table, tgroup, colspec, thead, tbody, row, entry.</p>
 <p>ReStructuredText provides two syntaxes for delineating table cells:
 <a class="reference internal" href="#grid-tables">Grid Tables</a> and <a class="reference internal" href="#simple-tables">Simple Tables</a>.</p>
@@ -1326,7 +1326,7 @@ top and bottom cell boundaries act as delimiting blank lines.  Each
 cell contains zero or more body elements.  Cell contents may include
 left and/or right margins, which are removed before processing.</p>
 <div class="section" id="grid-tables">
-<h5>Grid Tables<a class="headerlink" href="#grid-tables" title="Permalink to this headline">¶</a></h5>
+<h5>7.5.2.5.11.1. Grid Tables<a class="headerlink" href="#grid-tables" title="Permalink to this headline">¶</a></h5>
 <p>Grid tables provide a complete table representation via grid-like
 &#8220;ASCII art&#8221;.  Grid tables allow arbitrary cell contents (body
 elements), and both row and column spans.  However, grid tables can be
@@ -1403,7 +1403,7 @@ the text by adding an extra space before:</p>
 </div>
 </div>
 <div class="section" id="simple-tables">
-<h5>Simple Tables<a class="headerlink" href="#simple-tables" title="Permalink to this headline">¶</a></h5>
+<h5>7.5.2.5.11.2. Simple Tables<a class="headerlink" href="#simple-tables" title="Permalink to this headline">¶</a></h5>
 <p>Simple tables provide a compact and easy to type but limited
 row-oriented table representation for simple data sets.  Cell contents
 are typically single paragraphs, although arbitrary body elements may
@@ -1510,7 +1510,7 @@ col 1  col 2
 </div>
 </div>
 <div class="section" id="explicit-markup-blocks">
-<h4>Explicit Markup Blocks<a class="headerlink" href="#explicit-markup-blocks" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.5.12. Explicit Markup Blocks<a class="headerlink" href="#explicit-markup-blocks" title="Permalink to this headline">¶</a></h4>
 <p>An explicit markup block is a text block:</p>
 <ul class="simple">
 <li>whose first line begins with &#8221;..&#8221; followed by whitespace (the
@@ -1533,7 +1533,7 @@ unambiguous.</p>
 <p>The explicit markup syntax is used for footnotes, citations, hyperlink
 targets, directives, substitution definitions, and comments.</p>
 <div class="section" id="footnotes">
-<h5>Footnotes<a class="headerlink" href="#footnotes" title="Permalink to this headline">¶</a></h5>
+<h5>7.5.2.5.12.1. Footnotes<a class="headerlink" href="#footnotes" title="Permalink to this headline">¶</a></h5>
 <p>Doctree elements: footnote, label.</p>
 <p>Each footnote consists of an explicit markup start (&#8221;.. &#8221;), a left
 square bracket, the footnote label, a right square bracket, and
@@ -1574,7 +1574,7 @@ Targets</a> for a complete description of the mechanism.</p>
 </pre></div>
 </div>
 <div class="section" id="auto-numbered-footnotes">
-<h6>Auto-Numbered Footnotes<a class="headerlink" href="#auto-numbered-footnotes" title="Permalink to this headline">¶</a></h6>
+<h6>7.5.2.5.12.1.1. Auto-Numbered Footnotes<a class="headerlink" href="#auto-numbered-footnotes" title="Permalink to this headline">¶</a></h6>
 <p>A number sign (&#8220;#&#8221;) may be used as the first character of a footnote
 label to request automatic numbering of the footnote or footnote
 reference.</p>
@@ -1626,7 +1626,7 @@ they are encountered in the document, which is not necessarily the
 same as the order in which a person would read them.</p>
 </div>
 <div class="section" id="auto-symbol-footnotes">
-<h6>Auto-Symbol Footnotes<a class="headerlink" href="#auto-symbol-footnotes" title="Permalink to this headline">¶</a></h6>
+<h6>7.5.2.5.12.1.2. Auto-Symbol Footnotes<a class="headerlink" href="#auto-symbol-footnotes" title="Permalink to this headline">¶</a></h6>
 <p>An asterisk (&#8220;*&#8221;) may be used for footnote labels to request automatic
 symbol generation for footnotes and footnote references.  The asterisk
 may be the only character in the label.  For example:</p>
@@ -1676,7 +1676,7 @@ alternative for HTML and XML output is to use the
 </div>
 </div>
 <div class="section" id="mixed-manual-and-auto-numbered-footnotes">
-<h6>Mixed Manual and Auto-Numbered Footnotes<a class="headerlink" href="#mixed-manual-and-auto-numbered-footnotes" title="Permalink to this headline">¶</a></h6>
+<h6>7.5.2.5.12.1.3. Mixed Manual and Auto-Numbered Footnotes<a class="headerlink" href="#mixed-manual-and-auto-numbered-footnotes" title="Permalink to this headline">¶</a></h6>
 <p>Manual and automatic footnote numbering may both be used within a
 single document, although the results may not be expected.  Manual
 numbering takes priority.  Only unused footnote numbers are assigned
@@ -1700,7 +1700,7 @@ illustrative:</p>
 </div>
 </div>
 <div class="section" id="citations">
-<h5>Citations<a class="headerlink" href="#citations" title="Permalink to this headline">¶</a></h5>
+<h5>7.5.2.5.12.2. Citations<a class="headerlink" href="#citations" title="Permalink to this headline">¶</a></h5>
 <p>Citations are identical to footnotes except that they use only
 non-numeric labels such as <tt class="docutils literal"><span class="pre">[note]</span></tt> or <tt class="docutils literal"><span class="pre">[GVR2001]</span></tt>.  Citation
 labels are simple <a class="reference internal" href="#reference-names">reference names</a> (case-insensitive single words
@@ -1715,7 +1715,7 @@ differently from footnotes.  For example:</p>
 </div>
 </div>
 <div class="section" id="hyperlink-targets">
-<span id="hyperlinks"></span><h5>Hyperlink Targets<a class="headerlink" href="#hyperlink-targets" title="Permalink to this headline">¶</a></h5>
+<span id="hyperlinks"></span><h5>7.5.2.5.12.3. Hyperlink Targets<a class="headerlink" href="#hyperlink-targets" title="Permalink to this headline">¶</a></h5>
 <p>Doctree element: target.</p>
 <p>These are also called <span class="target" id="explicit-hyperlink-targets">explicit hyperlink targets</span>, to differentiate
 them from <a class="reference internal" href="#implicit-hyperlink-targets">implicit hyperlink targets</a> defined below.</p>
@@ -1725,7 +1725,7 @@ which may be linked to by <a class="reference internal" href="#hyperlink-referen
 consist of an explicit markup start (&#8221;.. &#8221;), an underscore, the
 reference name (no trailing underscore), a colon, whitespace, and a
 link block:</p>
-<div class="highlight-rest"><div class="highlight"><pre><span class="cp">.. _hyperlink-name: link-block</span>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="nt">_hyperlink-name:</span> link-block
 </pre></div>
 </div>
 <p>Reference names are whitespace-neutral and case-insensitive.  See
@@ -1772,9 +1772,9 @@ hyperlink target is propagated to the internal hyperlink targets;
 they will all &#8220;point to&#8221; the same URI.  There is no need to
 duplicate a URI.  For example, all three of the following hyperlink
 targets refer to the same URI:</p>
-<div class="highlight-rest"><div class="highlight"><pre><span class="cp">.. _Python DOC-SIG mailing list archive:</span>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="nt">_Python DOC-SIG mailing list archive:</span>
 <span class="p">..</span> <span class="nt">_archive:</span>
-<span class="cp">.. _Doc-SIG: http://mail.python.org/pipermail/doc-sig/</span>
+<span class="p">..</span> <span class="nt">_Doc-SIG:</span> http://mail.python.org/pipermail/doc-sig/
 </pre></div>
 </div>
 <p>An inline form of internal hyperlink target is available; see
@@ -1806,14 +1806,14 @@ blank lines.  If there are multiple lines in the link block, they
 are concatenated.  Any whitespace is removed (whitespace is
 permitted to allow for line wrapping).  The following external
 hyperlink targets are equivalent:</p>
-<div class="highlight-rest"><div class="highlight"><pre><span class="cp">.. _one-liner: http://docutils.sourceforge.net/rst.html</span>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="nt">_one-liner:</span> http://docutils.sourceforge.net/rst.html
 
-<span class="cp">.. _starts-on-this-line: http://</span>
-<span class="cp">   docutils.sourceforge.net/rst.html</span>
+<span class="p">..</span> <span class="nt">_starts-on-this-line:</span> http://
+   docutils.sourceforge.net/rst.html
 
-<span class="cp">.. _entirely-below:</span>
-<span class="cp">   http://docutils.</span>
-<span class="cp">   sourceforge.net/rst.html</span>
+<span class="p">..</span> <span class="nt">_entirely-below:</span>
+   http://docutils.
+   sourceforge.net/rst.html
 </pre></div>
 </div>
 <p>If an external hyperlink target&#8217;s URI contains an underscore as its
@@ -1846,9 +1846,9 @@ over multiple lines, in which case the lines are joined with
 whitespace before being normalized.</p>
 <p>For example, the following indirect hyperlink targets are
 equivalent:</p>
-<div class="highlight-rest"><div class="highlight"><pre><span class="cp">.. _one-liner: `A HYPERLINK`_</span>
-<span class="cp">.. _entirely-below:</span>
-<span class="cp">   `a    hyperlink`_</span>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="nt">_one-liner:</span> <span class="s">`A HYPERLINK`_</span>
+<span class="p">..</span> <span class="nt">_entirely-below:</span>
+   <span class="s">`a    hyperlink`_</span>
 <span class="p">..</span> <span class="nt">_split:</span> `A
    Hyperlink`_
 </pre></div>
@@ -1858,13 +1858,13 @@ equivalent:</p>
 <p>If the reference name contains any colons, either:</p>
 <ul>
 <li><p class="first">the phrase must be enclosed in backquotes:</p>
-<div class="highlight-rest"><div class="highlight"><pre><span class="cp">.. _`FAQTS: Computers: Programming: Languages: Python`:</span>
-<span class="cp">   http://python.faqts.com/</span>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="nt">_`FAQTS:</span> Computers: Programming: Languages: Python`:
+   http://python.faqts.com/
 </pre></div>
 </div>
 </li>
 <li><p class="first">or the colon(s) must be backslash-escaped in the link target:</p>
-<div class="highlight-rest"><div class="highlight"><pre><span class="cp">.. _Chapter One\: &quot;Tadpole Days&quot;:</span>
+<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="nt">_Chapter One\: &quot;Tadpole Days&quot;:</span>
 
 It&#39;s not easy being green...
 </pre></div>
@@ -1882,7 +1882,7 @@ duplicate reference names.</p>
 </pre></div>
 </div>
 <div class="section" id="anonymous-hyperlinks">
-<h6>Anonymous Hyperlinks<a class="headerlink" href="#anonymous-hyperlinks" title="Permalink to this headline">¶</a></h6>
+<h6>7.5.2.5.12.3.1. Anonymous Hyperlinks<a class="headerlink" href="#anonymous-hyperlinks" title="Permalink to this headline">¶</a></h6>
 <p>The <a class="reference external" href="http://www.w3.org/">World Wide Web Consortium</a> recommends in its <a class="reference external" href="http://www.w3.org/TR/WCAG10-HTML-TECHS/#link-text">HTML Techniques
 for Web Content Accessibility Guidelines</a> that authors should
 &#8220;clearly identify the target of each link.&#8221;  Hyperlink references
@@ -1920,7 +1920,7 @@ require attention to the order of corresponding targets.</p>
 </div>
 </div>
 <div class="section" id="directives">
-<h5>Directives<a class="headerlink" href="#directives" title="Permalink to this headline">¶</a></h5>
+<h5>7.5.2.5.12.4. Directives<a class="headerlink" href="#directives" title="Permalink to this headline">¶</a></h5>
 <p>Doctree elements: depend on the directive.</p>
 <p>Directives are an extension mechanism for reStructuredText, a way of
 adding support for new constructs without adding new primary syntax
@@ -1956,7 +1956,7 @@ these reasons:</p>
 <li><p class="first">Two colons are distinctive, and unlikely to be used in common text.</p>
 </li>
 <li><p class="first">Two colons avoids clashes with common comment text like:</p>
-<div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="nt">Danger:</span> modify at your own risk!
+<div class="highlight-rest"><div class="highlight"><pre><span class="cp">.. Danger: modify at your own risk!</span>
 </pre></div>
 </div>
 </li>
@@ -2020,7 +2020,7 @@ directives will trigger level-3 (error) system messages.</p>
 </div>
 </div>
 <div class="section" id="substitution-definitions">
-<h5>Substitution Definitions<a class="headerlink" href="#substitution-definitions" title="Permalink to this headline">¶</a></h5>
+<h5>7.5.2.5.12.5. Substitution Definitions<a class="headerlink" href="#substitution-definitions" title="Permalink to this headline">¶</a></h5>
 <p>Doctree element: substitution_definition.</p>
 <p>Substitution definitions are indicated by an explicit markup start
 (&#8221;.. &#8221;) followed by a vertical bar, the substitution text, another
@@ -2203,7 +2203,7 @@ __ http://developer.java.sun.com/developer/earlyAccess/
 </dl>
 </div>
 <div class="section" id="comments">
-<h5>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h5>
+<h5>7.5.2.5.12.6. Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h5>
 <p>Doctree element: comment.</p>
 <p>Arbitrary indented text may follow the explicit markup start and will
 be processed as a comment element.  No further processing is done on
@@ -2242,7 +2242,7 @@ construct, insert an unindented empty comment in-between.</p>
 </div>
 </div>
 <div class="section" id="implicit-hyperlink-targets">
-<h3>Implicit Hyperlink Targets<a class="headerlink" href="#implicit-hyperlink-targets" title="Permalink to this headline">¶</a></h3>
+<h3>7.5.2.6. Implicit Hyperlink Targets<a class="headerlink" href="#implicit-hyperlink-targets" title="Permalink to this headline">¶</a></h3>
 <p>Implicit hyperlink targets are generated by section titles, footnotes,
 and citations, and may also be generated by extension constructs.
 Implicit hyperlink targets otherwise behave identically to explicit
@@ -2270,7 +2270,7 @@ calling software (such as the <a class="reference external" href="http://docutil
 links, giving reasons for the messages.</p>
 </div>
 <div class="section" id="inline-markup">
-<h3>Inline Markup<a class="headerlink" href="#inline-markup" title="Permalink to this headline">¶</a></h3>
+<h3>7.5.2.7. Inline Markup<a class="headerlink" href="#inline-markup" title="Permalink to this headline">¶</a></h3>
 <p>In reStructuredText, inline markup applies to words or phrases within
 a text block.  The same whitespace and punctuation that serves to
 delimit words in written text is used to delimit the inline markup
@@ -2500,12 +2500,12 @@ recognized.</li>
 <li><a class="reference internal" href="#standalone-hyperlinks">Standalone hyperlinks</a> are the last to be recognized.</li>
 </ul>
 <div class="section" id="character-level-inline-markup">
-<h4>Character-Level Inline Markup<a class="headerlink" href="#character-level-inline-markup" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.7.1. Character-Level Inline Markup<a class="headerlink" href="#character-level-inline-markup" title="Permalink to this headline">¶</a></h4>
 <p>It is possible to mark up individual characters within a word with
 backslash escapes (see <a class="reference internal" href="#escaping-mechanism">Escaping Mechanism</a> above).  Backslash
 escapes can be used to allow arbitrary text to immediately follow
 inline markup:</p>
-<div class="highlight-rest"><div class="highlight"><pre>Python <span class="s">``list``</span>\s use square bracket syntax.
+<div class="highlight-rest"><div class="highlight"><pre>Python <span class="s">``list``\s use square bracket syntax.</span>
 </pre></div>
 </div>
 <p>The backslash will disappear from the processed document.  The word
@@ -2513,7 +2513,7 @@ inline markup:</p>
 immediately follow it as normal text, with no space in-between.</p>
 <p>Arbitrary text may immediately precede inline markup using
 backslash-escaped whitespace:</p>
-<div class="highlight-rest"><div class="highlight"><pre>Possible in <span class="ge">*re*</span>\ <span class="s">``Structured``</span>\ <span class="ge">*Text*</span>, though not encouraged.
+<div class="highlight-rest"><div class="highlight"><pre>Possible in <span class="ge">*re*</span>\ <span class="s">``Structured``\ *Text*, though not encouraged.</span>
 </pre></div>
 </div>
 <p>The backslashes and spaces separating &#8220;re&#8221;, &#8220;Structured&#8221;, and &#8220;Text&#8221;
@@ -2527,7 +2527,7 @@ sparingly and only where absolutely necessary.</p>
 </div>
 </div>
 <div class="section" id="emphasis">
-<h4>Emphasis<a class="headerlink" href="#emphasis" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.7.2. Emphasis<a class="headerlink" href="#emphasis" title="Permalink to this headline">¶</a></h4>
 <p>Doctree element: emphasis.</p>
 <p>Start-string = end-string = &#8220;*&#8221;.</p>
 <p>Text enclosed by single asterisk characters is emphasized:</p>
@@ -2537,7 +2537,7 @@ sparingly and only where absolutely necessary.</p>
 <p>Emphasized text is typically displayed in italics.</p>
 </div>
 <div class="section" id="strong-emphasis">
-<h4>Strong Emphasis<a class="headerlink" href="#strong-emphasis" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.7.3. Strong Emphasis<a class="headerlink" href="#strong-emphasis" title="Permalink to this headline">¶</a></h4>
 <p>Doctree element: strong.</p>
 <p>Start-string = end-string = &#8220;**&#8221;.</p>
 <p>Text enclosed by double-asterisks is emphasized strongly:</p>
@@ -2547,7 +2547,7 @@ sparingly and only where absolutely necessary.</p>
 <p>Strongly emphasized text is typically displayed in boldface.</p>
 </div>
 <div class="section" id="interpreted-text">
-<h4>Interpreted Text<a class="headerlink" href="#interpreted-text" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.7.4. Interpreted Text<a class="headerlink" href="#interpreted-text" title="Permalink to this headline">¶</a></h4>
 <p>Doctree element: depends on the explicit or implicit role and
 processing.</p>
 <p>Start-string = end-string = &#8220;`&#8221;.</p>
@@ -2583,7 +2583,7 @@ custom interpreted text roles.  In addition, applications may support
 specialized roles.</p>
 </div>
 <div class="section" id="inline-literals">
-<h4>Inline Literals<a class="headerlink" href="#inline-literals" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.7.5. Inline Literals<a class="headerlink" href="#inline-literals" title="Permalink to this headline">¶</a></h4>
 <p>Doctree element: literal.</p>
 <p>Start-string = end-string = &#8220;``&#8221;.</p>
 <p>Text enclosed by double-backquotes is treated as inline literals:</p>
@@ -2607,7 +2607,7 @@ floating-point numbers (without exponents).
 </div>
 </div>
 <div class="section" id="hyperlink-references">
-<h4>Hyperlink References<a class="headerlink" href="#hyperlink-references" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.7.6. Hyperlink References<a class="headerlink" href="#hyperlink-references" title="Permalink to this headline">¶</a></h4>
 <p>Doctree element: reference.</p>
 <ul class="simple">
 <li>Named hyperlink references:<ul>
@@ -2638,7 +2638,7 @@ in the document.  See <a class="reference internal" href="#hyperlink-targets">Hy
 match references to targets, but otherwise behave similarly to named
 hyperlinks.</p>
 <div class="section" id="embedded-uris">
-<h5>Embedded URIs<a class="headerlink" href="#embedded-uris" title="Permalink to this headline">¶</a></h5>
+<h5>7.5.2.7.6.1. Embedded URIs<a class="headerlink" href="#embedded-uris" title="Permalink to this headline">¶</a></h5>
 <p>A hyperlink reference may directly embed a target URI inline, within
 angle brackets (&#8220;&lt;...&gt;&#8221;) as follows:</p>
 <div class="highlight-rest"><div class="highlight"><pre>See the <span class="s">`Python home page </span><span class="si">&lt;http://www.python.org&gt;</span><span class="s">`_</span> for info.
@@ -2695,7 +2695,7 @@ to be read in processed form.</p>
 </div>
 </div>
 <div class="section" id="inline-internal-targets">
-<h4>Inline Internal Targets<a class="headerlink" href="#inline-internal-targets" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.7.7. Inline Internal Targets<a class="headerlink" href="#inline-internal-targets" title="Permalink to this headline">¶</a></h4>
 <p>Doctree element: target.</p>
 <p>Start-string = &#8220;_`&#8221;, end-string = &#8220;`&#8221;.</p>
 <p>Inline internal targets are the equivalent of explicit <a class="reference internal" href="#internal-hyperlink-targets">internal
@@ -2712,7 +2712,7 @@ may not be anonymous.</p>
 reference names.</p>
 </div>
 <div class="section" id="footnote-references">
-<h4>Footnote References<a class="headerlink" href="#footnote-references" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.7.8. Footnote References<a class="headerlink" href="#footnote-references" title="Permalink to this headline">¶</a></h4>
 <p>Doctree element: footnote_reference.</p>
 <p>Start-string = &#8220;[&#8221;, end-string = &#8220;]_&#8221;.</p>
 <p>Each footnote reference consists of a square-bracketed label followed
@@ -2732,7 +2732,7 @@ or</li>
 </div>
 </div>
 <div class="section" id="citation-references">
-<h4>Citation References<a class="headerlink" href="#citation-references" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.7.9. Citation References<a class="headerlink" href="#citation-references" title="Permalink to this headline">¶</a></h4>
 <p>Doctree element: citation_reference.</p>
 <p>Start-string = &#8220;[&#8221;, end-string = &#8220;]_&#8221;.</p>
 <p>Each citation reference consists of a square-bracketed label followed
@@ -2746,7 +2746,7 @@ plus internal hyphens, underscores, and periods; no whitespace).</p>
 <p>See <a class="reference internal" href="#citations">Citations</a> for the citation itself.</p>
 </div>
 <div class="section" id="substitution-references">
-<h4>Substitution References<a class="headerlink" href="#substitution-references" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.7.10. Substitution References<a class="headerlink" href="#substitution-references" title="Permalink to this headline">¶</a></h4>
 <p>Doctree element: substitution_reference, reference.</p>
 <p>Start-string = &#8220;|&#8221;, end-string = &#8220;|&#8221; (optionally followed by &#8220;_&#8221; or
 &#8220;__&#8221;).</p>
@@ -2769,7 +2769,7 @@ refer to the &quot;substitution and hyperlink reference&quot; target.
 </div>
 </div>
 <div class="section" id="standalone-hyperlinks">
-<h4>Standalone Hyperlinks<a class="headerlink" href="#standalone-hyperlinks" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.7.11. Standalone Hyperlinks<a class="headerlink" href="#standalone-hyperlinks" title="Permalink to this headline">¶</a></h4>
 <p>Doctree element: reference.</p>
 <p>Start-string = end-string = &#8220;&#8221; (empty string).</p>
 <p>A URI (absolute URI <a class="footnote-reference" href="#uri" id="id16">[8]</a> or standalone email address) within a text
@@ -2840,7 +2840,7 @@ URLs (Uniform Resource Locators).  For the syntax of URIs see
 </div>
 </div>
 <div class="section" id="units">
-<h3>Units<a class="headerlink" href="#units" title="Permalink to this headline">¶</a></h3>
+<h3>7.5.2.8. Units<a class="headerlink" href="#units" title="Permalink to this headline">¶</a></h3>
 <p>(New in Docutils 0.3.10.)</p>
 <p>All measures consist of a positive floating point number in standard
 (non-scientific) notation and a unit, possibly separated by one or
@@ -2848,7 +2848,7 @@ more spaces.</p>
 <p>Units are only supported where explicitly mentioned in the reference
 manuals.</p>
 <div class="section" id="length-units">
-<h4>Length Units<a class="headerlink" href="#length-units" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.8.1. Length Units<a class="headerlink" href="#length-units" title="Permalink to this headline">¶</a></h4>
 <p>The following length units are supported by the reStructuredText
 parser:</p>
 <ul class="simple">
@@ -2870,7 +2870,7 @@ default (e.g. px with <cite>html4css1</cite>, pt with <cite>latex2e</cite>). See
 specific documentation in the <a class="reference external" href="../../user/">user doc</a> for details.</p>
 </div>
 <div class="section" id="percentage-units">
-<h4>Percentage Units<a class="headerlink" href="#percentage-units" title="Permalink to this headline">¶</a></h4>
+<h4>7.5.2.8.2. Percentage Units<a class="headerlink" href="#percentage-units" title="Permalink to this headline">¶</a></h4>
 <p>Percentage values have a percent sign (&#8220;%&#8221;) as unit.  Percentage
 values are relative to other values, depending on the context in which
 they occur.</p>
@@ -2878,7 +2878,7 @@ they occur.</p>
 </div>
 </div>
 <div class="section" id="error-handling">
-<h2>Error Handling<a class="headerlink" href="#error-handling" title="Permalink to this headline">¶</a></h2>
+<h2>7.5.3. Error Handling<a class="headerlink" href="#error-handling" title="Permalink to this headline">¶</a></h2>
 <p>Doctree element: system_message, problematic.</p>
 <p>Markup errors are handled according to the specification in <a class="reference external" href="http://docutils.sourceforge.net/docs/peps/pep-0258.html">PEP
 258</a>.</p>
@@ -2893,109 +2893,38 @@ they occur.</p>
         <div class="sphinxsidebarwrapper">
 <h3><a href="../../index.html">Table Of Contents</a></h3>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../20110524133011/index.html">Quick install and start</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../20110325210002/index.html">Features</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../20110325152027/index.html">Install</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../20110325183154/index.html">Project Management</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../20110325183235/index.html">Adding content</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../20110325183402/index.html">Build HTML files</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../20110525114558/index.html">Sphinx documentation</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../20110525114720/index.html">reStructuredText Primer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../20110525120240/index.html">Sphinx Markup Constructs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../20110525141625/index.html">Sphinx Domains</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../20110525143013/index.html">The build configuration file</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">reStructuredText Markup Specification</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#quick-syntax-overview">Quick Syntax Overview</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#syntax-details">Syntax Details</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#whitespace">Whitespace</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#blank-lines">Blank Lines</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#indentation">Indentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110524133011/index.html">1. Quick install and start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110325210002/index.html">2. Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110325152027/index.html">3. Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110325183154/index.html">4. Project Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110325183235/index.html">5. Adding content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110325183402/index.html">6. Build HTML files</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../20110525114558/index.html">7. Sphinx documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../20110525114720/index.html">7.1. reStructuredText Primer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../20110525120240/index.html">7.2. Sphinx Markup Constructs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../20110525141625/index.html">7.3. Sphinx Domains</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../20110525143013/index.html">7.4. The build configuration file</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">7.5. reStructuredText Markup Specification</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#quick-syntax-overview">7.5.1. Quick Syntax Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#syntax-details">7.5.2. Syntax Details</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#whitespace">7.5.2.1. Whitespace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#escaping-mechanism">7.5.2.2. Escaping Mechanism</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#reference-names">7.5.2.3. Reference Names</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#document-structure">7.5.2.4. Document Structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#body-elements">7.5.2.5. Body Elements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#implicit-hyperlink-targets">7.5.2.6. Implicit Hyperlink Targets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#inline-markup">7.5.2.7. Inline Markup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#units">7.5.2.8. Units</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="#escaping-mechanism">Escaping Mechanism</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#reference-names">Reference Names</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#document-structure">Document Structure</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#document">Document</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#sections">Sections</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#transitions">Transitions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#error-handling">7.5.3. Error Handling</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="#body-elements">Body Elements</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#paragraphs">Paragraphs</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#bullet-lists">Bullet Lists</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#enumerated-lists">Enumerated Lists</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#definition-lists">Definition Lists</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#field-lists">Field Lists</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="#bibliographic-fields">Bibliographic Fields</a></li>
-<li class="toctree-l6"><a class="reference internal" href="#rcs-keywords">RCS Keywords</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../20110525173013/index.html">7.6. reStructuredText Directives</a></li>
 </ul>
 </li>
-<li class="toctree-l5"><a class="reference internal" href="#option-lists">Option Lists</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#literal-blocks">Literal Blocks</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="#indented-literal-blocks">Indented Literal Blocks</a></li>
-<li class="toctree-l6"><a class="reference internal" href="#quoted-literal-blocks">Quoted Literal Blocks</a></li>
-</ul>
-</li>
-<li class="toctree-l5"><a class="reference internal" href="#line-blocks">Line Blocks</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#block-quotes">Block Quotes</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#doctest-blocks">Doctest Blocks</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#tables">Tables</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="#grid-tables">Grid Tables</a></li>
-<li class="toctree-l6"><a class="reference internal" href="#simple-tables">Simple Tables</a></li>
-</ul>
-</li>
-<li class="toctree-l5"><a class="reference internal" href="#explicit-markup-blocks">Explicit Markup Blocks</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="#footnotes">Footnotes</a><ul>
-<li class="toctree-l7"><a class="reference internal" href="#auto-numbered-footnotes">Auto-Numbered Footnotes</a></li>
-<li class="toctree-l7"><a class="reference internal" href="#auto-symbol-footnotes">Auto-Symbol Footnotes</a></li>
-<li class="toctree-l7"><a class="reference internal" href="#mixed-manual-and-auto-numbered-footnotes">Mixed Manual and Auto-Numbered Footnotes</a></li>
-</ul>
-</li>
-<li class="toctree-l6"><a class="reference internal" href="#citations">Citations</a></li>
-<li class="toctree-l6"><a class="reference internal" href="#hyperlink-targets">Hyperlink Targets</a><ul>
-<li class="toctree-l7"><a class="reference internal" href="#anonymous-hyperlinks">Anonymous Hyperlinks</a></li>
-</ul>
-</li>
-<li class="toctree-l6"><a class="reference internal" href="#directives">Directives</a></li>
-<li class="toctree-l6"><a class="reference internal" href="#substitution-definitions">Substitution Definitions</a></li>
-<li class="toctree-l6"><a class="reference internal" href="#comments">Comments</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="#implicit-hyperlink-targets">Implicit Hyperlink Targets</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#inline-markup">Inline Markup</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#character-level-inline-markup">Character-Level Inline Markup</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#emphasis">Emphasis</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#strong-emphasis">Strong Emphasis</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#interpreted-text">Interpreted Text</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#inline-literals">Inline Literals</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#hyperlink-references">Hyperlink References</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="#embedded-uris">Embedded URIs</a></li>
-</ul>
-</li>
-<li class="toctree-l5"><a class="reference internal" href="#inline-internal-targets">Inline Internal Targets</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#footnote-references">Footnote References</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#citation-references">Citation References</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#substitution-references">Substitution References</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#standalone-hyperlinks">Standalone Hyperlinks</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="#units">Units</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#length-units">Length Units</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#percentage-units">Percentage Units</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#error-handling">Error Handling</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../20110525173013/index.html">reStructuredText Directives</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../20110524132550/index.html">Shortcut Keys</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../20110325225721/index.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110524132550/index.html">8. Shortcut Keys</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110325225721/index.html">9. Download</a></li>
 </ul>
 
   <h3>This Page</h3>
@@ -3030,18 +2959,18 @@ they occur.</p>
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="../20110525173013/index.html" title="reStructuredText Directives"
+          <a href="../20110525173013/index.html" title="7.6. reStructuredText Directives"
              >next</a> |</li>
         <li class="right" >
-          <a href="../20110525143013/index.html" title="The build configuration file"
+          <a href="../20110525143013/index.html" title="7.4. The build configuration file"
              >previous</a> |</li>
         <li><a href="../../index.html">Baow Help</a> &raquo;</li>
-          <li><a href="../20110525114558/index.html" >Sphinx documentation</a> &raquo;</li> 
+          <li><a href="../20110525114558/index.html" >7. Sphinx documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
-        &copy; Copyright Cyrus. Created using Baow Editor.
-      Last updated on May 07, 2012.
+        &copy; Copyright Cyrus Baow. Created using Baow Editor.
+      Last updated on Aug 08, 2012.
       Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
     </div>
   </body>

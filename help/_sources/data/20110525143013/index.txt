@@ -1073,7 +1073,7 @@ These options influence manual page output.
 .. _Sphinx: http://sphinx.pocoo.org/index.html
 
 
-.. _baow: http://www.baow.com/help/baow-3.1.xpi
+.. _baow: http://www.baow.com/help/baow-3.2.xpi
 
 
 .. _new_doc: ../20110325202815/add_doc.png

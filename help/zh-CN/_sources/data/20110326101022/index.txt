@@ -75,7 +75,7 @@ Linux/BSD/Unix
 .. _Python Package Index \: setuptools: http://pypi.python.org/pypi/setuptools/
 
 
-.. _baow: http://www.baow.com/help/baow-3.1.xpi
+.. _baow: http://www.baow.com/help/baow-3.2.xpi
 
 
 .. _Sphinx: http://sphinx.pocoo.org/index.html

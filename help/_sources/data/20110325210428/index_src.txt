@@ -1,3 +1,0 @@
-You can add links or bookmark with right pop up menu. 
-
-Copy ReST text to your document.

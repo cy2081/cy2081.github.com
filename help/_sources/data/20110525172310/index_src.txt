@@ -1,3 +1,0 @@
-Percentage values have a percent sign ("%") as unit.  Percentage
-values are relative to other values, depending on the context in which
-they occur.

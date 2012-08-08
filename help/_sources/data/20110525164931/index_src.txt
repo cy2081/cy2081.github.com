@@ -1,5 +1,0 @@
-Descriptions below list "doctree elements" (document tree element
-names; XML DTD generic identifiers) corresponding to syntax
-constructs.  For details on the hierarchy of elements, please see `The
-Docutils Document Tree`_ and the `Docutils Generic DTD`_ XML document
-type definition.

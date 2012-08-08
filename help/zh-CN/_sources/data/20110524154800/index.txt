@@ -36,7 +36,7 @@ Baow 和 `Sphinx`_ 是完全兼容的，改进了编写的方式，只要按照�
 .. _Python Package Index \: setuptools: http://pypi.python.org/pypi/setuptools/
 
 
-.. _baow: http://www.baow.com/help/baow-3.1.xpi
+.. _baow: http://www.baow.com/help/baow-3.2.xpi
 
 
 .. _Sphinx: http://sphinx.pocoo.org/index.html

@@ -7,8 +7,8 @@ Baow Document Editor
 
  :Author: Cyrus Baow
  :Contact: cy2081@baow.com
- :Version: |version|    (2012-05-07)
- :Download: `here <http://www.baow.com/help/baow-3.1.xpi>`_
+ :Version: |version|    (2012-08-08)
+ :Download: `here <http://www.baow.com/help/baow-3.2.xpi>`_
 
  |screen| 
 
@@ -35,6 +35,8 @@ User's Guide
 
 
 .. toctree::
+   :numbered:
+   :maxdepth: 4
 
    Quick install and start <data/20110524133011/index>
    Features <data/20110325210002/index>
@@ -77,7 +79,7 @@ Indices and tables
 .. _Sphinx: http://sphinx.pocoo.org/index.html
 
 
-.. _baow: http://www.baow.com/help/baow-3.1.xpi
+.. _baow: http://www.baow.com/help/baow-3.2.xpi
 
 
 .. _new_doc: data/20110325202815/add_doc.png

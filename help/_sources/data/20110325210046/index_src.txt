@@ -1,5 +1,0 @@
-Click the button |project| :
-
- |project manage| 
-
-

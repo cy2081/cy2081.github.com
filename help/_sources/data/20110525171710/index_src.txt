@@ -1,9 +1,0 @@
-Doctree element: emphasis.
-
-Start-string = end-string = "*".
-
-Text enclosed by single asterisk characters is emphasized::
-
-    This is *emphasized text*.
-
-Emphasized text is typically displayed in italics.

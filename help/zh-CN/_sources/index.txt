@@ -9,8 +9,8 @@ Baow还可以管理自己的网络资源，比如常用的网址，保存网页�
 
  :作者: 川越
  :联系: cy2081@baow.com
- :最新版本: |version| (2012-05-07)
- :下载: `下载安装 <http://www.baow.com/help/baow-3.1.xpi>`_ 
+ :最新版本: |version| (2012-08-08)
+ :下载: `下载安装 <http://www.baow.com/help/baow-3.2.xpi>`_ 
 
 
 .. figure:: data/20110326091043/screen_s2.png
@@ -26,6 +26,8 @@ Baow还可以管理自己的网络资源，比如常用的网址，保存网页�
 
 
 .. toctree::
+   :numbered:
+   :maxdepth: 4
 
    特性和功能 <data/20110326100315/index>
    简明使用方法 <data/20110524131333/index>
@@ -66,7 +68,7 @@ Indices and tables
 .. _Python Package Index \: setuptools: http://pypi.python.org/pypi/setuptools/
 
 
-.. _baow: http://www.baow.com/help/baow-3.1.xpi
+.. _baow: http://www.baow.com/help/baow-3.2.xpi
 
 
 .. _Sphinx: http://sphinx.pocoo.org/index.html

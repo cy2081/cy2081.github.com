@@ -1,6 +1,0 @@
-Download Firefox extension:  `baow`_ .
-
-You can download this demo project code from `here <http://www.baow.com/help/doc.zip>`_ 
-Unpack it, and from Baow projects management, click  **Root Path**  button, and  select data path  ``doc/src`` . Select a project , and apply it.
-
-  

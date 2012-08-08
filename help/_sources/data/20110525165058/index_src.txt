@@ -1,7 +1,0 @@
-Blank lines are used to separate paragraphs and other elements.
-Multiple successive blank lines are equivalent to a single blank line,
-except within literal blocks (where all whitespace is preserved).
-Blank lines may be omitted when the markup makes element separation
-unambiguous, in conjunction with indentation.  The first line of a
-document is treated as if it is preceded by a blank line, and the last
-line of a document is treated as if it is followed by a blank line.

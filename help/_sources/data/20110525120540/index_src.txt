@@ -1,3 +1,0 @@
-More markup is added by :ref:`domains`.
-
-.. _standard reST markup: ../20110525164311/index.html

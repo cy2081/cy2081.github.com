@@ -1,5 +1,0 @@
-Spaces are recommended for indentation_, but tabs may also be used.
-Tabs will be converted to spaces.  Tab stops are at every 8th column.
-
-Other whitespace characters (form feeds [chr(12)] and vertical tabs
-[chr(11)]) are converted to single spaces before processing.

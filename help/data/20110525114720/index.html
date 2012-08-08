@@ -7,7 +7,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>reStructuredText Primer &mdash; Baow Help</title>
+    <title>7.1. reStructuredText Primer &mdash; Baow Help</title>
     
     <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -25,9 +25,9 @@
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="top" title="Baow Help" href="../../index.html" />
-    <link rel="up" title="Sphinx documentation" href="../20110525114558/index.html" />
-    <link rel="next" title="Sphinx Markup Constructs" href="../20110525120240/index.html" />
-    <link rel="prev" title="Sphinx documentation" href="../20110525114558/index.html" />
+    <link rel="up" title="7. Sphinx documentation" href="../20110525114558/index.html" />
+    <link rel="next" title="7.2. Sphinx Markup Constructs" href="../20110525120240/index.html" />
+    <link rel="prev" title="7. Sphinx documentation" href="../20110525114558/index.html" />
 <link rel="stylesheet" href="../../_static/baow.css" type="text/css" />
 <link rel="shortcut icon" href="/images/favicon.ico" />
 
@@ -63,13 +63,13 @@
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="../20110525120240/index.html" title="Sphinx Markup Constructs"
+          <a href="../20110525120240/index.html" title="7.2. Sphinx Markup Constructs"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="../20110525114558/index.html" title="Sphinx documentation"
+          <a href="../20110525114558/index.html" title="7. Sphinx documentation"
              accesskey="P">previous</a> |</li>
         <li><a href="../../index.html">Baow Help</a> &raquo;</li>
-          <li><a href="../20110525114558/index.html" accesskey="U">Sphinx documentation</a> &raquo;</li> 
+          <li><a href="../20110525114558/index.html" accesskey="U">7. Sphinx documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -79,7 +79,7 @@
           <div class="body">
             
   <div class="section" id="restructuredtext-primer">
-<span id="rst-primer"></span><h1>reStructuredText Primer<a class="headerlink" href="#restructuredtext-primer" title="Permalink to this headline">¶</a></h1>
+<span id="rst-primer"></span><h1>7.1. reStructuredText Primer<a class="headerlink" href="#restructuredtext-primer" title="Permalink to this headline">¶</a></h1>
 <p>This section is a brief introduction to reStructuredText (reST) concepts and
 syntax, intended to provide authors with enough information to author documents
 productively.  Since reST was designed to be a simple, unobtrusive markup
@@ -89,14 +89,14 @@ language, this will not take too long.</p>
 <p class="last">The authoritative <a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText User Documentation</a>.</p>
 </div>
 <div class="section" id="paragraphs">
-<h2>Paragraphs<a class="headerlink" href="#paragraphs" title="Permalink to this headline">¶</a></h2>
+<h2>7.1.1. Paragraphs<a class="headerlink" href="#paragraphs" title="Permalink to this headline">¶</a></h2>
 <p>The paragraph (<a class="reference external" href="../20110525164311/index.html#paragraphs">ref</a>) is the most basic block in a reST
 document.  Paragraphs are simply chunks of text separated by one or more blank
 lines.  As in Python, indentation is significant in reST, so all lines of the
 same paragraph must be left-aligned to the same level of indentation.</p>
 </div>
 <div class="section" id="inline-markup">
-<span id="inlinemarkup"></span><h2>Inline markup<a class="headerlink" href="#inline-markup" title="Permalink to this headline">¶</a></h2>
+<span id="inlinemarkup"></span><h2>7.1.2. Inline markup<a class="headerlink" href="#inline-markup" title="Permalink to this headline">¶</a></h2>
 <p>The standard reST inline markup is quite simple: use</p>
 <ul class="simple">
 <li>one asterisk: <tt class="docutils literal"><span class="pre">*text*</span></tt> for emphasis (italics),</li>
@@ -130,7 +130,7 @@ materials</li>
 <p>See <a class="reference internal" href="../20110525140549/index.html#inline-markup"><em>Inline markup</em></a> for roles added by Sphinx.</p>
 </div>
 <div class="section" id="lists-and-quote-like-blocks">
-<h2>Lists and Quote-like blocks<a class="headerlink" href="#lists-and-quote-like-blocks" title="Permalink to this headline">¶</a></h2>
+<h2>7.1.3. Lists and Quote-like blocks<a class="headerlink" href="#lists-and-quote-like-blocks" title="Permalink to this headline">¶</a></h2>
 <p>List markup (<a class="reference external" href="../20110525164311/index.html#bullet-lists">ref</a>) is natural: just place an asterisk at
 the start of a paragraph and indent properly.  The same goes for numbered lists;
 they can also be autonumbered using a <tt class="docutils literal"><span class="pre">#</span></tt> sign:</p>
@@ -184,7 +184,7 @@ them more than the surrounding paragraphs.</p>
 </ul>
 </div>
 <div class="section" id="source-code">
-<h2>Source Code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h2>
+<h2>7.1.4. Source Code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h2>
 <p>Literal code blocks (<a class="reference external" href="../20110525164311/index.html#literal-blocks">ref</a>) are introduced by ending a
 paragraph with the special marker <tt class="docutils literal"><span class="pre">::</span></tt>.  The literal block must be indented
 (and, like all paragraphs, separated from the surrounding ones by blank lines):</p>
@@ -210,7 +210,7 @@ colon.</li>
 rendered as &#8220;The next paragraph is a code sample:&#8221;.</p>
 </div>
 <div class="section" id="tables">
-<span id="rst-tables"></span><h2>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h2>
+<span id="rst-tables"></span><h2>7.1.5. Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h2>
 <p>Two forms of tables are supported.  For <em>grid tables</em> (<a class="reference external" href="../20110525164311/index.html#grid-tables">ref</a>), you have to &#8220;paint&#8221; the cell grid yourself.  They look like
 this:</p>
 <div class="highlight-rest"><div class="highlight"><pre>+------------------------+------------+----------+----------+
@@ -238,9 +238,9 @@ True   True   True
 </div>
 </div>
 <div class="section" id="hyperlinks">
-<h2>Hyperlinks<a class="headerlink" href="#hyperlinks" title="Permalink to this headline">¶</a></h2>
+<h2>7.1.6. Hyperlinks<a class="headerlink" href="#hyperlinks" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="external-links">
-<h3>External links<a class="headerlink" href="#external-links" title="Permalink to this headline">¶</a></h3>
+<h3>7.1.6.1. External links<a class="headerlink" href="#external-links" title="Permalink to this headline">¶</a></h3>
 <p>Use <tt class="docutils literal"><span class="pre">`Link</span> <span class="pre">text</span> <span class="pre">&lt;http://example.com/&gt;`_</span></tt> for inline web links.  If the link
 text should be the web address, you don&#8217;t need special markup at all, the parser
 finds links and mail addresses in ordinary text.</p>
@@ -252,13 +252,13 @@ finds links and mail addresses in ordinary text.</p>
 </div>
 </div>
 <div class="section" id="internal-links">
-<h3>Internal links<a class="headerlink" href="#internal-links" title="Permalink to this headline">¶</a></h3>
+<h3>7.1.6.2. Internal links<a class="headerlink" href="#internal-links" title="Permalink to this headline">¶</a></h3>
 <p>Internal linking is done via a special reST role provided by Sphinx, see the
 section on specific markup, <a class="reference internal" href="../20110525140549/index.html#ref-role"><em>Cross-referencing arbitrary locations</em></a>.</p>
 </div>
 </div>
 <div class="section" id="sections">
-<h2>Sections<a class="headerlink" href="#sections" title="Permalink to this headline">¶</a></h2>
+<h2>7.1.7. Sections<a class="headerlink" href="#sections" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Baow create section headers level automatic by tree, and need no marker characters. You may skip this section.</p>
@@ -287,7 +287,7 @@ documentation), and use a deeper nesting level, but keep in mind that most
 target formats (HTML, LaTeX) have a limited supported nesting depth.</p>
 </div>
 <div class="section" id="explicit-markup">
-<h2>Explicit Markup<a class="headerlink" href="#explicit-markup" title="Permalink to this headline">¶</a></h2>
+<h2>7.1.8. Explicit Markup<a class="headerlink" href="#explicit-markup" title="Permalink to this headline">¶</a></h2>
 <p>&#8220;Explicit markup&#8221; (<a class="reference external" href="../20110525164311/index.html#explicit-markup-blocks">ref</a>) is used in reST for
 most constructs that need special handling, such as footnotes,
 specially-highlighted paragraphs, comments, and generic directives.</p>
@@ -298,7 +298,7 @@ paragraphs.  This may all sound a bit complicated, but it is intuitive enough
 when you write it.)</p>
 </div>
 <div class="section" id="directives">
-<span id="id1"></span><h2>Directives<a class="headerlink" href="#directives" title="Permalink to this headline">¶</a></h2>
+<span id="id1"></span><h2>7.1.9. Directives<a class="headerlink" href="#directives" title="Permalink to this headline">¶</a></h2>
 <p>A directive (<a class="reference external" href="../20110525164311/index.html#directives">ref</a>) is a generic block of explicit markup.
 Besides roles, it is one of the extension mechanisms of reST, and Sphinx makes
 heavy use of it.</p>
@@ -383,7 +383,7 @@ same level as the directive content.</p>
 directive start.</p>
 </div>
 <div class="section" id="images">
-<h2>Images<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h2>
+<h2>7.1.10. Images<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h2>
 <p>reST supports an image directive (<a class="reference external" href="../20110525173013/index.html#image">ref</a>), used like so:</p>
 <div class="highlight-rest"><div class="highlight"><pre><span class="p">..</span> <span class="ow">image</span><span class="p">::</span> gnu.png
    (options)
@@ -416,7 +416,7 @@ the former, while the HTML builder would prefer the latter.</p>
 <span class="versionmodified">Changed in version 0.6: </span>Image paths can now be absolute.</p>
 </div>
 <div class="section" id="footnotes">
-<h2>Footnotes<a class="headerlink" href="#footnotes" title="Permalink to this headline">¶</a></h2>
+<h2>7.1.11. Footnotes<a class="headerlink" href="#footnotes" title="Permalink to this headline">¶</a></h2>
 <p>For footnotes (<a class="reference external" href="../20110525164311/index.html#footnotes">ref</a>), use <tt class="docutils literal"><span class="pre">[#name]_</span></tt> to mark the footnote
 location, and add the footnote body at the bottom of the document after a
 &#8220;Footnotes&#8221; rubric heading, like so:</p>
@@ -432,7 +432,7 @@ location, and add the footnote body at the bottom of the document after a
 footnotes without names (<tt class="docutils literal"><span class="pre">[#]_</span></tt>).</p>
 </div>
 <div class="section" id="citations">
-<h2>Citations<a class="headerlink" href="#citations" title="Permalink to this headline">¶</a></h2>
+<h2>7.1.12. Citations<a class="headerlink" href="#citations" title="Permalink to this headline">¶</a></h2>
 <p>Standard reST citations (<a class="reference external" href="../20110525164311/index.html#citations">ref</a>) are supported, with the
 additional feature that they are &#8220;global&#8221;, i.e. all citations can be referenced
 from all files.  Use them like so:</p>
@@ -445,7 +445,7 @@ from all files.  Use them like so:</p>
 numeric or begins with <tt class="docutils literal"><span class="pre">#</span></tt>.</p>
 </div>
 <div class="section" id="substitutions">
-<h2>Substitutions<a class="headerlink" href="#substitutions" title="Permalink to this headline">¶</a></h2>
+<h2>7.1.13. Substitutions<a class="headerlink" href="#substitutions" title="Permalink to this headline">¶</a></h2>
 <p>reST supports &#8220;substitutions&#8221; (<a class="reference external" href="../20110525164311/index.html#substitution-definitions">ref</a>), which
 are pieces of text and/or markup referred to in the text by <tt class="docutils literal"><span class="pre">|name|</span></tt>.  They
 are defined like footnotes with explicit markup blocks, like this:</p>
@@ -467,7 +467,7 @@ source files, to avoid Sphinx finding it as a standalone document.)</p>
 <p>Sphinx defines some default substitutions, see <em class="xref std std-ref">default-substitutions</em>.</p>
 </div>
 <div class="section" id="comments">
-<h2>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h2>
+<h2>7.1.14. Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h2>
 <p>Every explicit markup block which isn&#8217;t a valid markup construct (like the
 footnotes above) is regarded as a comment (<a class="reference external" href="../20110525164311/index.html#comments">ref</a>).  For
 example:</p>
@@ -484,14 +484,14 @@ example:</p>
 </div>
 </div>
 <div class="section" id="source-encoding">
-<h2>Source encoding<a class="headerlink" href="#source-encoding" title="Permalink to this headline">¶</a></h2>
+<h2>7.1.15. Source encoding<a class="headerlink" href="#source-encoding" title="Permalink to this headline">¶</a></h2>
 <p>Since the easiest way to include special characters like em dashes or copyright
 signs in reST is to directly write them as Unicode characters, one has to
 specify an encoding.  Sphinx assumes source files to be encoded in UTF-8 by
 default; you can change this with the <a class="reference internal" href="../20110525143013/index.html#confval-source_encoding"><tt class="xref std std-confval docutils literal"><span class="pre">source_encoding</span></tt></a> config value.</p>
 </div>
 <div class="section" id="gotchas">
-<h2>Gotchas<a class="headerlink" href="#gotchas" title="Permalink to this headline">¶</a></h2>
+<h2>7.1.16. Gotchas<a class="headerlink" href="#gotchas" title="Permalink to this headline">¶</a></h2>
 <p>There are some problems one commonly runs into while authoring reST documents:</p>
 <ul class="simple">
 <li><strong>Separation of inline markup:</strong> As said above, inline markup spans must be
@@ -520,45 +520,45 @@ will be shadowed.  Therefore, Sphinx re-exports it as <tt class="xref rst rst-di
         <div class="sphinxsidebarwrapper">
 <h3><a href="../../index.html">Table Of Contents</a></h3>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../20110524133011/index.html">Quick install and start</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../20110325210002/index.html">Features</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../20110325152027/index.html">Install</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../20110325183154/index.html">Project Management</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../20110325183235/index.html">Adding content</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../20110325183402/index.html">Build HTML files</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../20110525114558/index.html">Sphinx documentation</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="">reStructuredText Primer</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#paragraphs">Paragraphs</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#inline-markup">Inline markup</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#lists-and-quote-like-blocks">Lists and Quote-like blocks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#source-code">Source Code</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tables">Tables</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#hyperlinks">Hyperlinks</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#external-links">External links</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#internal-links">Internal links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110524133011/index.html">1. Quick install and start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110325210002/index.html">2. Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110325152027/index.html">3. Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110325183154/index.html">4. Project Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110325183235/index.html">5. Adding content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110325183402/index.html">6. Build HTML files</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../20110525114558/index.html">7. Sphinx documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">7.1. reStructuredText Primer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#paragraphs">7.1.1. Paragraphs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#inline-markup">7.1.2. Inline markup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lists-and-quote-like-blocks">7.1.3. Lists and Quote-like blocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#source-code">7.1.4. Source Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tables">7.1.5. Tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hyperlinks">7.1.6. Hyperlinks</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#external-links">7.1.6.1. External links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#internal-links">7.1.6.2. Internal links</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#sections">Sections</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#explicit-markup">Explicit Markup</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#directives">Directives</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#images">Images</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#footnotes">Footnotes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#citations">Citations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#substitutions">Substitutions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#comments">Comments</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#source-encoding">Source encoding</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#gotchas">Gotchas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sections">7.1.7. Sections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#explicit-markup">7.1.8. Explicit Markup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#directives">7.1.9. Directives</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#images">7.1.10. Images</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#footnotes">7.1.11. Footnotes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#citations">7.1.12. Citations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#substitutions">7.1.13. Substitutions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#comments">7.1.14. Comments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#source-encoding">7.1.15. Source encoding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gotchas">7.1.16. Gotchas</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../20110525120240/index.html">Sphinx Markup Constructs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../20110525141625/index.html">Sphinx Domains</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../20110525143013/index.html">The build configuration file</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../20110525164311/index.html">reStructuredText Markup Specification</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../20110525173013/index.html">reStructuredText Directives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../20110525120240/index.html">7.2. Sphinx Markup Constructs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../20110525141625/index.html">7.3. Sphinx Domains</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../20110525143013/index.html">7.4. The build configuration file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../20110525164311/index.html">7.5. reStructuredText Markup Specification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../20110525173013/index.html">7.6. reStructuredText Directives</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../20110524132550/index.html">Shortcut Keys</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../20110325225721/index.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110524132550/index.html">8. Shortcut Keys</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110325225721/index.html">9. Download</a></li>
 </ul>
 
   <h3>This Page</h3>
@@ -593,18 +593,18 @@ will be shadowed.  Therefore, Sphinx re-exports it as <tt class="xref rst rst-di
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="../20110525120240/index.html" title="Sphinx Markup Constructs"
+          <a href="../20110525120240/index.html" title="7.2. Sphinx Markup Constructs"
              >next</a> |</li>
         <li class="right" >
-          <a href="../20110525114558/index.html" title="Sphinx documentation"
+          <a href="../20110525114558/index.html" title="7. Sphinx documentation"
              >previous</a> |</li>
         <li><a href="../../index.html">Baow Help</a> &raquo;</li>
-          <li><a href="../20110525114558/index.html" >Sphinx documentation</a> &raquo;</li> 
+          <li><a href="../20110525114558/index.html" >7. Sphinx documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
-        &copy; Copyright Cyrus. Created using Baow Editor.
-      Last updated on May 07, 2012.
+        &copy; Copyright Cyrus Baow. Created using Baow Editor.
+      Last updated on Aug 08, 2012.
       Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
     </div>
   </body>
