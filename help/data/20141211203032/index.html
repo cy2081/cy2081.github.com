@@ -1,0 +1,451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Data Management &mdash; Baow Help</title>
+    
+    <link rel="stylesheet" href="../../_static/sphinx13.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Baow Help" href="../../index.html" />
+    <link rel="next" title="Edit documents" href="../20141211202838/index.html" />
+    <link rel="prev" title="Annotation" href="../20141211202930/index.html" />
+ <link rel="shortcut icon" href="/images/favicon.ico" />
+ 
+    <style type="text/css">
+      table.right { float: right; margin-left: 20px; }
+      table.right td { border: 1px solid #ccc; }
+      
+    </style>
+    <script type="text/javascript">
+      // intelligent scrolling of the sidebar content
+      $(window).scroll(function() {
+        var sb = $('.sphinxsidebarwrapper');
+        var win = $(window);
+        var sbh = sb.height();
+        var offset = $('.sphinxsidebar').position()['top'];
+        var wintop = win.scrollTop();
+        var winbot = wintop + win.innerHeight();
+        var curtop = sb.position()['top'];
+        var curbot = curtop + sbh;
+        // does sidebar fit in window?
+        if (sbh < win.innerHeight()) {
+          // yes: easy case -- always keep at the top
+          sb.css('top', $u.min([$u.max([0, wintop - offset - 10]),
+                                $(document).height() - sbh - 200]));
+        } else {
+          // no: only scroll if top/bottom edge of sidebar is at
+          // top/bottom edge of window
+          if (curtop > wintop && curbot > winbot) {
+            sb.css('top', $u.max([wintop - offset - 10, 0]));
+          } else if (curtop < wintop && curbot < winbot) {
+            sb.css('top', $u.min([winbot - sbh - offset - 20,
+                                  $(document).height() - sbh - 200]));
+          }
+        }
+      });
+    </script>
+
+  </head>
+  <body>
+<div class="pageheader">
+  <ul>
+    <li><a href="/help">Home</a></li>
+    <li><a href="/help/zh-CN">Chinese(中文版)</a></li>
+    <li><a href="/help/data/20110325225721/">Download</a></li>
+  </ul>
+  <div>
+    <a href="/">
+      <img src="../../_static/logo.png" alt="Baow" />
+    </a>
+  </div>
+</div>
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../20141211202838/index.html" title="Edit documents"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../20141211202930/index.html" title="Annotation"
+             accesskey="P">previous</a> |</li>
+        <li><a href="/help">Baow Home</a>&nbsp;</li>
+ 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../20110325152027/index.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110325183154/index.html">Project management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110325183235/index.html">Adding content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20141211202930/index.html">Annotation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Data Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#shortcuts">Shortcuts</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../20141211202838/index.html">Edit documents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110325225721/index.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20141224121139/index.html">Changes</a></li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/data/20141211203032/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="data-management">
+<h1>Data Management<a class="headerlink" href="#data-management" title="Permalink to this headline">¶</a></h1>
+<img alt="../../_images/manage-en.png" src="../../_images/manage-en.png" />
+<p>You can manage data in this window, and check or modify properties of it.</p>
+<div class="section" id="shortcuts">
+<h2>Shortcuts<a class="headerlink" href="#shortcuts" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="82%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>F1</td>
+<td>new document</td>
+</tr>
+<tr class="row-even"><td>F2</td>
+<td>new sub document</td>
+</tr>
+<tr class="row-odd"><td>F3</td>
+<td>move up</td>
+</tr>
+<tr class="row-even"><td>F4</td>
+<td>move down</td>
+</tr>
+<tr class="row-odd"><td>F8</td>
+<td>show properties</td>
+</tr>
+<tr class="row-even"><td>F9</td>
+<td>manage up level</td>
+</tr>
+<tr class="row-odd"><td>F10</td>
+<td>manage current item</td>
+</tr>
+<tr class="row-even"><td>F11</td>
+<td>set start time</td>
+</tr>
+<tr class="row-odd"><td>F12</td>
+<td>set end time</td>
+</tr>
+<tr class="row-even"><td>Ctrl-1</td>
+<td>set color style 1</td>
+</tr>
+<tr class="row-odd"><td>Ctrl-2</td>
+<td>set color style 2</td>
+</tr>
+<tr class="row-even"><td>Ctrl-3</td>
+<td>remove color</td>
+</tr>
+<tr class="row-odd"><td>Ctrl-Shift-a</td>
+<td>set priority A</td>
+</tr>
+<tr class="row-even"><td>Ctrl-Shift-b</td>
+<td>set priority B</td>
+</tr>
+<tr class="row-odd"><td>Ctrl-Shift-c</td>
+<td>set priority C</td>
+</tr>
+<tr class="row-even"><td>Ctrl-Shift-d</td>
+<td>set priority D</td>
+</tr>
+<tr class="row-odd"><td>Ctrl-0</td>
+<td>cancel priority</td>
+</tr>
+<tr class="row-even"><td>Ctrl-l</td>
+<td>locate source item from search results</td>
+</tr>
+<tr class="row-odd"><td>Ctrl-o</td>
+<td>open the folder where saved</td>
+</tr>
+<tr class="row-even"><td>Alt-1</td>
+<td>locate the first item in favorites list</td>
+</tr>
+<tr class="row-odd"><td>Alt-2</td>
+<td>locate the second item in favorites list</td>
+</tr>
+<tr class="row-even"><td>Alt-3</td>
+<td>locate the third item in favorites list</td>
+</tr>
+<tr class="row-odd"><td>Alt-t</td>
+<td>set status as TODO</td>
+</tr>
+<tr class="row-even"><td>Alt-n</td>
+<td>set status as NEXT</td>
+</tr>
+<tr class="row-odd"><td>Alt-0</td>
+<td>set status as null</td>
+</tr>
+<tr class="row-even"><td>Alt-d</td>
+<td>set status as DONE</td>
+</tr>
+<tr class="row-odd"><td>Alt-h</td>
+<td>set status as HOLD</td>
+</tr>
+<tr class="row-even"><td>Alt-w</td>
+<td>set status as WAITING</td>
+</tr>
+<tr class="row-odd"><td>Alt-e</td>
+<td>set status as DELAY</td>
+</tr>
+<tr class="row-even"><td>Alt-a</td>
+<td>set status as CANCELLED</td>
+</tr>
+<tr class="row-odd"><td>Alt-i</td>
+<td>ignore</td>
+</tr>
+<tr class="row-even"><td>Alt-r</td>
+<td>open the project management window</td>
+</tr>
+<tr class="row-odd"><td>Alt-s</td>
+<td>to sub link</td>
+</tr>
+<tr class="row-even"><td>Alt-l</td>
+<td>to link</td>
+</tr>
+<tr class="row-odd"><td>Alt-x</td>
+<td>copy link</td>
+</tr>
+<tr class="row-even"><td>Alt-p</td>
+<td>paste link</td>
+</tr>
+<tr class="row-odd"><td>Alt-m</td>
+<td>open previous project</td>
+</tr>
+<tr class="row-even"><td>Alt-b</td>
+<td>back</td>
+</tr>
+<tr class="row-odd"><td>Alt-f</td>
+<td>scroll down 16 lines</td>
+</tr>
+<tr class="row-even"><td>Alt-v</td>
+<td>scroll up 16 lines</td>
+</tr>
+<tr class="row-odd"><td>Alt-o</td>
+<td>search</td>
+</tr>
+<tr class="row-even"><td>Alt-u</td>
+<td>focus tree</td>
+</tr>
+<tr class="row-odd"><td>Alt-Space</td>
+<td>select</td>
+</tr>
+<tr class="row-even"><td>Number</td>
+<td>record jump step</td>
+</tr>
+<tr class="row-odd"><td>Space</td>
+<td>toggle folder open/close state</td>
+</tr>
+<tr class="row-even"><td>a</td>
+<td>add to favorites</td>
+</tr>
+<tr class="row-odd"><td>Shift-d</td>
+<td>delete</td>
+</tr>
+<tr class="row-even"><td>Delete</td>
+<td>delete an item</td>
+</tr>
+<tr class="row-odd"><td>RETURN</td>
+<td>open it , toggle open state for folder.</td>
+</tr>
+<tr class="row-even"><td>e</td>
+<td>open it at right pannel</td>
+</tr>
+<tr class="row-odd"><td>x</td>
+<td>show properties at right pannel</td>
+</tr>
+<tr class="row-even"><td>z</td>
+<td>close the right pannel</td>
+</tr>
+<tr class="row-odd"><td>w</td>
+<td>toggle focus mode</td>
+</tr>
+<tr class="row-even"><td>q</td>
+<td>locate an item from searh results</td>
+</tr>
+<tr class="row-odd"><td>Shift-r</td>
+<td>to link source</td>
+</tr>
+<tr class="row-even"><td>r</td>
+<td>to root</td>
+</tr>
+<tr class="row-odd"><td>Shift-m</td>
+<td>open/close all items</td>
+</tr>
+<tr class="row-even"><td>m</td>
+<td>move</td>
+</tr>
+<tr class="row-odd"><td>n</td>
+<td>create new document</td>
+</tr>
+<tr class="row-even"><td>Shift-a</td>
+<td>create new document on the top in sub folder.</td>
+</tr>
+<tr class="row-odd"><td>Shift-n</td>
+<td>create new sub document</td>
+</tr>
+<tr class="row-even"><td>b</td>
+<td>back</td>
+</tr>
+<tr class="row-odd"><td>Shift-f</td>
+<td>forward</td>
+</tr>
+<tr class="row-even"><td>g</td>
+<td>open it with Gvim editor</td>
+</tr>
+<tr class="row-odd"><td>s</td>
+<td>manage sub level</td>
+</tr>
+<tr class="row-even"><td>f</td>
+<td>new link</td>
+</tr>
+<tr class="row-odd"><td>&lt;</td>
+<td>to top</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>to bottom</td>
+</tr>
+<tr class="row-odd"><td>j</td>
+<td>focus down a line</td>
+</tr>
+<tr class="row-even"><td>Shift-j</td>
+<td>to bottom</td>
+</tr>
+<tr class="row-odd"><td>Shift-l</td>
+<td>show current line</td>
+</tr>
+<tr class="row-even"><td>k</td>
+<td>focus up a line</td>
+</tr>
+<tr class="row-odd"><td>K</td>
+<td>to top</td>
+</tr>
+<tr class="row-even"><td>,</td>
+<td>focus up item in same level</td>
+</tr>
+<tr class="row-odd"><td>.</td>
+<td>focus down item in same level</td>
+</tr>
+<tr class="row-even"><td>Shift-u</td>
+<td>manage parent item</td>
+</tr>
+<tr class="row-odd"><td>u</td>
+<td>focus parent item</td>
+</tr>
+<tr class="row-even"><td>h</td>
+<td>close folder</td>
+</tr>
+<tr class="row-odd"><td>Shift-h</td>
+<td>close all sub folder</td>
+</tr>
+<tr class="row-even"><td>l</td>
+<td>open sub folder</td>
+</tr>
+<tr class="row-odd"><td>t</td>
+<td>open all sub folder</td>
+</tr>
+<tr class="row-even"><td>v</td>
+<td>show properties window</td>
+</tr>
+<tr class="row-odd"><td>o</td>
+<td>open</td>
+</tr>
+<tr class="row-even"><td>Shift-o</td>
+<td>open and close window</td>
+</tr>
+<tr class="row-odd"><td>Shift-v</td>
+<td>show down more</td>
+</tr>
+<tr class="row-even"><td>c</td>
+<td>copy</td>
+</tr>
+<tr class="row-odd"><td>Alt-click</td>
+<td>select</td>
+</tr>
+<tr class="row-even"><td>Middle click</td>
+<td>open data and close window</td>
+</tr>
+<tr class="row-odd"><td>Right click</td>
+<td>delete an item in favorites or history list from pop up menu.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../20141211202838/index.html" title="Edit documents"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../20141211202930/index.html" title="Annotation"
+             >previous</a> |</li>
+        <li><a href="/help">Baow Home</a>&nbsp;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright Baow Resource Manager.
+      Last updated on Dec 31, 2014.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+Edit documents
+############################
+
+
+1. Open Firefox browser, and select the menu :menuselection:`Baow --> Show in Sidebar`
+2. Click the menu   :menuselection:`New Document`  from the sidebar, and input text, edit in new opened tab editor, and click  :guilabel:`Save`  button.
+
+     |new_doc|
+
+3. Click button  |generate button|  from the sidebar.
+
+      |generate|
+
+4. Select your sphinx build command path, and output path, click  :guilabel:`Ok` . 
+
+     |output path| 
+
+5. OK, you got full features web documents. 
+
+
+
+
+.. |project| image:: ../20110325205532/project.png
+
+.. |new_doc| image:: ../20110325202815/side-en.png
+
+.. |generate| image:: ../20110325202955/gen_doc_menu_en.png
+
+.. |output path| image:: ../20110325203025/gen_en.png
+
+.. |generate button| image:: ../20110401215016/generate_button.png
+
+
+
+
+
+
+Gvim editor
+**********************
+
+
+You can configure Gvim editor path in Options windows.
+
+.. image:: ../20141211223703/op-en.png
+
+
+
+
+
+Shortcuts
+******************
+
+Text edit mode:
+
+=====  ============
+F5     input date string.
+F6     save text.
+=====  ============
+
+
+
+
+.. _Python:
+
+.. _Python Programming Language: http://www.python.org/
+
+
+.. _Python Package\: Sphinx: http://pypi.python.org/pypi/Sphinx/
+
+
+.. _Firefox web browser: http://www.mozilla.com/
+
+
+.. _Sphinx: http://sphinx-doc.org/index.html
+
+
+.. _Baow Resource Manager: ../20141211174118/baow-9.2.xpi
+
+
+.. _Baow Paint: ../20141211192048/baow-paint-2.1.xpi
+
+
+.. _Gvim Plugin: ../20141211224005/baow-vim-plugins-1.1.zip
+
+
+.. _Gvim: http://www.vim.org/
+
+
+
+

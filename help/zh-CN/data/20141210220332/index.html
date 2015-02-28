@@ -1,0 +1,453 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>数据管理 &mdash; 穿越资源管理器</title>
+    
+    <link rel="stylesheet" href="../../_static/sphinx13.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/translations.js"></script>
+    <link rel="top" title="穿越资源管理器" href="../../index.html" />
+    <link rel="next" title="编写文档" href="../20110326104741/index.html" />
+    <link rel="prev" title="网页标注" href="../20141209163626/index.html" />
+ <link rel="shortcut icon" href="/images/favicon.ico" />
+ 
+    <style type="text/css">
+      table.right { float: right; margin-left: 20px; }
+      table.right td { border: 1px solid #ccc; }
+      
+    </style>
+    <script type="text/javascript">
+      // intelligent scrolling of the sidebar content
+      $(window).scroll(function() {
+        var sb = $('.sphinxsidebarwrapper');
+        var win = $(window);
+        var sbh = sb.height();
+        var offset = $('.sphinxsidebar').position()['top'];
+        var wintop = win.scrollTop();
+        var winbot = wintop + win.innerHeight();
+        var curtop = sb.position()['top'];
+        var curbot = curtop + sbh;
+        // does sidebar fit in window?
+        if (sbh < win.innerHeight()) {
+          // yes: easy case -- always keep at the top
+          sb.css('top', $u.min([$u.max([0, wintop - offset - 10]),
+                                $(document).height() - sbh - 200]));
+        } else {
+          // no: only scroll if top/bottom edge of sidebar is at
+          // top/bottom edge of window
+          if (curtop > wintop && curbot > winbot) {
+            sb.css('top', $u.max([wintop - offset - 10, 0]));
+          } else if (curtop < wintop && curbot < winbot) {
+            sb.css('top', $u.min([winbot - sbh - offset - 20,
+                                  $(document).height() - sbh - 200]));
+          }
+        }
+      });
+    </script>
+
+  </head>
+  <body>
+<div class="pageheader">
+  <ul>
+    <li><a href="/">首页</a></li>
+    <li><a href="/help">English</a></li>
+    <li><a href="/help/zh-CN/data/20141210221357">下载</a></li>
+  </ul>
+  <div>
+    <a href="/">
+      <img src="../../_static/logo.png" alt="Baow" />
+    </a>
+  </div>
+</div>
+
+    <div class="related">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="../20110326104741/index.html" title="编写文档"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="../20141209163626/index.html" title="网页标注"
+             accesskey="P">上一页</a> |</li>
+        <li><a href="/">Baow 首页</a>&nbsp;|</li>
+        <li><a href="/help/zh-CN/">穿越资源管理器</a> &raquo;</li>
+ 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../../index.html">內容目录</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../20110326100315/index.html">特性和功能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110326101022/index.html">安装方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110326101834/index.html">项目管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110326103822/index.html">添加内容</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20141209163626/index.html">网页标注</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">数据管理</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">快捷键</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../20110326104741/index.html">编写文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20141210221357/index.html">下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20141224121938/index.html">更新</a></li>
+</ul>
+
+  <h3>本页</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/data/20141210220332/index.txt"
+           rel="nofollow">显示源代码</a></li>
+  </ul>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>数据管理<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<img alt="../../_images/manage-cn.png" src="../../_images/manage-cn.png" />
+<p>在数据管理中可以方便的对数据进行各种操作，可以修改和查看各种属性。</p>
+<div class="section" id="id2">
+<h2>快捷键<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="74%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>F1</td>
+<td>新建文档</td>
+</tr>
+<tr class="row-even"><td>F2</td>
+<td>新建下级文档</td>
+</tr>
+<tr class="row-odd"><td>F3</td>
+<td>上移</td>
+</tr>
+<tr class="row-even"><td>F4</td>
+<td>下移</td>
+</tr>
+<tr class="row-odd"><td>F8</td>
+<td>显示属性</td>
+</tr>
+<tr class="row-even"><td>F9</td>
+<td>管理上级</td>
+</tr>
+<tr class="row-odd"><td>F10</td>
+<td>管理当前数据</td>
+</tr>
+<tr class="row-even"><td>F11</td>
+<td>设置开始时间</td>
+</tr>
+<tr class="row-odd"><td>F12</td>
+<td>设置结束时间</td>
+</tr>
+<tr class="row-even"><td>Ctrl-1</td>
+<td>设置颜色</td>
+</tr>
+<tr class="row-odd"><td>Ctrl-2</td>
+<td>设置颜色</td>
+</tr>
+<tr class="row-even"><td>Ctrl-3</td>
+<td>去除颜色</td>
+</tr>
+<tr class="row-odd"><td>Ctrl-Shift-a</td>
+<td>设置优先级为 A</td>
+</tr>
+<tr class="row-even"><td>Ctrl-Shift-b</td>
+<td>设置优先级为 B</td>
+</tr>
+<tr class="row-odd"><td>Ctrl-Shift-c</td>
+<td>设置优先级为 C</td>
+</tr>
+<tr class="row-even"><td>Ctrl-Shift-d</td>
+<td>设置优先级为 D</td>
+</tr>
+<tr class="row-odd"><td>Ctrl-0</td>
+<td>取消优先级</td>
+</tr>
+<tr class="row-even"><td>Ctrl-l</td>
+<td>从搜索结果中定位到原始数据</td>
+</tr>
+<tr class="row-odd"><td>Ctrl-o</td>
+<td>打开数据所在文件夹</td>
+</tr>
+<tr class="row-even"><td>Alt-1</td>
+<td>选择收藏中的第一个数据</td>
+</tr>
+<tr class="row-odd"><td>Alt-2</td>
+<td>选择收藏中的第二个数据</td>
+</tr>
+<tr class="row-even"><td>Alt-3</td>
+<td>选择收藏中的第三个数据</td>
+</tr>
+<tr class="row-odd"><td>Alt-t</td>
+<td>设置状态为 TODO</td>
+</tr>
+<tr class="row-even"><td>Alt-n</td>
+<td>设置状态为 NEXT</td>
+</tr>
+<tr class="row-odd"><td>Alt-0</td>
+<td>设置状态为空</td>
+</tr>
+<tr class="row-even"><td>Alt-d</td>
+<td>设置状态为DONE</td>
+</tr>
+<tr class="row-odd"><td>Alt-h</td>
+<td>设置状态为HOLD</td>
+</tr>
+<tr class="row-even"><td>Alt-w</td>
+<td>设置状态为WAITING</td>
+</tr>
+<tr class="row-odd"><td>Alt-e</td>
+<td>设置状态为DELAY</td>
+</tr>
+<tr class="row-even"><td>Alt-a</td>
+<td>设置状态为CANCELLED</td>
+</tr>
+<tr class="row-odd"><td>Alt-i</td>
+<td>忽略</td>
+</tr>
+<tr class="row-even"><td>Alt-r</td>
+<td>打开项目窗口</td>
+</tr>
+<tr class="row-odd"><td>Alt-s</td>
+<td>到子链接</td>
+</tr>
+<tr class="row-even"><td>Alt-l</td>
+<td>到链接</td>
+</tr>
+<tr class="row-odd"><td>Alt-x</td>
+<td>复制链接</td>
+</tr>
+<tr class="row-even"><td>Alt-p</td>
+<td>粘贴链接</td>
+</tr>
+<tr class="row-odd"><td>Alt-m</td>
+<td>打开前一项目</td>
+</tr>
+<tr class="row-even"><td>Alt-b</td>
+<td>返回</td>
+</tr>
+<tr class="row-odd"><td>Alt-f</td>
+<td>向下翻页，跳转16行</td>
+</tr>
+<tr class="row-even"><td>Alt-v</td>
+<td>向上翻页，跳转16行</td>
+</tr>
+<tr class="row-odd"><td>Alt-o</td>
+<td>搜索</td>
+</tr>
+<tr class="row-even"><td>Alt-u</td>
+<td>聚焦树</td>
+</tr>
+<tr class="row-odd"><td>Alt-Space</td>
+<td>多选</td>
+</tr>
+<tr class="row-even"><td>数字</td>
+<td>记录跳转的行数</td>
+</tr>
+<tr class="row-odd"><td>空格</td>
+<td>切换状态</td>
+</tr>
+<tr class="row-even"><td>a</td>
+<td>加入收藏</td>
+</tr>
+<tr class="row-odd"><td>RETURN</td>
+<td>打开，如果是文件夹类型的，切换状态</td>
+</tr>
+<tr class="row-even"><td>e</td>
+<td>右侧打开</td>
+</tr>
+<tr class="row-odd"><td>x</td>
+<td>右侧查看属性</td>
+</tr>
+<tr class="row-even"><td>z</td>
+<td>关闭右侧窗口</td>
+</tr>
+<tr class="row-odd"><td>w</td>
+<td>切换聚焦状态</td>
+</tr>
+<tr class="row-even"><td>q</td>
+<td>搜索结果定位</td>
+</tr>
+<tr class="row-odd"><td>Shift-r</td>
+<td>转到链接源</td>
+</tr>
+<tr class="row-even"><td>r</td>
+<td>转到根目录</td>
+</tr>
+<tr class="row-odd"><td>Shift-m</td>
+<td>全部打开或关闭</td>
+</tr>
+<tr class="row-even"><td>m</td>
+<td>移动</td>
+</tr>
+<tr class="row-odd"><td>n</td>
+<td>新建文档</td>
+</tr>
+<tr class="row-even"><td>Shift-a</td>
+<td>下级首个位置新建文档</td>
+</tr>
+<tr class="row-odd"><td>Shift-n</td>
+<td>新建下级文档</td>
+</tr>
+<tr class="row-even"><td>b</td>
+<td>后退</td>
+</tr>
+<tr class="row-odd"><td>Shift-f</td>
+<td>前进</td>
+</tr>
+<tr class="row-even"><td>g</td>
+<td>用Gvim打开</td>
+</tr>
+<tr class="row-odd"><td>s</td>
+<td>管理下级</td>
+</tr>
+<tr class="row-even"><td>f</td>
+<td>新建链接</td>
+</tr>
+<tr class="row-odd"><td>&lt;</td>
+<td>回到顶部</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>到底部</td>
+</tr>
+<tr class="row-odd"><td>j</td>
+<td>聚焦下一行</td>
+</tr>
+<tr class="row-even"><td>Shift-j</td>
+<td>底部</td>
+</tr>
+<tr class="row-odd"><td>Shift-l</td>
+<td>定位当前行</td>
+</tr>
+<tr class="row-even"><td>k</td>
+<td>聚焦上一行</td>
+</tr>
+<tr class="row-odd"><td>K</td>
+<td>到顶部</td>
+</tr>
+<tr class="row-even"><td>,</td>
+<td>聚焦同级上一个节点</td>
+</tr>
+<tr class="row-odd"><td>.</td>
+<td>聚焦同级下一个节点</td>
+</tr>
+<tr class="row-even"><td>Shift-u</td>
+<td>管理上一级</td>
+</tr>
+<tr class="row-odd"><td>u</td>
+<td>聚焦父级节点</td>
+</tr>
+<tr class="row-even"><td>h</td>
+<td>关闭文件夹</td>
+</tr>
+<tr class="row-odd"><td>Shift-h</td>
+<td>关闭下级所有文件夹</td>
+</tr>
+<tr class="row-even"><td>l</td>
+<td>打开文件夹</td>
+</tr>
+<tr class="row-odd"><td>t</td>
+<td>打开全部下级文件夹</td>
+</tr>
+<tr class="row-even"><td>v</td>
+<td>查看属性</td>
+</tr>
+<tr class="row-odd"><td>o</td>
+<td>打开</td>
+</tr>
+<tr class="row-even"><td>Shift-o</td>
+<td>打开并关闭窗口</td>
+</tr>
+<tr class="row-odd"><td>Shift-v</td>
+<td>如果靠近底部则上移</td>
+</tr>
+<tr class="row-even"><td>c</td>
+<td>复制</td>
+</tr>
+<tr class="row-odd"><td>Shift-d</td>
+<td>删除</td>
+</tr>
+<tr class="row-even"><td>Delete</td>
+<td>删除</td>
+</tr>
+<tr class="row-odd"><td>Alt-鼠标左键</td>
+<td>选择</td>
+</tr>
+<tr class="row-even"><td>鼠标中键</td>
+<td>打开并关闭窗口</td>
+</tr>
+<tr class="row-odd"><td>鼠标右键</td>
+<td>在收藏和历史中删除一个条目</td>
+</tr>
+</tbody>
+</table>
+<p>查看属性时</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="40%" />
+<col width="60%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Alt-s</td>
+<td>保存属性并关闭窗口</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="../20110326104741/index.html" title="编写文档"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="../20141209163626/index.html" title="网页标注"
+             >上一页</a> |</li>
+        <li><a href="/">Baow 首页</a>&nbsp;|</li>
+        <li><a href="/help/zh-CN/">穿越资源管理器</a> &raquo;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; 版权所有 川月，使用穿越资源管理器生成.
+      最后更新于 Dec 31, 2014.
+    </div>
+  </body>
+</html>

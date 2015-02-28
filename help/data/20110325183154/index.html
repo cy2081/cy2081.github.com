@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Project management &mdash; Baow Help</title>
+    
+    <link rel="stylesheet" href="../../_static/sphinx13.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Baow Help" href="../../index.html" />
+    <link rel="next" title="Adding content" href="../20110325183235/index.html" />
+    <link rel="prev" title="Install" href="../20110325152027/index.html" />
+ <link rel="shortcut icon" href="/images/favicon.ico" />
+ 
+    <style type="text/css">
+      table.right { float: right; margin-left: 20px; }
+      table.right td { border: 1px solid #ccc; }
+      
+    </style>
+    <script type="text/javascript">
+      // intelligent scrolling of the sidebar content
+      $(window).scroll(function() {
+        var sb = $('.sphinxsidebarwrapper');
+        var win = $(window);
+        var sbh = sb.height();
+        var offset = $('.sphinxsidebar').position()['top'];
+        var wintop = win.scrollTop();
+        var winbot = wintop + win.innerHeight();
+        var curtop = sb.position()['top'];
+        var curbot = curtop + sbh;
+        // does sidebar fit in window?
+        if (sbh < win.innerHeight()) {
+          // yes: easy case -- always keep at the top
+          sb.css('top', $u.min([$u.max([0, wintop - offset - 10]),
+                                $(document).height() - sbh - 200]));
+        } else {
+          // no: only scroll if top/bottom edge of sidebar is at
+          // top/bottom edge of window
+          if (curtop > wintop && curbot > winbot) {
+            sb.css('top', $u.max([wintop - offset - 10, 0]));
+          } else if (curtop < wintop && curbot < winbot) {
+            sb.css('top', $u.min([winbot - sbh - offset - 20,
+                                  $(document).height() - sbh - 200]));
+          }
+        }
+      });
+    </script>
+
+  </head>
+  <body>
+<div class="pageheader">
+  <ul>
+    <li><a href="/help">Home</a></li>
+    <li><a href="/help/zh-CN">Chinese(中文版)</a></li>
+    <li><a href="/help/data/20110325225721/">Download</a></li>
+  </ul>
+  <div>
+    <a href="/">
+      <img src="../../_static/logo.png" alt="Baow" />
+    </a>
+  </div>
+</div>
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../20110325183235/index.html" title="Adding content"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../20110325152027/index.html" title="Install"
+             accesskey="P">previous</a> |</li>
+        <li><a href="/help">Baow Home</a>&nbsp;</li>
+ 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../20110325152027/index.html">Install</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Project management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#open-project-window">Open project window</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#select-root-path">Select root path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#input-project-information">Input project information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sphinx-config">Sphinx config</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#open-project">Open project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#shortcuts">Shortcuts</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../20110325183235/index.html">Adding content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20141211202930/index.html">Annotation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20141211203032/index.html">Data Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20141211202838/index.html">Edit documents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110325225721/index.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20141224121139/index.html">Changes</a></li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/data/20110325183154/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="project-management">
+<h1>Project management<a class="headerlink" href="#project-management" title="Permalink to this headline">¶</a></h1>
+<p>You will get the full power of Baow with project management.</p>
+<div class="section" id="open-project-window">
+<h2>Open project window<a class="headerlink" href="#open-project-window" title="Permalink to this headline">¶</a></h2>
+<p>Click the button <img alt="project" src="../../_images/project.png" /> , you will see the project management window as follows:</p>
+<blockquote>
+<div><img alt="project manage" src="../../_images/project-manage-en.png" /></div></blockquote>
+</div>
+<div class="section" id="select-root-path">
+<h2>Select root path<a class="headerlink" href="#select-root-path" title="Permalink to this headline">¶</a></h2>
+<p>Click the <em class="guilabel">Root Path</em> button in the project management window, you should select a root path where to save your data and pages. You can  select  a path by click the <em class="guilabel">Select</em>  button.</p>
+<blockquote>
+<div><img alt="root path" src="../../_images/root-en.png" /></div></blockquote>
+</div>
+<div class="section" id="input-project-information">
+<h2>Input project information<a class="headerlink" href="#input-project-information" title="Permalink to this headline">¶</a></h2>
+<p>Click  the <em class="guilabel">New Project</em> button in the project management window, and input project information.</p>
+<blockquote>
+<div><img alt="New project" src="../../_images/new-project-en.png" /></div></blockquote>
+<p><tt class="docutils literal"><span class="pre">Project</span> <span class="pre">Name</span></tt>  and  <tt class="docutils literal"><span class="pre">Path</span> <span class="pre">ID</span></tt> are required. You can leave next options blank.</p>
+</div>
+<div class="section" id="sphinx-config">
+<h2>Sphinx config<a class="headerlink" href="#sphinx-config" title="Permalink to this headline">¶</a></h2>
+<p>This is an optional step. You should continue to click the <em class="guilabel">Sphinx Config</em> button if you want to generate  <a class="reference external" href="http://sphinx-doc.org/index.html">Sphinx</a>  document pages.</p>
+<p>You should read  <a class="reference external" href="http://sphinx-doc.org/index.html">Sphinx</a>  documents carefully when inputing the next options. They are plain texts, some of them with Python language format, check <a class="reference external" href="http://sphinx-doc.org/index.html">Sphinx</a> document, please.</p>
+<img alt="../../_images/sphinx-en.png" src="../../_images/sphinx-en.png" />
+</div>
+<div class="section" id="open-project">
+<h2>Open project<a class="headerlink" href="#open-project" title="Permalink to this headline">¶</a></h2>
+<p>Finally, you should click the <em class="guilabel">Open</em> button to use one project settings and open data management window.</p>
+</div>
+<div class="section" id="shortcuts">
+<h2>Shortcuts<a class="headerlink" href="#shortcuts" title="Permalink to this headline">¶</a></h2>
+<p>Shortcuts in project management window as follows:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="82%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>F11</td>
+<td>set start time</td>
+</tr>
+<tr class="row-even"><td>F12</td>
+<td>set end time</td>
+</tr>
+<tr class="row-odd"><td>Ctrl-l</td>
+<td>locate source item from search results</td>
+</tr>
+<tr class="row-even"><td>Alt-f</td>
+<td>scroll down 16 lines</td>
+</tr>
+<tr class="row-odd"><td>Alt-v</td>
+<td>scroll up 16 lines</td>
+</tr>
+<tr class="row-even"><td>Alt-c</td>
+<td>open data management window</td>
+</tr>
+<tr class="row-odd"><td>Alt-x</td>
+<td>copy project link</td>
+</tr>
+<tr class="row-even"><td>Alt-m</td>
+<td>open previous project</td>
+</tr>
+<tr class="row-odd"><td>Alt-o</td>
+<td>search</td>
+</tr>
+<tr class="row-even"><td>Alt-u</td>
+<td>focus tree</td>
+</tr>
+<tr class="row-odd"><td>Number</td>
+<td>record jump step</td>
+</tr>
+<tr class="row-even"><td>Space</td>
+<td>toggle folder open/close state</td>
+</tr>
+<tr class="row-odd"><td>a</td>
+<td>add to favorites</td>
+</tr>
+<tr class="row-even"><td>Shift-d</td>
+<td>to delete</td>
+</tr>
+<tr class="row-odd"><td>Delete</td>
+<td>delete an item</td>
+</tr>
+<tr class="row-even"><td>q</td>
+<td>locate an item from searh results</td>
+</tr>
+<tr class="row-odd"><td>Shift-m</td>
+<td>open/close all items</td>
+</tr>
+<tr class="row-even"><td>n</td>
+<td>new project</td>
+</tr>
+<tr class="row-odd"><td>Shift-n</td>
+<td>new sub project</td>
+</tr>
+<tr class="row-even"><td>b</td>
+<td>back</td>
+</tr>
+<tr class="row-odd"><td>Shift-f</td>
+<td>forward</td>
+</tr>
+<tr class="row-even"><td>&lt;</td>
+<td>to top</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>to bottom</td>
+</tr>
+<tr class="row-even"><td>j</td>
+<td>focus down a line</td>
+</tr>
+<tr class="row-odd"><td>Shift-j</td>
+<td>to bottom</td>
+</tr>
+<tr class="row-even"><td>Shift-l</td>
+<td>show current line</td>
+</tr>
+<tr class="row-odd"><td>k</td>
+<td>focus up a line</td>
+</tr>
+<tr class="row-even"><td>K</td>
+<td>to top</td>
+</tr>
+<tr class="row-odd"><td>,</td>
+<td>focus up item in same level</td>
+</tr>
+<tr class="row-even"><td>.</td>
+<td>focus down item in same level</td>
+</tr>
+<tr class="row-odd"><td>u</td>
+<td>focus parent item</td>
+</tr>
+<tr class="row-even"><td>h</td>
+<td>close folder</td>
+</tr>
+<tr class="row-odd"><td>Shift-h</td>
+<td>close all sub folder</td>
+</tr>
+<tr class="row-even"><td>o</td>
+<td>open this project</td>
+</tr>
+<tr class="row-odd"><td>l</td>
+<td>open sub folder</td>
+</tr>
+<tr class="row-even"><td>c</td>
+<td>sphinx config</td>
+</tr>
+<tr class="row-odd"><td>Shift-v</td>
+<td>show down more</td>
+</tr>
+<tr class="row-even"><td>Double click</td>
+<td>open this project and close window</td>
+</tr>
+<tr class="row-odd"><td>Right click</td>
+<td>delete an item in favorites or history list from pop up menu.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../20110325183235/index.html" title="Adding content"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../20110325152027/index.html" title="Install"
+             >previous</a> |</li>
+        <li><a href="/help">Baow Home</a>&nbsp;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright Baow Resource Manager.
+      Last updated on Dec 31, 2014.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+Data Management
+##############################
+
+
+.. image:: ../20141211215951/manage-en.png
+
+
+You can manage data in this window, and check or modify properties of it.
+
+
+
+
+Shortcuts
+******************
+
+=============  ============
+F1             new document
+F2             new sub document
+F3             move up
+F4             move down
+F8             show properties
+F9             manage up level
+F10            manage current item
+F11            set start time
+F12            set end time
+Ctrl-1         set color style 1
+Ctrl-2         set color style 2
+Ctrl-3         remove color
+Ctrl-Shift-a   set priority A
+Ctrl-Shift-b   set priority B
+Ctrl-Shift-c   set priority C
+Ctrl-Shift-d   set priority D
+Ctrl-0         cancel priority
+Ctrl-l         locate source item from search results
+Ctrl-o         open the folder where saved
+Alt-1          locate the first item in favorites list
+Alt-2          locate the second item in favorites list
+Alt-3          locate the third item in favorites list
+Alt-t          set status as TODO
+Alt-n          set status as NEXT
+Alt-0          set status as null
+Alt-d          set status as DONE
+Alt-h          set status as HOLD
+Alt-w          set status as WAITING
+Alt-e          set status as DELAY
+Alt-a          set status as CANCELLED
+Alt-i          ignore
+Alt-r          open the project management window
+Alt-s          to sub link
+Alt-l          to link
+Alt-x          copy link
+Alt-p          paste link
+Alt-m          open previous project
+Alt-b          back
+Alt-f          scroll down 16 lines 
+Alt-v          scroll up 16 lines 
+Alt-o          search
+Alt-u          focus tree
+Alt-Space      select
+Number         record jump step
+Space          toggle folder open/close state
+a              add to favorites
+Shift-d        delete
+Delete         delete an item
+RETURN         open it , toggle open state for folder.
+e              open it at right pannel
+x              show properties at right pannel
+z              close the right pannel
+w              toggle focus mode
+q              locate an item from searh results
+Shift-r        to link source
+r              to root    
+Shift-m        open/close all items
+m              move
+n              create new document
+Shift-a        create new document on the top in sub folder.
+Shift-n        create new sub document
+b              back
+Shift-f        forward
+g              open it with Gvim editor
+s              manage sub level
+f              new link 
+<              to top
+>              to bottom
+j              focus down a line
+Shift-j        to bottom
+Shift-l        show current line
+k              focus up a line
+K              to top
+,              focus up item in same level
+.              focus down item in same level
+Shift-u        manage parent item
+u              focus parent item
+h              close folder
+Shift-h        close all sub folder
+l              open sub folder
+t              open all sub folder
+v              show properties window
+o              open
+Shift-o        open and close window
+Shift-v        show down more
+c              copy
+Alt-click      select
+Middle click   open data and close window
+Right click    delete an item in favorites or history list from pop up menu.   
+=============  ============
+
+
+
+
+.. _Python:
+
+.. _Python Programming Language: http://www.python.org/
+
+
+.. _Python Package\: Sphinx: http://pypi.python.org/pypi/Sphinx/
+
+
+.. _Firefox web browser: http://www.mozilla.com/
+
+
+.. _Sphinx: http://sphinx-doc.org/index.html
+
+
+.. _Baow Resource Manager: ../20141211174118/baow-9.2.xpi
+
+
+.. _Baow Paint: ../20141211192048/baow-paint-2.1.xpi
+
+
+.. _Gvim Plugin: ../20141211224005/baow-vim-plugins-1.1.zip
+
+
+.. _Gvim: http://www.vim.org/
+
+
+
+

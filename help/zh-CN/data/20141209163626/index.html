@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>网页标注 &mdash; 穿越资源管理器</title>
+    
+    <link rel="stylesheet" href="../../_static/sphinx13.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/translations.js"></script>
+    <link rel="top" title="穿越资源管理器" href="../../index.html" />
+    <link rel="next" title="数据管理" href="../20141210220332/index.html" />
+    <link rel="prev" title="添加内容" href="../20110326103822/index.html" />
+ <link rel="shortcut icon" href="/images/favicon.ico" />
+ 
+    <style type="text/css">
+      table.right { float: right; margin-left: 20px; }
+      table.right td { border: 1px solid #ccc; }
+      
+    </style>
+    <script type="text/javascript">
+      // intelligent scrolling of the sidebar content
+      $(window).scroll(function() {
+        var sb = $('.sphinxsidebarwrapper');
+        var win = $(window);
+        var sbh = sb.height();
+        var offset = $('.sphinxsidebar').position()['top'];
+        var wintop = win.scrollTop();
+        var winbot = wintop + win.innerHeight();
+        var curtop = sb.position()['top'];
+        var curbot = curtop + sbh;
+        // does sidebar fit in window?
+        if (sbh < win.innerHeight()) {
+          // yes: easy case -- always keep at the top
+          sb.css('top', $u.min([$u.max([0, wintop - offset - 10]),
+                                $(document).height() - sbh - 200]));
+        } else {
+          // no: only scroll if top/bottom edge of sidebar is at
+          // top/bottom edge of window
+          if (curtop > wintop && curbot > winbot) {
+            sb.css('top', $u.max([wintop - offset - 10, 0]));
+          } else if (curtop < wintop && curbot < winbot) {
+            sb.css('top', $u.min([winbot - sbh - offset - 20,
+                                  $(document).height() - sbh - 200]));
+          }
+        }
+      });
+    </script>
+
+  </head>
+  <body>
+<div class="pageheader">
+  <ul>
+    <li><a href="/">首页</a></li>
+    <li><a href="/help">English</a></li>
+    <li><a href="/help/zh-CN/data/20141210221357">下载</a></li>
+  </ul>
+  <div>
+    <a href="/">
+      <img src="../../_static/logo.png" alt="Baow" />
+    </a>
+  </div>
+</div>
+
+    <div class="related">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="../20141210220332/index.html" title="数据管理"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="../20110326103822/index.html" title="添加内容"
+             accesskey="P">上一页</a> |</li>
+        <li><a href="/">Baow 首页</a>&nbsp;|</li>
+        <li><a href="/help/zh-CN/">穿越资源管理器</a> &raquo;</li>
+ 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../../index.html">內容目录</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../20110326100315/index.html">特性和功能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110326101022/index.html">安装方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110326101834/index.html">项目管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110326103822/index.html">添加内容</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">网页标注</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20141210220332/index.html">数据管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20110326104741/index.html">编写文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20141210221357/index.html">下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20141224121938/index.html">更新</a></li>
+</ul>
+
+  <h3>本页</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/data/20141209163626/index.txt"
+           rel="nofollow">显示源代码</a></li>
+  </ul>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="abc">
+<span id="id1"></span><h1>网页标注<a class="headerlink" href="#abc" title="永久链接至标题">¶</a></h1>
+<p>对保存后的网页，通过屏幕下方出现的工具条进行处理。</p>
+<img alt="../../_images/toolbar-bot.png" src="../../_images/toolbar-bot.png" />
+<p>如果是文字标注，可以使用预先设置好的风格，也可以进行图形标注。</p>
+<img alt="../../_images/snap-en.png" src="../../_images/snap-en.png" />
+<p>如果要对网页进行图形标注，先需要下载安装  <a class="reference external" href="../20141209163313/baow-paint-2.1.xpi">Baow Paint</a>  Firefox 扩展。基本步骤如下：</p>
+<ol class="arabic simple">
+<li>点击右下角的图形标注图标 <img alt="图形标注按钮" src="../../_images/but3.png" /></li>
+<li>再点击 BaowPaint 按钮 <img alt="Baow Paint 按钮" src="../../_images/but21.png" /></li>
+<li>在新出现的绘图框中绘图，拖动顶部或底部可以进行缩放</li>
+<li>要取消点击 X 按钮，保存当前绘图点击 Save 按钮，默认绘图区域随鼠标滚动，如不想，可去掉勾选。</li>
+<li>最后点击保存网页图标 <img alt="保存" src="../../_images/save.png" /></li>
+</ol>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="../20141210220332/index.html" title="数据管理"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="../20110326103822/index.html" title="添加内容"
+             >上一页</a> |</li>
+        <li><a href="/">Baow 首页</a>&nbsp;|</li>
+        <li><a href="/help/zh-CN/">穿越资源管理器</a> &raquo;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; 版权所有 川月，使用穿越资源管理器生成.
+      最后更新于 Dec 31, 2014.
+    </div>
+  </body>
+</html>

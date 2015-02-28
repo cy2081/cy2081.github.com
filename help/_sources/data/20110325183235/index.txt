@@ -1,0 +1,124 @@
+Adding content
+############################
+
+You can add objects such as Web pages, Document, Summary, Image, File, Bookmark, Separator, Folder or Source File.
+
+* Web pages : 
+   Download and save.
+* Document: 
+   You can edit with it, and add sub documents.
+* Summary: 
+   Text paragraphs, and will be inserted into document.
+* Image:
+   An image file from local folders or web pages, and referenced in ReST.
+* File:
+   A file from local folders or web pages, and referenced in ReST.
+* Bookmark:
+   Web links or local file links with title and URL, and referenced in ReST.
+* Source File:
+   You can edit source code, like C++, Java, PHP, Python.
+* Separator:
+   It's used for partition.
+* Folder:
+   Help you organizing resources.
+
+
+
+
+Documents
+******************
+
+Click menu   :menuselection:`New Document`  from the sidebar, and input text in bring up dialog, then edit it in new opened tab editor, and click  :guilabel:`Save`  button finally.
+
+You can add sub documents as sections in multi levels.
+
+.. tip:: A document can be contained by another document, this is document tree. Section mark characters is no longer needed.
+
+
+You can set toctree style in **Properties** dialog window by checking :guilabel:`Toctree`.
+
+
+
+
+Summary
+**************
+
+Summary text will be inserted into document, and displayed in sequence.
+
+Click the menu  :menuselection:`New Summary` from the sidebar.
+
+You can edit the text in a new opened tab editor, and click  :guilabel:`Save`  button finally.
+
+
+
+
+
+
+Images or files
+******************************
+
+You can add images and files from local folders or web pages.
+
+**Add local file:**
+
+Click menu   :menuselection:`New Image` or :menuselection:`New File` from the sidebar, and select your local file or input a file URL.
+
+**Save web file:**
+
+Move your mouse on image, link, web pages, and right click , click save menu.
+
+You can reference it through copying ReST text from pop up menu or property settings.
+
+
+
+
+
+
+Web links or bookmark
+******************************************
+
+You can add links or bookmark from right pop up menu, or click the menu  :menuselection:`New Bookmark`  from the sidebar. 
+
+You can copy ReST text into document for web links by clicking right pop up menu.
+
+
+
+
+Source file
+**********************
+
+You can add source files from local folders, and edit code.
+
+Click menu  :menuselection:`New Source File` , and select your local file, like C++, Java, Python, PHP files.
+
+
+
+
+.. _Python:
+
+.. _Python Programming Language: http://www.python.org/
+
+
+.. _Python Package\: Sphinx: http://pypi.python.org/pypi/Sphinx/
+
+
+.. _Firefox web browser: http://www.mozilla.com/
+
+
+.. _Sphinx: http://sphinx-doc.org/index.html
+
+
+.. _Baow Resource Manager: ../20141211174118/baow-9.2.xpi
+
+
+.. _Baow Paint: ../20141211192048/baow-paint-2.1.xpi
+
+
+.. _Gvim Plugin: ../20141211224005/baow-vim-plugins-1.1.zip
+
+
+.. _Gvim: http://www.vim.org/
+
+
+
+

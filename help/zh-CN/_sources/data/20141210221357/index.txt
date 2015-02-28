@@ -1,0 +1,65 @@
+下载
+####
+
+**Firefox 扩展**
+
+ * `穿越资源管理器`_ |version|
+ * `Baow Paint`_ |paint version|
+  
+
+**Gvim plugin**
+
+ * 下载 `Gvim 扩展`_
+ * 版本： 1.1
+ * 公布：2014-12-15
+ * 使用：解压缩后把文件放到 gvim 的 plugin 目录中。
+
+这个Gvim扩展可用于辅助编辑文档，其中包含：
+
+  - cy_tab: 可用于tab中显示文档标题，同时对tab功能进行了加强
+  - cy_status: 用于状态栏中显示文档标题
+  - buffergator: 改进版，用于切换文件时显示文档标题
+  - mru : 改进版，显示文件时可以显示文档标题
+
+
+
+
+
+
+
+
+.. _Sphinx Markup: http://sphinx-doc.org/markup/index.html
+
+
+.. _reStructuredText: http://sphinx-doc.org/rest.html
+.. _Python:
+
+.. _Python 语言: http://www.python.org/
+
+
+.. _Sphinx 模块: http://pypi.python.org/pypi/Sphinx/
+
+
+.. _Firefox 浏览器: http://www.mozilla.com/
+
+
+.. _Python Package Index \: setuptools: http://pypi.python.org/pypi/setuptools/
+
+
+.. _穿越资源管理器: ../20141208173411/baow-9.2.xpi
+
+
+.. _Baow Paint: ../20141209163313/baow-paint-2.1.xpi
+
+
+.. _Sphinx: http://sphinx-doc.org/index.html
+
+
+.. _Gvim: http://www.vim.org/
+
+
+.. _Gvim 扩展: ../20141211004053/baow-vim-plugins-1.1.zip
+
+
+
+

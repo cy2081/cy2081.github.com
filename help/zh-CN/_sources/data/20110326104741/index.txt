@@ -1,0 +1,126 @@
+编写文档
+########
+
+通过 Baow 资源管理器可以进行文档编写，然后生成网页格式的文件。步骤如下：
+
+1. 打开 Firefox 浏览器, 选择菜单 :menuselection:`Baow --> 在侧栏显示`
+2. 从左侧栏选择菜单  :menuselection:`添加文档` ， 然后在弹出的对话框中输入标题等信息，然后打开， 最后 ``保存`` 。
+
+     |新文档|
+
+3. 从左侧栏当中点击按钮  |生成按钮|  。
+
+      |生成文档|
+
+4. 选择 Sphinx 命令的路径，并选择文档输出的路径，最后点击 ``确定`` 。 
+
+     |选择生成参数|  
+
+
+5. 好了， 开始生成 ，等一会，自动打开显示生成结果。 如果你想充分使用Baow的强大功能，应该建立项目，并进行详细的配置。方法是点击项目管理按钮 |项目管理按钮| ，然后进行设置。
+
+
+
+
+
+
+.. |新文档| image:: ../20110325202815/side-cn.png
+
+.. |生成按钮| image:: ../20110402004113/generate_button.png
+
+.. |选择生成参数| image:: ../20110420142541/生成文档_005.png
+
+.. |生成文档| image:: ../20110325202955/gen_doc_menu.png
+
+.. |项目管理按钮| image:: ../20110325205532/project.png
+
+
+
+
+语法标记
+********
+
+Baow 文档编辑器在生成网页的时候采用 `Sphinx`_ 编写文档的方式进行。 `Sphinx`_ 源于 Python 编程语言当中支持的 reStructuredText 。
+
+reStructuredText 是一种简单易用的标记语言，通过按照 reStructuredText 规定好的语法进行编写，就可以生成网页在内的多种格式的文档。  `Sphinx`_  对 reStructuredText 进行了扩展，加入了更多的标记，然后可以将多个文件串联在一起，形成网页文件。 Baow 采用  `Sphinx`_ 生成网页的方式，只需要在 Firefox 浏览器当中编写文档就可以了，简化了 Sphinx 编写文档的方式。
+
+.. seealso::
+
+     `Sphinx`_ 
+
+Baow 和 `Sphinx`_ 是完全兼容的，改进了编写的方式，只要按照树状结构组织章节，就能自动生成目录结构。不用加入用于标明标题样式的字符了。
+
+
+
+
+
+Gvim
+********
+
+编写文档时，除了可以用默认的编辑方式外，还可以  `Gvim`_  编辑器或其它软件，可以在选项当中设置。
+
+
+.. image:: ../20141211135837/op-cn.png
+
+
+
+
+
+
+
+快捷键
+******
+
+编辑状态：
+
+===== ==============
+F5    插入日期字符
+F4    保存当前的文本
+F9    用 Gvim 编辑
+===== ==============
+
+
+生成文档：
+
+ Ctrl-Alt-h
+
+
+
+
+
+
+.. _Sphinx Markup: http://sphinx-doc.org/markup/index.html
+
+
+.. _reStructuredText: http://sphinx-doc.org/rest.html
+.. _Python:
+
+.. _Python 语言: http://www.python.org/
+
+
+.. _Sphinx 模块: http://pypi.python.org/pypi/Sphinx/
+
+
+.. _Firefox 浏览器: http://www.mozilla.com/
+
+
+.. _Python Package Index \: setuptools: http://pypi.python.org/pypi/setuptools/
+
+
+.. _穿越资源管理器: ../20141208173411/baow-9.2.xpi
+
+
+.. _Baow Paint: ../20141209163313/baow-paint-2.1.xpi
+
+
+.. _Sphinx: http://sphinx-doc.org/index.html
+
+
+.. _Gvim: http://www.vim.org/
+
+
+.. _Gvim 扩展: ../20141211004053/baow-vim-plugins-1.1.zip
+
+
+
+
