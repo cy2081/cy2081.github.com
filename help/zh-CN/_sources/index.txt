@@ -7,7 +7,7 @@
  :作者: 川月
  :联系: cy2081@baow.com
  :最新版本: |version| 
- :公布日期: 2014-12-31
+ :公布日期: 2015-08-23
 
 
 **下载** 
@@ -65,7 +65,7 @@
 .. _Python Package Index \: setuptools: http://pypi.python.org/pypi/setuptools/
 
 
-.. _穿越资源管理器: data/20141208173411/baow-9.2.xpi
+.. _穿越资源管理器: data/20141208173411/baow-11.xpi
 
 
 .. _Baow Paint: data/20141209163313/baow-paint-2.1.xpi

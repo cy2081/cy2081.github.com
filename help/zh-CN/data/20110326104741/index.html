@@ -64,7 +64,7 @@
     </script>
 
   </head>
-  <body>
+  <body role="document">
 <div class="pageheader">
   <ul>
     <li><a href="/">首页</a></li>
@@ -78,7 +78,7 @@
   </div>
 </div>
 
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -95,7 +95,7 @@
  
       </ul>
     </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
 <h3><a href="../../index.html">內容目录</a></h3>
 <ul class="current">
@@ -115,26 +115,28 @@
 <li class="toctree-l1"><a class="reference internal" href="../20141224121938/index.html">更新</a></li>
 </ul>
 
-  <h3>本页</h3>
-  <ul class="this-page-menu">
-    <li><a href="../../_sources/data/20110326104741/index.txt"
-           rel="nofollow">显示源代码</a></li>
-  </ul>
+  <div role="note" aria-label="source link">
+    <h3>本页</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/data/20110326104741/index.txt"
+            rel="nofollow">显示源代码</a></li>
+    </ul>
+   </div>
         </div>
       </div>
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="id1">
 <h1>编写文档<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
 <p>通过 Baow 资源管理器可以进行文档编写，然后生成网页格式的文件。步骤如下：</p>
 <ol class="arabic">
-<li><p class="first">打开 Firefox 浏览器, 选择菜单 <em class="menuselection">Baow ‣ 在侧栏显示</em></p>
+<li><p class="first">打开 Firefox 浏览器, 选择菜单 <span class="menuselection">Baow ‣ 在侧栏显示</span></p>
 </li>
-<li><p class="first">从左侧栏选择菜单  <em class="menuselection">添加文档</em> ， 然后在弹出的对话框中输入标题等信息，然后打开， 最后 <tt class="docutils literal"><span class="pre">保存</span></tt> 。</p>
+<li><p class="first">从左侧栏选择菜单  <span class="menuselection">添加文档</span> ， 然后在弹出的对话框中输入标题等信息，然后打开， 最后 <code class="docutils literal"><span class="pre">保存</span></code> 。</p>
 <blockquote>
 <div><p><img alt="新文档" src="../../_images/side-cn.png" /></p>
 </div></blockquote>
@@ -144,7 +146,7 @@
 <div><p><img alt="生成文档" src="../../_images/gen_doc_menu.png" /></p>
 </div></blockquote>
 </li>
-<li><p class="first">选择 Sphinx 命令的路径，并选择文档输出的路径，最后点击 <tt class="docutils literal"><span class="pre">确定</span></tt> 。</p>
+<li><p class="first">选择 Sphinx 命令的路径，并选择文档输出的路径，最后点击 <code class="docutils literal"><span class="pre">确定</span></code> 。</p>
 <blockquote>
 <div><p><img alt="选择生成参数" src="../../_images/生成文档_005.png" /></p>
 </div></blockquote>
@@ -199,7 +201,7 @@
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -216,9 +218,9 @@
  
       </ul>
     </div>
-    <div class="footer">
+    <div class="footer" role="contentinfo">
         &copy; 版权所有 川月，使用穿越资源管理器生成.
-      最后更新于 Dec 31, 2014.
+      最后更新于 Aug 23, 2015.
     </div>
   </body>
 </html>

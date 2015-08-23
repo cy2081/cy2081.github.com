@@ -6,7 +6,7 @@ Baow Resource Manager
  :Author: Cyrus Baow
  :Contact: cy2081@baow.com
  :Version: |version|
- :Release: December 31, 2014
+ :Release: 2015-08-23
 
 **Download**
 
@@ -73,7 +73,7 @@ Indices and tables
 .. _Sphinx: http://sphinx-doc.org/index.html
 
 
-.. _Baow Resource Manager: data/20141211174118/baow-9.2.xpi
+.. _Baow Resource Manager: data/20141211174118/baow-11.xpi
 
 
 .. _Baow Paint: data/20141211192048/baow-paint-2.1.xpi

@@ -64,7 +64,7 @@
     </script>
 
   </head>
-  <body>
+  <body role="document">
 <div class="pageheader">
   <ul>
     <li><a href="/">首页</a></li>
@@ -78,7 +78,7 @@
   </div>
 </div>
 
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -95,7 +95,7 @@
  
       </ul>
     </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
 <h3><a href="../../index.html">內容目录</a></h3>
 <ul class="current">
@@ -118,18 +118,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../20141224121938/index.html">更新</a></li>
 </ul>
 
-  <h3>本页</h3>
-  <ul class="this-page-menu">
-    <li><a href="../../_sources/data/20110326101834/index.txt"
-           rel="nofollow">显示源代码</a></li>
-  </ul>
+  <div role="note" aria-label="source link">
+    <h3>本页</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/data/20110326101834/index.txt"
+            rel="nofollow">显示源代码</a></li>
+    </ul>
+   </div>
         </div>
       </div>
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="id1">
 <h1>项目管理<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
@@ -142,25 +144,25 @@
 </div>
 <div class="section" id="id3">
 <h2>配置基本路径<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
-<p>在项目管理窗口当中，点击  <tt class="docutils literal"><span class="pre">路径</span></tt> 按钮，在弹出的窗口当中，首先输入基本的路径信息。 通过点击  <em class="guilabel">选择</em>  按钮可以直接选择路径。</p>
+<p>在项目管理窗口当中，点击  <code class="docutils literal"><span class="pre">路径</span></code> 按钮，在弹出的窗口当中，首先输入基本的路径信息。 通过点击  <span class="guilabel">选择</span>  按钮可以直接选择路径。</p>
 <blockquote>
 <div><img alt="选择路径" src="../../_images/root-cn.png" /></div></blockquote>
 </div>
 <div class="section" id="id4">
 <h2>输入项目信息<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
-<p>输入完了基本路径信息，然后点击  <tt class="docutils literal"><span class="pre">新项目</span></tt> 按钮输入项目信息。</p>
+<p>输入完了基本路径信息，然后点击  <code class="docutils literal"><span class="pre">新项目</span></code> 按钮输入项目信息。</p>
 <blockquote>
 <div><blockquote>
 <div><img alt="项目信息" src="../../_images/new-project-cn.png" /></div></blockquote>
-<p><tt class="docutils literal"><span class="pre">项目名称</span></tt>  和  <tt class="docutils literal"><span class="pre">Path</span> <span class="pre">ID</span></tt> 是必需输入的，其它选项自由填写。</p>
+<p><code class="docutils literal"><span class="pre">项目名称</span></code>  和  <code class="docutils literal"><span class="pre">Path</span> <span class="pre">ID</span></code> 是必需输入的，其它选项自由填写。</p>
 </div></blockquote>
 </div>
 <div class="section" id="sphinx">
 <h2>Sphinx 配置<a class="headerlink" href="#sphinx" title="永久链接至标题">¶</a></h2>
-<p>这一步可跳过，如果需要生成Sphinx文档，则接着点击 <tt class="docutils literal"><span class="pre">Sphinx</span> <span class="pre">配置</span></tt> ，默认的配置一般足够了，大多数选项只需要输入文字就可以，但有些特殊的设置需要按照Python的语法格式进行。具体的方法请先查阅一下 <a class="reference external" href="http://sphinx-doc.org/index.html">Sphinx</a> 的文档。</p>
-<div class="figure align-center">
+<p>这一步可跳过，如果需要生成Sphinx文档，则接着点击 <code class="docutils literal"><span class="pre">Sphinx</span> <span class="pre">配置</span></code> ，默认的配置一般足够了，大多数选项只需要输入文字就可以，但有些特殊的设置需要按照Python的语法格式进行。具体的方法请先查阅一下 <a class="reference external" href="http://sphinx-doc.org/index.html">Sphinx</a> 的文档。</p>
+<div class="figure align-center" id="id12">
 <img alt="../../_images/sphinx-cn.png" src="../../_images/sphinx-cn.png" />
-<p class="caption">Sphinx 配置</p>
+<p class="caption"><span class="caption-text">Sphinx 配置</span></p>
 </div>
 </div>
 <div class="section" id="id5">
@@ -307,7 +309,7 @@
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -324,9 +326,9 @@
  
       </ul>
     </div>
-    <div class="footer">
+    <div class="footer" role="contentinfo">
         &copy; 版权所有 川月，使用穿越资源管理器生成.
-      最后更新于 Dec 31, 2014.
+      最后更新于 Aug 23, 2015.
     </div>
   </body>
 </html>

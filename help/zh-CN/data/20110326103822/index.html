@@ -64,7 +64,7 @@
     </script>
 
   </head>
-  <body>
+  <body role="document">
 <div class="pageheader">
   <ul>
     <li><a href="/">首页</a></li>
@@ -78,7 +78,7 @@
   </div>
 </div>
 
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -95,7 +95,7 @@
  
       </ul>
     </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
 <h3><a href="../../index.html">內容目录</a></h3>
 <ul class="current">
@@ -116,18 +116,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../20141224121938/index.html">更新</a></li>
 </ul>
 
-  <h3>本页</h3>
-  <ul class="this-page-menu">
-    <li><a href="../../_sources/data/20110326103822/index.txt"
-           rel="nofollow">显示源代码</a></li>
-  </ul>
+  <div role="note" aria-label="source link">
+    <h3>本页</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/data/20110326103822/index.txt"
+            rel="nofollow">显示源代码</a></li>
+    </ul>
+   </div>
         </div>
       </div>
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="id1">
 <h1>添加内容<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
@@ -153,7 +155,7 @@
 </dl>
 <div class="section" id="id2">
 <h2>添加文档<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
-<p>从左侧栏点击菜单   <em class="menuselection">添加文档</em> ，然后输入文档标题等信息，然后输入文档内容。最后点击 <tt class="docutils literal"><span class="pre">保存</span></tt> 按钮 。</p>
+<p>从左侧栏点击菜单   <span class="menuselection">添加文档</span> ，然后输入文档标题等信息，然后输入文档内容。最后点击 <code class="docutils literal"><span class="pre">保存</span></code> 按钮 。</p>
 <p>可以自由添加下级文档，也就是下级章节，通过拖动，可以自由安排结构。</p>
 <div class="admonition tip">
 <p class="first admonition-title">小技巧</p>
@@ -163,7 +165,7 @@
 </div>
 <div class="section" id="id3">
 <h2>添加图片和文件<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
-<p>从左侧栏当中点击菜单   <em class="menuselection">添加图片</em> 或者 <em class="menuselection">添加文件</em> ，然后选择文件名称，或输入一个网址。</p>
+<p>从左侧栏当中点击菜单   <span class="menuselection">添加图片</span> 或者 <span class="menuselection">添加文件</span> ，然后选择文件名称，或输入一个网址。</p>
 <p>也可以在浏览网页时，通过鼠标右键调出菜单，把当前的图片、链接或文件保存下来。</p>
 <p>添加完成以后，可以通过右键菜单或属性对话框中，复制相应的ReST引用方法。</p>
 </div>
@@ -184,7 +186,7 @@
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -201,9 +203,9 @@
  
       </ul>
     </div>
-    <div class="footer">
+    <div class="footer" role="contentinfo">
         &copy; 版权所有 川月，使用穿越资源管理器生成.
-      最后更新于 Dec 31, 2014.
+      最后更新于 Aug 23, 2015.
     </div>
   </body>
 </html>

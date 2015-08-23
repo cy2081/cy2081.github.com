@@ -56,7 +56,7 @@ You will see the icon |baow paint| as follows:
 .. _Sphinx: http://sphinx-doc.org/index.html
 
 
-.. _Baow Resource Manager: ../20141211174118/baow-9.2.xpi
+.. _Baow Resource Manager: ../20141211174118/baow-11.xpi
 
 
 .. _Baow Paint: ../20141211192048/baow-paint-2.1.xpi

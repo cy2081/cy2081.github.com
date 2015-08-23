@@ -57,7 +57,7 @@
 .. _Python Package Index \: setuptools: http://pypi.python.org/pypi/setuptools/
 
 
-.. _穿越资源管理器: ../20141208173411/baow-9.2.xpi
+.. _穿越资源管理器: ../20141208173411/baow-11.xpi
 
 
 .. _Baow Paint: ../20141209163313/baow-paint-2.1.xpi
