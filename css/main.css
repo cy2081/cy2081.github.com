@@ -1,0 +1,141 @@
+html {
+    font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 1.2rem;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 1.4rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 1.6rem;
+    }
+}
+
+.blog h1 {
+    font-size: 1.5rem;
+    display:block;
+    background-color: #f1f1f1;
+}
+.blog h2 {
+    font-size: 1.4rem;
+    display:block;
+    background-color: #f1f1f1;
+}
+.blog h3 {
+    font-size: 1.3rem;
+    display:block;
+    background-color: #f1f1f1;
+}
+.blog h4 {
+    font-size: 1.2rem;
+    display:block;
+    background-color: #f1f1f1;
+}
+.blog h5 {
+    font-size: 1.1rem;
+    display:block;
+    background-color: #f1f1f1;
+}
+.blog h6 {
+    font-size: 1.1rem;
+    display:block;
+    background-color: #f1f1f1;
+}
+
+.blog p {
+    text-indent: 2rem;
+}
+
+.blog ul {
+    margin-left: 3rem;
+}
+
+.blog li a {
+    margin-right: 2rem;
+}
+
+
+.myval {
+    border: solid 2px #000;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding: 4px;
+    background-color: #f1f1f1;
+    letter-spacing: 2px;
+}
+
+.my {
+    display:block;
+    margin: 10px;
+    padding:5px;
+}
+.toc-1 {
+    padding-left: 2rem;
+}
+.toc-2 {
+    padding-left: 4rem;
+}
+.toc-3 {
+    padding-left: 6rem;
+}
+.toc-4 {
+    padding-left: 8rem;
+}
+.toc-5 {
+    padding-left: 10rem;
+}
+.toc-6 {
+    padding-left: 12rem;
+}
+
+.my-nav a:hover {
+    color: #fff;
+    border-bottom: solid 3px #f1f1f1;
+}
+
+.navbar-nav .active {
+    border-bottom: solid 3px #FFE100;
+}
+
+.cc-tag {
+    border: solid 2px #eee;
+}
+.cc-tag h1 {
+    background-color: #ffe100
+}
+.cc-tag h2 {
+    background-color: #ffccaa
+}
+.cc-tag h3 {
+    background-color: #aaccaa
+}
+.cc-tag h5 {
+    background-color: #e1e1e1
+}
+
+.cc-tag pre {
+    font-size: 1rem;
+    text-indent: 0rem;
+    padding-left: 2rem;
+}
+
+.cc-tag p {
+    font-size: 1rem;
+}
+
+.cc-tag li {
+    font-size: 1rem;
+}
+
+.cc-tag .res {
+    padding-left: 4rem;
+}
